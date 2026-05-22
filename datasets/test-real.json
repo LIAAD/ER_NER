@@ -1,0 +1,866 @@
+[
+  {
+    "doc_id": 2,
+    "text": "afd27e61-6b20-43f9-a7cd-c5986d3ecfa8\r\n\r\nCENTRO HOSPITALAR DE LISBOA - SERVIÇO DE MEDICINA INTERNA\r\nDirector de Serviço: Prof Doutor Leonardo da Vinci\r\nEquipa assistente: Dra Sofia Rodrigues; Dr Bruno Fernandes; Dr Joao Paulo Silva; Dr Maria Helena Costa; Dr Pedro Miguel Santos\r\nDoente admitido durante a manhã de hoje para Medicina Interna com diagnóstico de Sepse.\r\n\r\nIDENTIFICAÇÃO\r\nDoente de 67 anos de idade; Engenheiro Civil reformado; vive sozinho\r\n\r\nMOTIVO DE INTERNAMENTO\r\nSepse de origem abdominal com descompensaçao de Insuficiência Cardíaca e insuficiência renal aguda.\r\n\r\nANTECEDENTES\r\n# Hipertensão arterial, seguida no médico de família\r\n# Insuficiência Cardíaca com fração de ejeção ventricular esquerda diminuída, seguida no cardiologista\r\n# Diabetes Mellitus tipo 2, seguido no diabetologista\r\n# Ex-fumador 2 maços/dia (40 UMA), parou de fumar em janeiro de 2010\r\n\r\nMEDICAÇÃO HABITUAL\r\n- Enalapril 20 mg\r\n- Metformina 1000 mg\r\n- Simvastatina 20 mg\r\n- Aspirina (Aspegic) 100 mg\r\n- Sinvastatina 40 mg\r\n\r\nHISTORIA DA DOENÇA ACTUAL\r\nNo seu estado habitual de saúde até à altura da semana passada, quando notou agravamento do padrão habitual de dor abdominal e dispneia; por agravamento progressivo recorreu ao SU deste hospital a 10 de Março de 2023; tinha febre; a GSA à entrada: pH 7,32; pCO2 42,7 mm Hg; pO2 85,0; Lac 2,50; estudo analítico revelou leucocitose com elevação de PCR. Teve alta medicada com ceftriaxona (10 dias) e metronidazol (10 dias).\r\nA doente refere não ter tido melhoria das queixas abdominais, mantendo dor abdominal e febre.\r\nNo dia 15/03, durante noite, teve agravamento da dispneia com necessidade de recorrer pelo menos 3x ao oxigénio e febre (39°C); apresentava também taquicardia e hipotensão. Nesse mesmo dia, recorreu ao SU deste hospital:\r\n- GSA (O2 a 40%): pH 7,28; pO2 75,4 mmHg; pCO2 45,1 mmHg; HCO3- 22,1 mmol/L; Sat 88%; \r\npO2/FiO2 253; Hb 12,5 g/dL; Na+ 135,6 mmol/L; K+ 4,21 mmol/L; Ca++ 1,18 mmol/L; Cl- 101 mmol/L; Glicose 150 mg/dl; Lact 3,50 mmol/L.\r\n- Rx de tórax: sem evidência de condensações\r\n- Antigénios urinários negativos\r\n- Leucocitose 18000 e elevação de PCR 120,5.\r\nAinda neste episódio de SU colheu zaragatoa para pesquisa de RNA. Teve alta medicada com meropenem. No dia seguinte (16/03) regressou ao SU por manter dispneia, tendo feito medicação sintomática no SU e após melhoria sintomática teve alta medicada com vancomicina. Regressou ao SU a 17/03 novamente com dispneia e após medicação sintomática teve alta. Regressou algumas horas após a alta por agravamento da dispneia:\r\n- GSA (O2 a 50%): pH 7,24, pO2 68,1, pCO2 48, HCO3 25,4, SatO2 84,9%, Lactatos 5,10\r\n- Analiticamente: Leucocitose; PCR 150,1.\r\nEntretanto conhecimento de hemocultura positiva para Estafilococos aureus resistente à meticilina.\r\nRepetiu Rx de tórax que não evidenciou condensações. Por manter insuficiência respiratória e renal foi decidido internamento sob meropenem e vancomicina.\r\n\r\nApós terapêutica, melhoria da dispneia e da dor abdominal, embora mantenha acessos frequentes de tosse com expectoração mucosa. Nega dor torácica, cefaleias, náuseas ou vómitos. Mantém febre e astenia. Sem queixas urinárias ou GI. Mantém insuficiencia respiratoria e renal.\r\n\r\nEXAME OBJECTIVO\r\nCCO TE. Estado geral razoável.\r\nPele e mucosas coradas e hidratadas.\r\nOrofaringe sem lesões ou exsudados.\r\nAnictérica e acianótica. Sem exantemas.\r\nEupneica e com sinais de dificuldade respiratória (O2 por CN a 5L/min).\r\nTA: 100/60 mmHg; FC: 110 bpm; FR: 25 cpm; SatO2 90%; Febre (38,5ºC)\r\nAC: S1 e S2, rítmicos e regulares, sem sopros\r\nAP: MV presente bilateralmente, globalmente diminuído e com tempo expiratório prolongado. Raros sibilos dispersos.\r\nAbdómen mole e depressível, dor à palpação, sem massas ou organomegalias palpáveis. RHA+.\r\nSem edemas dos MI.\r\n\r\nPortanto, Sepse de origem abdominal com insuficiência respiratória tipo 1 e renal aguda em doente com Insuficiência Cardíaca já conhecida; Melhoria clínica desde a admissão\r\n\r\nLISTA DE PROBLEMAS ACTIVOS\r\n# Infecção bacteriana por Estafilococos aureus resistente à meticilina\r\n- Insuficiência respiratória tipo 1 à admissão\r\n# Insuficiência renal aguda\r\n-- Hipertensão arterial não controlada\r\n\r\nOUTROS PROBLEMAS DA DOENTE\r\n# Diabetes Mellitus tipo 2, sem complicações\r\n- Ex-fumador 40 UMA, até janeiro de 2010",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318855006",
+        "begin": 905,
+        "end": 920
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "376701008",
+        "begin": 924,
+        "end": 942
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "319997009",
+        "begin": 946,
+        "end": 964
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "1197380000",
+        "begin": 968,
+        "end": 976
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "320000009",
+        "begin": 997,
+        "end": 1015
+      },
+      {
+        "label": "Diagnóstico",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": "A49.0",
+        "EDQM": null,
+        "begin": 4004,
+        "end": 4072
+      }
+    ]
+  },
+  {
+    "doc_id": 9,
+    "text": "8edb2f8c-02d2-45b9-8a65-173c4762a60b\r\n\r\nADMISSÃO UCIM\r\n\r\n68 anos de idade. Antecedentes de adenocarcinoma gástrico submetido a gastrectomia subtotal (09/2022), seguido de quimioterapia adjuvante até 03/2023. Em vigilância, com achado de metástases hepáticas únicas no segmento VIII e nódulos pulmonares subcentimétricos em TAC de 11/2024. Reencaminhado a oncologia, iniciou 2ª linha de quimioterapia paliativa com FOLFIRI em 01/2025, último ciclo em 29/03/2025, tendo tido bons tolerância, exceto astenia prolongada. Mantém seguimento por medicina interna por hipertensão arterial e insuficiência cardíaca (FEVE 45%).\r\n\r\nMedicação habitual (confirmado com a esposa): bisoprolol 2,5mg id, ramipril 5mg id, furosemida 20mg id, pantoprazol 20mg id, ferro oral 100mg id\r\n\r\nAlergia conhecida: metoclopramida (náuseas importantes, vómitos e irritação cutânea em episódios prévios).\r\n\r\nQueixas de vômitos alimentares frequentes há 5 dias, associados a náuseas, diminuição marcada da ingestão oral, prostração intensa e tonturas ortostáticas. Esposa refere também diminuição da diurese e perda notória de peso nas últimas semanas. Sem febre ou dispneia. Enviado ao SU por médico assistente por agravamento do estado geral.\r\n\r\nÀ entrada no SU: consciente, orientado, desidratado, mucosas secas, hipoactivo; PA 93/54 mmHg, FC 88 bpm, satO2 96% AA. Abdómen doloroso difuso, sem sinais de irritação peritoneal; sem edema periférico. Peso estimado 56kg (era 62kg no último controlo há 1 mês).\r\n\r\nAnalítica: Na+ 128, K+ 3,1, Cl- 95, PCR 54, pCr 2,47 (baseline 1,1), uremia 98, Hb 10,2, Leu 7,3, Plaq 234, Lactato 2,1. RX abdómen sem distensão significativa, sem sinais de obstrução. Eco abdominal: fígado com lesão sólida conhecida, moderada ascite, sem dilatação das vias biliares; rins sem alterações relevantes.\r\n\r\nAo longo das primeiras horas no SU foi iniciado SF 0,9% com ligeira melhoria da TA, diurese esparsa (<0,3 mL/kg/h). Por hipoNa e IRA funcional, platô de evolução negativa metabólica e instabilidade hemodinâmica ligeira, admitido na UCIM para vigilância e correção hidroelectrolítica.\r\n\r\nÀ admissão na UCIM\r\nPA 99/60 mmHg, FC 85 bpm\r\nDesidratado, pele e mucosas secas\r\nConsciente, colaborante, sem focalidade neurológica\r\nAC: ritmo regular\r\nAP: murmúrio vesicular presente, sem ruídos patológicos\r\nAbdómen: sem defesa, doloroso à palpação difusa, ausência de peristaltismo audível\r\nExtremidades sem edemas\r\nSem sinais infecciosos cutâneos\r\n\r\nDocumentação laboratorial nas últimas 24h:\r\n2/04: Na+ 126, K+ 3,0, PCR 60, pCr 2,36, uremia 94\r\nGSA: acidose metabólica ligeira, lactato 1,8\r\n\r\nIMPRESSÃO\r\nHIPONATRÉMIA HIPOVOLÉMICA GRAVE em contexto de vómitos persistentes, redução da ingestão e possível agravamento de insuficiência renal funcional, com quadro compatível com desidratação grave.\r\nDoente oncológico com doença avançada, perfis digestivos sem sinais de obstrução aguda.\r\n\r\nPLANO\r\nCorreção volumétrica cuidadosa (SF 0,9%) com ajustamento pelo ritmo da diurese e parâmetros laboratoriais, vigilância próxima hemodinâmica.\r\nReposição cuidadosa de potássio.\r\nAvaliação de resposta à hidratação nas primeiras 6-12h.\r\nEvitar metoclopramida (A L E R G I A documentada) - antiemético alternativo: ondansetrona iv se necessário.\r\nMonitorização analítica diária.\r\nManter hemodinâmica e reavaliação clínica frequente.\r\nObservação multidisciplinar (Oncologia, Nefrologia).\r\n\r\nColheitas dirigidas: hemoculturas, função renal e eletrólitos seriados.\r\n",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318605000",
+        "begin": 667,
+        "end": 686
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "408051007",
+        "begin": 688,
+        "end": 703
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "317971007",
+        "begin": 705,
+        "end": 723
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": "Positiva",
+        "ICD10": null,
+        "EDQM": "1145537008",
+        "begin": 725,
+        "end": 744
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "421953007",
+        "begin": 746,
+        "end": 765
+      },
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Positiva",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 788,
+        "end": 802
+      },
+      {
+        "label": "Diagnóstico",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": "E87.1",
+        "EDQM": null,
+        "begin": 2600,
+        "end": 2631
+      }
+    ]
+  },
+  {
+    "doc_id": 34,
+    "text": "fa8a7023-7ada-4474-8e0a-61fbe69bb762\r\n\r\nDoente de 62 anos, independente para as atividades da vida diária, chamado Leonardo da Vinci, foi admitido no serviço de Medicina Interna.\r\n\r\nANTECEDENTES PESSOAIS: \r\n# FRCV: hipertensão arterial e dislipidemia\r\n# Diabetes tipo 2, diagnosticado em 2015, controlado com metformina\r\n# Doença pulmonar obstrutiva crónica (DPOC), com predomínio enfisematoso, sob vigilância no Centro de Especialidades de Pneumologia\r\n# Infecção por Helicobacter pylori, tratada em 2019\r\n# Litíase renal, com episódios de colica renal em 2018 e 2020\r\n\r\nMEDICAÇÃO HABITUAL: \r\n- Amlodipino 5 mg\r\n- Atorvastatina 20 mg\r\n- Metformina 1000 mg bid\r\n- Salmeterol/Fluticasona 50/500 mcg, 2 inalações/dia\r\n- Omeprazol 20 mg\r\n\r\nHistória da doença atual: \r\nO doente deu entrada no serviço de urgência às 22h do dia 10, reclamando febre (com pico máximo de 38,5ºC), tosse seca e dor torácica tipo pressão, há 24 horas. Referiu dificuldade respiratória progressiva, com necessidade de oxigénio suplementar. Nega trauma torácico ou exposição a substâncias tóxicas.\r\n\r\nEXAME OBJETIVO NO SU: \r\nO doente apresentava-se consciente, orientado e cooperante, com saturação de oxigénio de 92% em ar ambiente, frequência cardíaca de 100 batimentos por minuto e pressão arterial de 140/90 mmHg. A ausculta pulmonar revelou murmúrios vesiculares diminuídos e ruídos crepitantes bilaterais. O exame abdominal foi normal.\r\n\r\nECDS no SU: \r\n- Análise ao sangue: leucocitose com 12000 leucócitos/mm3, PCR elevada a 150 mg/L\r\n- Radiografia torácica: infiltrados pulmonares bilaterais, sugerindo pneumonia\r\n\r\nHipoteses de diagnóstico: \r\n# Pneumonia bacteriana em doente com DPOC\r\n- Sepsis de origem respiratória\r\n\r\nEvolução: \r\nO doente iniciou antibioticoterapia com ceftriaxone e azitromicina, e foi internado na unidade de cuidados paliativos para monitorização e vigilância clínica. Durante a noite, o doente apresentou melhoria dos sintomas respiratórios, mas com necessidade contínua de oxigénio suplementar. Foi solicitada uma tomografia computorizada de tórax para avaliar a extensão da pneumonia e excluir outras complicações.",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "783049000",
+        "begin": 596,
+        "end": 611
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "1145420004",
+        "begin": 615,
+        "end": 634
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "376701008",
+        "begin": 638,
+        "end": 660
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "770310003",
+        "begin": 664,
+        "end": 714
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "317306008",
+        "begin": 718,
+        "end": 733
+      },
+      {
+        "label": "Diagnóstico",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": "J15.9",
+        "EDQM": null,
+        "begin": 1626,
+        "end": 1646
+      }
+    ]
+  },
+  {
+    "doc_id": 44,
+    "text": "933fc848-5271-4b2d-ab49-201a04a4bb8a\r\n\r\n62 anos, raça caucásica, casada e mãe de dois filhos. Empregada de escritório.\r\n\r\nContactos: 963214567, marido 916543210.\r\n\r\nEtiologia DRC: Pneumopatia crónica.\r\nInicio de HD: 10/02/2018.\r\nTransfusões: sim, uma em 2020.\r\nGravidezes - 2\r\nTransplante prévio - Não\r\n\r\nANTECEDENTES PESSOAIS:\r\n# Asma alérgica\r\n- seguida em consulta de Pneumologia;\r\n- iniciou terapêutica com corticosteroides inalatórios e broncodilatadores em 2010.\r\n# DPOC: \r\n- ECG (abr/2020): RS, FC ~70bpm;\r\n- spirometria (jun/2020): VEF1 60% do valor previsto, indicativo de obstrução respiratória moderada.\r\n# Antecedentes ginecológicos/obstétricos: partos normais; menopausa aos 50 anos; sem THS\r\n# Antecedentes cirúrgicos: cesariana em 1995 e histerectomia em 2001\r\n# Antecedentes familiares: pai com DPOC faleceu aos 65 anos; 2 irmãos afetados pela mesma doença.\r\n# Alergias: não refere alergias medicamentosa conhecidas.\r\n\r\nPERÍODO CLÍNICO:\r\n# Insuficiência respiratória crónica\r\n- classe III NYHA-> Ok por Pneumologia\r\n# Internamento em 2022 por exacerbação da DPOC.\r\nAguardava avaliação para oxigenoterapia de longo prazo -> iniciada em 02/2022\r\n- Realizou ECG de repouso em 15/02/2022 com resultado normal\r\n# Infeção COVID em 01/2022 mas já curada. Assintomática.\r\n\r\n# Suspensão temporária da terapêutica inalatória devido a dificuldades na sua administração.\r\n- Reavaliação da terapêutica e ajustes necessários\r\n# Avaliação de capacidade respiratória -> FEV1 55% do valor previsto, sem alterações significativas.\r\n\r\nEstratégia clínica: Data da última avaliação: 20.03.2023 Modalidade: Monitorização ambulatória Marca: Não aplicável\r\nTipo: Seguimento clínico N.º de consultas: 4 por ano\r\n\r\nMarcadores laboratoriais: hemograma completo em 10/02/2023 - sem alterações significativas, gasometria arterial em 15/02/2023 - pH 7.38, PaCO2 42 mmHg, PaO2 85 mmHg.\r\n\r\nVACINAÇÃO \r\nImunização pneumocócica: prevenar 13 em 2018 e pneumovax 23 em 2020\r\nImunização gripe: 15/10/2022\r\nImunização covid-19: 20.05.2021 e booster 01.11.2022\r\n\r\nNa avaliação mais recente, em Consulta de Pneumologia em fevereiro de 2023, destaca-se:\r\n\r\nREVISÃO DE SINTOMAS \r\nGeral: Assintomática Humor: Bem Apetite: Bom Prurido: não Dores ósseas: não tem\r\nSintomas cardiovasculares: nega dispneia ou ortopneia. Nega dor torácica.\r\nSintomas respiratórios: nega tosse ou expectoração, mas refere Orthopneia e dispneia de esforço\r\n\r\nEXAME FÍSICO \r\nAspecto geral: Regular TA=130/80 mmHg P=60 bpm\r\nHérnias: 0 AP: limpa Peso = 65 kg Edema MI: sem edema\r\n\r\nREVISÃO DA TERAPÊUTICA \r\n- Inalador de corticosteroides e broncodilatadores, com ajuste da posologia para manter controle dos sintomas.\r\n- Oxigenoterapia de longo prazo, com avaliação mensal da necessidade de ajustes.\r\n\r\nAVALIAÇÃO GLOBAL E PLANO \r\nMantenha a terapêutica atual, com acompanhamento regular para ajustes e monitorização da função pulmonar.\r\nRealizar ecocardiograma anual, spirometria bianual, e exames laboratoriais trimestrais para acompanhar a evolução clínica.\r\n\r\nMedicação:\r\n- Inhalador de salbutamol 5mg, 2 inhalações quando necessário\r\n- inhalador de fluticasona-salmeterol 250/25mcg, 2 inhalações bid\r\n- Oxigénio 2L/minuto durante 18 horas/dia\r\n- Sinvastatina 40 mg id\r\n- carvedilol 6.25 mg bid",
+    "annotations": [
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Negativa",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 898,
+        "end": 920
+      },
+      {
+        "label": "Diagnóstico",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": "J96.1",
+        "EDQM": null,
+        "begin": 956,
+        "end": 990
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "1197460000",
+        "begin": 3037,
+        "end": 3083
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "770306001",
+        "begin": 3100,
+        "end": 3150
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "320000009",
+        "begin": 3197,
+        "end": 3218
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318635007",
+        "begin": 3222,
+        "end": 3244
+      }
+    ]
+  },
+  {
+    "doc_id": 79,
+    "text": "01a1687c-b00f-4923-bcd7-a8f6a18a8486\r\n\r\nNota de Admissao no Servico de Doencas Infecciosas\r\n\r\nHomem de 42 anos, casado, trabalhador em empresa de tecnologia da informacao, sem antecedentes familiares relevantes para o caso.\r\n# Antecedente clinico: hipertensao arterial, diagnosticada ha cerca de 5 anos, sendo medicado com Enalapril maleato 10 mg e Hidroclorotiazida 25 mg.\r\n# Outros antecedentes patologicos: episodio de pancreatite aguda ha 2 anos, considerado de causa idiopatica, nao tendo sido identificada qualquer causa subjacente.\r\n- Medicao atual: Enalapril maleato 10 mg, Hidroclorotiazida 25 mg, Simvastatina 20 mg.\r\nPossui alergia medicamentosa conhecida a penicilina, com reacao de hipersensibilidade tipo I, tendo sido diagnosticada ha cerca de 10 anos.\r\n\r\nDo foro infeccioso: historia de episodio de pneumonia adquirida na comunidade ha cerca de 3 anos, sendo tratado com Amoxicilina-Clavulanato durante 7 dias.\r\nTem uma consulta recente no Centro de Saude ha cerca de 2 semanas, onde foi avaliado por sintomas de febre, tosse seca e mialgias, tendo sido medicado com Paracetamol 500 mg e Azitromicina 250 mg, sem melhoria significativa dos sintomas.\r\n\r\nVindo ao nosso Servico de Urgencia hoje, o paciente refere dor abdominal intensa, nausea e vometos, alem de febre alta, com temperatura corporal de 39 graus Celsius.\r\nA nossa observacao: Paciente apresenta-se com estado geral alterado, febril, comSatO2 94% em ar ambiente,Frequency cardica 110/min, Pressao arterial 130/80 mmHg.\r\n- ECG: TA, 110/min, AxR 90 graus, sem alteracoes significativas.\r\n- Analises: Hb 14,5 g/dL, Leucocitos 18.000/mm3, PLT 350.000/mm3, Urea 40 mg/dL, Creatinina 1,2 mg/dL, Na 140 mEq/L, K 4,5 mEq/L.\r\n- Rx Torax: Infiltrado intersticial bilateral.\r\n\r\nPortanto, o quadro clinico sugere uma infeccao, possivelmente de etiologia bacteriana, sendo necessario iniciar antibioticoterapia empirica com Ceftriaxona 1g EV e realizar culturas e exames para identificar o agente causador.\r\nMedicado tambem com Paracetamol 1000 mg EV e Ondansetrone 4 mg EV.",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318853004",
+        "begin": 557,
+        "end": 580
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "376209006",
+        "begin": 582,
+        "end": 605
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "319997009",
+        "begin": 607,
+        "end": 625
+      },
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Positiva",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 669,
+        "end": 679
+      }
+    ]
+  },
+  {
+    "doc_id": 109,
+    "text": "77b2503e-8984-48f2-ad8c-03e4191d90bd\r\n\r\nNOTA DE ENTRADA - SERVIÇO DE NEFROLOGIA\r\nEQUIPA ASSISTENTE: Drª Sofia Rodrigues (Assistente de Nefrologia), Drª Joana Silva (IFE Nefrologia), Drª Luís Fernandes (IFE Urologia), Drª Beatriz Costa (IFE Medicina Interna)\r\nIDENTIFICAÇÃO\r\nDoente do sexo masculino, 62 anos, casado, natural e residente em Lisboa, reformado, 12 anos de escolaridade. Vive com a esposa. Mão dominante: direita. \r\nC. S.: Usf Francisco Pina\r\n\r\nDATA E MOTIVO DE INTERNAMENTO\r\nInternado no serviço de Nefrologia a 10/03/2025, proveniente do serviço de urgência, com quadro de insuficiência renal aguda sobre doença renal crónica.\r\n\r\nHISTÓRIA DA DOENÇA ACTUAL\r\nDoente com história de doença renal crónica em estágio 4, sob acompanhamento no nosso serviço. Nos últimos dias, apresentou uma deterioração clínica, com aumento da fadiga, náuseas e vômitos. \r\nRealizou análises que mostraram um agravamento da função renal, com creatinina de 3,5 mg/dL e ureia de 120 mg/dL.\r\n\r\nNa admissão: PA: 160/90 mmHg; P radial: 80 ppm; Glicemia capilar 180 mg/dL e apirético. \r\nAo exame físico, estava desperto, mas apresentava sinais de desidratação, com oligúria e edema em membros inferiores.\r\n\r\nEfectuou os seguintes estudos\r\nAnálises Laboratoriais: Hemograma com Hb-10,2 g/dL; Leucocitose com 12.000 leucócitos/mm3; Platelmia normal; \r\nUremia de 120 mg/dL; Creatinina de 3,5 mg/dL; Sódio de 140 mEq/L; Potássio de 5,2 mEq/L; \r\nCálcio de 8,5 mg/dL; Fósforo de 6,2 mg/dL; \r\nECG: Ritmo sinusal com ondas T invertidas em DII, DIII e aVF.\r\nRx Tórax: Bilaterismo com presença de estrias intersticiais finas.\r\n\r\nNa ausência de contraindicação, iniciou diálise peritoneal contínua.\r\nDiscutida a necessidade de uma abordagem multidisciplinar, com envolvimento da equipa de urologia e medicina interna.\r\n\r\nNo decurso do internamento, o doente apresentou uma melhoria clínica, com redução da fadiga e aumento da diurese.\r\nRealizou-se um ecodoppler renal que mostrou uma redução do fluxo sanguíneo nos rins, compatível com a doença renal crónica.\r\n\r\nANTECEDENTES PESSOAIS\r\n#Hipertensão arterial\r\n#Doença renal crónica em estágio 4\r\n#Diabetes mellitus tipo 2\r\n#Hiperparatiroidismo secundário\r\n\r\nPossui alergia medicamentosa conhecida a penicilina.\r\n\r\nMEDICAÇÃO HABITUAL\r\n- Losartan \r\n- Metformina \r\n- Epoetina alfa \r\n- Calcitriol \r\n\r\nANTECEDENTES FAMILIARES\r\nHistória familiar de doença renal crónica e hipertensão arterial.\r\n\r\nADMISSÃO NO SERVIÇO DE NEFROLOGIA\r\nObjectiva queixas de fadiga e náuseas.\r\nEquipa de enfermagem refere oligúria e edema em membros inferiores.\r\n\r\nEupneico em ar ambiente.\r\nEN: Consciente, cooperante. \r\nOlhos na linha média, pupilas isocóricas fotorreactivas. \r\nMovimentos oculares possíveis em todas as direcções do olhar, sem nistagmo. \r\nSem aparente défice motor dos membros. \r\nROT presentes simétricos.\r\nMarcha possível, mas com dificuldade devido ao edema.\r\n\r\nSinais Vitais (11/03): TA 150/80 mmHg; FC 75 bpm; temp 36,5ºC; SatO2 95%\r\n\r\nLISTA DE PROBLEMAS\r\n#Insuficiência renal aguda sobre doença renal crónica\r\n#Hipertensão arterial\r\n#Diabetes mellitus tipo 2\r\n#Hiperparatiroidismo secundário\r\n\r\nPLANO\r\nAjuste da diálise peritoneal contínua.\r\nAvaliação da necessidade de diálise hemodialítica.\r\nControle rigoroso dos níveis de eletrólitos e ácido úrico.\r\nPedido de colaboração com a equipa de urologia para avaliar a necessidade de acesso vascular para diálise.",
+    "annotations": [
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Positiva",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 2223,
+        "end": 2233
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "776577001",
+        "begin": 2260,
+        "end": 2268
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "372567009",
+        "begin": 2273,
+        "end": 2283
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "775796008",
+        "begin": 2288,
+        "end": 2301
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "774983007",
+        "begin": 2306,
+        "end": 2316
+      },
+      {
+        "label": "Diagnóstico",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": "N17",
+        "EDQM": null,
+        "begin": 2976,
+        "end": 3001
+      }
+    ]
+  },
+  {
+    "doc_id": 119,
+    "text": "86be760c-3fd0-41eb-8b8a-2e00779f030d\r\n\r\nDIRECTOR DE SERVIÇO: Dr. Nuno Sousa\r\nEQUIPA ASSISTENCIAL: Dr. Luís Filipe (AHG); Dra. Sofia Rodrigues (IFE Oncologia); Dr. Pedro Coelho (IFE Medicina Interna); Dra. Ana Rita (IAC); Dr. Gonçalo Martins (Aluno 6º ano)\r\n\r\nDATA DE ADMISSAO NO SU: 10/02\r\nDATA DE ADMISSÃO NO SERVIÇO DE ONCOLOGIA: 12/02\r\n\r\nIDENTIFICAÇÃO: Mulher de 42 anos, raça caucasiana, cognitivamente bem, autónoma para AVDs. Casada, vive com o marido e dois filhos, professora do ensino básico, residente em Matosinhos.\r\n\r\nCARACTERIZAÇAO DO ESTADO DE SAUDE:\r\n# Neoplasia mamária - diagnosticada há 6 meses, actualmente em tratamento de quimioterapia\r\n- Suspeita de metástase óssea - realizou recentemente um exame de TC que mostrou lesões osteolíticas nos ossos longos\r\nInternada no Serviço de Oncologia recentemente, tendo sido abordados os seguintes problemas:\r\n# Anemia - decorrente da quimioterapia\r\nMedicada com epoetina alfa (cumpriu durante 4 semanas) com melhoria analítica. Manteve-se asténica e HD estavel desde o início do tratamento. HCs e baciloscopia negativas.\r\n# Quadro de dor óssea - decorrente da metástase\r\n- Dor intensa no ombro esquerdo, que irradiou para o braço\r\nTeve alta orientada para CE de Oncologia e Medicina Paliativa.\r\n# Hipertensão arterial\r\n# Dislipidemia\r\n# Obesidade\r\n# Ex-fumadora (20UMA, nos ultimos anos fumava 2 maços/dia)\r\n# História familiar de cancro - mãe com cancro da mama\r\n\r\nALERGIAS:\r\nNão refere alergias medicamentosas.\r\n\r\nMEDICAÇAO HABITUAL:\r\n- Tamoxifeno\r\n- Anastrozol\r\n- Paracetamol\r\n\r\nMOTIVO DE INTERNAMENTO: Dor óssea intensa em estudo\r\n\r\nHISTORIA DA DOENÇA ACTUAL:\r\nDoente com antecedentes de neoplasia mamária que terá iniciado quadro de dor óssea intensa no ombro esquerdo, T (ax): 38.0 ºC na segunda-feira (10/02), sem outra sintomatologia associada e tendo realizado paracetamol no domicílio. Na terça-feira, 12/02, doente encontrava-se no H. Dia de Oncologia para realizar avaliação da dor e ter-se-á \"sentido mal\". Observado pelo colega de Oncologia (Dr. João Silva) , que constatou febre e dor intensa no ombro esquerdo, revertida com administração de morfina. Colheu rastreio séptico (UC + HC e estudo analítico) e fez toma de ceftriaxone + 500 cc SF + paracetamol. Único foco infeccioso clinicamente detectado é uma ferida cutânea no pé esquerdo (traumática). Rx tórax sem sinais de conedensações. Foi proposto internamento por dor óssea intensa.\r\n\r\nDecidido internamento no Serviço de Oncologia para estudo etiológico da dor e tratamento de suporte.",
+    "annotations": [
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Negativa",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 1450,
+        "end": 1473
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "777672008",
+        "begin": 1501,
+        "end": 1511
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "774606004",
+        "begin": 1515,
+        "end": 1525
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "387517004",
+        "begin": 1529,
+        "end": 1540
+      }
+    ]
+  },
+  {
+    "doc_id": 149,
+    "text": "c5aa5159-be8c-44e0-80e9-f1c1b54dad2e\r\n\r\nDados de Identificação: Doente de 32 anos, sexo masculino. Casado, pai de um filho de 5 anos de idade. É engenheiro civil e trabalha num escritório de projectos em Lisboa. Vive com a esposa e o filho em Sintra.\r\n\r\nData e Motivo de Internamento: Internado voluntariamente a partir do Serviço de Urgência Geral, a 10 de março de 2023, por queixa de dor abdominal superior esquerda e episódio de diarreia sanguinolenta.\r\n\r\nHistória da Doença Atual:\r\nEEM no Serviço de Urgência: vigil e cooperante, orientada temporo-espacialmente e na pessoa. Apresentação cuidada, sem sinais de desidratação ou escoliose. Atitude ansiosa, postura globalmente conservadora. Discurso lógico e coerente, sem alterações do humor. Sem ideação auto ou heteroagressiva. Critica preservada para o seu estado clínico.\r\n\r\n# Antecedentes Clínicos: \r\n- Paciente refere história de episódios de dispepsia pós-prandial nos últimos 6 meses\r\n- Sem antecedentes de doenças gastrointestinais conhecidas\r\n\r\n# Antecedentes Médico-Cirúrgicos:\r\n- Apendicectomia em 2005 devido a apendicite aguda\r\n- Sem outras intervenções cirúrgicas relevantes\r\n\r\nMedicação Habitual:\r\n- Omeprazol 20mg 0+1+0 para controlo de sintomas dispepticos\r\n\r\n# Alergias Medicamentosas: \r\nNao refere alergia conhecida a qualquer medicamento\r\n\r\nHábitos Toxifílicos:\r\n- Fumador ocasional de tabaco (cerca de 5 cigarros por semana)\r\n- Consumo ocasionais de álcool, em doses moderadas (cerca de 1 copo de vinho por dia)\r\n\r\nAssim, doente com queixas gastrointestinais recorrentes e história de apendicectomia, agora apresenta sintomas sugestivos de uma possibile doença inflamatória intestinal ou outra patologia gastrointestinal. Apresentou-se no Serviço de Urgência com dor abdominal e diarreia sanguinolenta, justeificando a admissão para avaliação e tratamento. A nossa observação inclui a realização de exames complementares para esclarecer o diagnóstico, como endoscopia digestiva alta e baixa, e marcadores inflamatórios. O doente aceita o plano proposto.\r\n-teste Sars-Cov2 negativo\r\n\r\nMCDT no Serviço de Urgência:\r\n- Analiticamente com leucocitose (14.500 leucócitos/mm3), PCR ligeiramente aumentada (10,2 mg/L)\r\n- Exame sumário de urina sem alterações de relevo\r\n- Teste Sars-Cov2 negativo",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "317306008",
+        "begin": 1170,
+        "end": 1190
+      },
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Negativa",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 1272,
+        "end": 1279
+      }
+    ]
+  },
+  {
+    "doc_id": 157,
+    "text": "d0ee5c90-c2f9-4007-8d70-b4e066fb7064\r\n\r\nADMISSAO PARA AVALIACAO NEFROLOGICA\r\nPaciente: Leonardo da Vinci, sexo M, idade 45 anos\r\nDoador: Nao se aplica\r\nTempo de isquemia: Nao se aplica\r\nGrupo de sangue A+\r\nMM: 3A, 2B, 1DR MMABCDR 6/8 ; Sem Ac anti HLA identificados\r\nTIPAGEM:\r\nPaciente : HLA-A 03,24 ; B 27,35; C 04, 07; DRB1 15,16 DRB3 01, 02 DQA1 02, 03 , DQB1 06, 08 DPA! 02, 04 , DPB1 05, 09\r\nSem lesões cutâneas.\r\n# Antecedente de pielonefrite aos 20 anos\r\n# Antecedente de litíase renal aos 30 anos\r\nSem perda ponderal, suores nocturnos, febre ou outros sintomas constitucionais.\r\nSem dispneia, tosse, hemoptises, ou secreções brônquicas. Sem pieira ou história de broncospasmo.\r\n- Losartan 50mg id\r\n- Hidroclorotiazida 25mg id\r\nRefere que habitualmente tem TA controlada.\r\nSem nauseas, vómitos, dor abdominal. Transito intestinal regular, sem melenas ou hemoatoquézias. Sem hematemeses.\r\n# Antecedente de cólica nefrética esquerda\r\n- Amlodipino 10mg id\r\nDU diário 800-1200mL\r\nSem disúria, polaquiúria ou hematúria.\r\nSem queixas genitais.\r\nSono repousante, nega ansiedade ou sintomas depressivos. Sem outras queixas neuro-psiquiátricas. Vive com familiares e sente-se bem.\r\nOntem fez vacinaçao para sars-cov2.\r\nExame objectivo na admissão\r\nCCOTE. Mucosas coradas e hidratadas. Óptimo estado geral.\r\nTA 140/90 mmHg\r\nFc 60 /min\r\nSat O2 com FiO2 21% 98%\r\nEupneica\r\nTemp 36.5ºC\r\nPeso 70Kg \r\nSem adenomegalias occipitais, supraclaviculares, submentonianas, submaxilares, axilares e inguinais.\r\nAC S1 e S2 +, rítmicos, não ouço sopros\r\nAP sr + bilateralmente, simétricos, sem ruídos adeventícios\r\nAbdómen com RHA+, mole e depressível, indolor à palpação superficial e profunda, sem massas ou organomegalias palpáveis.\r\nSem edema periférico.\r\nPulsos radiais e pediosos + , amplos, rítmicos.\r\nECG: RS sem alteraçoes\r\nRX: sem alteraçoes pleuroparenquimatosas\r\nEstudo analitico: Sem leucocitose. PCR negativa. Sem hipercalemia.\r\nEstudo de coagulaçao sem alteraçoes\r\nPortanto, doente com excelente estado geral e baixo risco nefrologico.\r\nDiscuto risco e beneficios. Maior probabilidade de melhoria da função renal com tratamento medicamentoso.\r\nOpto por avançar com Losartan e Hidroclorotiazida.\r\nConsentimento informado: assinado.\r\nSem contra-indicação por Nefrologia para tratamento.\r\nAnalises para amanha.\r\nRx torax e ecodoppler para amanha.",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318956006",
+        "begin": 688,
+        "end": 704
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "376209006",
+        "begin": 708,
+        "end": 733
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "783048008",
+        "begin": 941,
+        "end": 959
+      }
+    ]
+  },
+  {
+    "doc_id": 182,
+    "text": "d210fdc6-2e48-48a1-b336-54557509d11d\r\n\r\nSERVIÇO DE DOENÇAS INFECCIOSAS - HOSPITAL SANTA MARIA\r\nDirector de Serviço - Dr. Luís Filipe. Coordenadora do Serviço: Drª Sofia Rodrigues\r\nEquipa Médica: Dr. Pedro Martins (AH Doenças Infecciosas); Dra. Joana Silva (IFE Doenças Infecciosas); Dra. Margarida Costa (IFE Medicina Intensiva), Dra. Teresa Fernandes (IFG)\r\n\r\nIDENTIFICAÇÃO: Leonardo da Vinci, 42 anos. Casado, natural de Lisboa e residente em Amadora, designer gráfico e músico, 12º ano de escolaridade. Autónomo para as AVD.\r\nCS: Amadora\r\nMOTIVO DE INTERNAMENTO: Febre de origem desconhecida\r\n\r\nDATA DE ADMISSÃO HSJ: 10/02/2023 DATA DE ADMISSÃO NO S. DOENÇAS INFECCIOSAS A: 12/02/2023 (2 dias na UCIM previamente) PROVENIÊNCIA: AREA AMARELA (posteriormente UCIM)\r\n\r\nANTECEDENTES PESSOAIS:\r\n# FRCV:\r\n- Hipertensão arterial, dislipidemia, hábitos tabágicos (20 UMA), doença renal crónica estágio 2.\r\n- Doença pulmonar obstrutiva crónica (DPOC) com exacerbações frequentes, asmático desde a infância.\r\n# Sindrome de Guillain-Barré .\r\n » AR - Em 2018, internamento na Neurologia por fraqueza muscular progressiva e parestesias, com diagnóstico de Síndrome de Guillain-Barré. Atualmente sem grande expressão neurológica.\r\n# Infecções prévias:\r\n- Pneumonia adquirida na comunidade em 2015, tratada com amoxicilina.\r\n - Hepatite A em 2002, com recuperação completa.\r\n\r\n #Internamentos/Cx prévias:\r\n- Internamento em 2010 por exacerbação de DPOC.\r\n\r\n#Hábitos: hábitos alcoolicos leves -\r\n#Antecedentes Familiares:\r\n- Pai falecido com doença cardiovascular.\r\n#Vacinação: atualizada; fez pneumo e gripe anual, além de vacina contra a hepatite B.\r\n#Rastreios: ECG 2020, Rx tórax 2020.\r\n# Antibioterapia 3 meses anteriores ao internamento:\r\n- Azitromicina por 5 dias para tratamento de infecção respiratória.\r\n\r\nMEDICAÇÃO HABITUAL:\r\n - Salbutamol khi necessário; Salmeterol/Fluticasona 1 inalação bid; Atorvastatina 20mg id; Enalapril 10mg id; AAS 100mg id; Omeprazol 20mg id.\r\n- Enoxaparina sódica 40mg sc 1x/dia para profilaxia de tromboembolismo venoso.\r\n\r\nNÃO POSSUI ALERGIAS MEDICAMENTOSAS RELATADAS.\r\n\r\nHISTÓRIA DA DOENÇA ATUAL:\r\nDoente apresentou febre alta (39°C) e dor de cabeça intensa, com início súbito 3 dias antes da admissão. Referiu também perda de apetite e fadiga. Não havia viajado recentemente para áreas de risco ou tido contato com pessoas doentes.\r\nDoente com história de exposição ocupacional a substâncias químicas e música em ambientes fechados.\r\n\r\nEXAME OBJECTIVO NO SU:\r\nPA - 120/80mmHg\r\nAC-N; AP - sons normais\r\nAbdomen - sem alterações\r\nLinfonodos - não palpáveis\r\n\r\nECDT no SU:\r\n* Hemograma: leucocitose com 15000 leucócitos/mm³, hemoglobina 14 g/dl\r\n* Bioquímica: creatinina 1.2 mg/dl, ureia 30 mg/dl, ASAT 40 UI/L, ALAT 30 UI/L\r\n* Rx tórax: sem alterações\r\n- Eco abdominal: fígado e baço com dimensões normais, sem dilatação das vias biliares.\r\n\r\nAssim:\r\n# Febre de origem desconhecida.\r\n » Doente já com história de doenças infecciosas prévias e exposição a substâncias químicas.\r\n- Foi internado na UCIM para realização de exames complementares e continuação de cuidados.\r\n- Realizou AngioTC torácico e abdominal, que não mostrou evidências de infecção ou doença inflamatória.\r\n- Iniciada antibioticoterapia empirica com ceftriaxona 2g iv 1x/dia.\r\n- Acompanhamento clínico e laboratorial para avaliação da evolução.",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "768882009",
+        "begin": 1827,
+        "end": 1852
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "779309002",
+        "begin": 1854,
+        "end": 1891
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "1145420004",
+        "begin": 1893,
+        "end": 1914
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318853004",
+        "begin": 1916,
+        "end": 1933
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "1197380000",
+        "begin": 1935,
+        "end": 1947
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "317306008",
+        "begin": 1949,
+        "end": 1966
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "108983001",
+        "begin": 1971,
+        "end": 2004
+      },
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Negativa",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 2062,
+        "end": 2085
+      },
+      {
+        "label": "Diagnóstico",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": "R50.9",
+        "EDQM": null,
+        "begin": 2881,
+        "end": 2909
+      }
+    ]
+  },
+  {
+    "doc_id": 186,
+    "text": "NOTA CLÍNICA DE ADMISSÃO\r\n\r\nIDENTIFICAÇÃO: Doente do sexo feminino, 74 anos, reformada, natural e residente no Porto, viúva.\r\n\r\nDATA E MOTIVO DA ADMISSÃO: Admitida em 11/02/2025 por síncope e tontura.\r\n\r\nHISTÓRIA DA DOENÇA ATUAL: Paciente refere episódios recorrentes de tontura há cerca de 6 meses, associados a instabilidade postural. Hoje, apresentou episódio de síncope enquanto estava sentada, sem pródromos, com recuperação espontânea em poucos segundos. Nega cefaleia, dor torácica, palpitações ou dispneia.\r\n\r\nANTECEDENTES PESSOAIS: - Hipertensão arterial há 20 anos, em tratamento com losartan e hidroclorotiazida. - Dislipidemia, em uso de atorvastatina. - Doença de Parkinson diagnosticada há 5 anos, em tratamento com levodopa. - Osteoporose, em tratamento com bifosfonatos.\r\n\r\nANTECEDENTES FAMILIARES: - Mãe com Doença de Alzheimer. - Pai falecido por AVC.\r\n\r\nEXAME FÍSICO: - Geral: Paciente consciente, orientada, sem sinais de sofrimento. - Sinais Vitais: - FC: 54 bpm - PA: 105/65 mmHg - FR: 18 irpm - SpO₂: 96% em ar ambiente - Temperatura: 36,5ºC - Cardiovascular: Pulso bradicárdico, sem sinais de insuficiência cardíaca. - Neurológico: Tremor de repouso em membros superiores, rigidez muscular, marcha com passos curtos. - Ortostática: Queda da PA para 85/50 mmHg ao ortostatismo.\r\n\r\nEXAMES COMPLEMENTARES: - ECG: Bradicardia sinusal (FC 52 bpm). - Holter 24h: Episódios de pausas sinusais de até 3,2 segundos.\r\n\r\nLISTA DE PROBLEMAS: 1. Síncope de provável etiologia disautonômica. 2. Bradicardia sinusal. 3. Hipotensão ortostática. 4. Doença de Parkinson. 5. Hipertensão arterial.\r\n\r\nPLANO: - Suspender hidroclorotiazida. - Ajuste da medicação antiparkinsónica. - Encaminhar para avaliação por Cardiologia para estudo eletrofisiológico. - Educação do paciente e familiares sobre risco de quedas e estratégias de prevenção.\r\n",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "776577001",
+        "begin": 594,
+        "end": 602
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "776226009",
+        "begin": 605,
+        "end": 622
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "773455007",
+        "begin": 650,
+        "end": 663
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "776515002",
+        "begin": 730,
+        "end": 738
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "96281001",
+        "begin": 773,
+        "end": 785
+      },
+      {
+        "label": "Diagnóstico",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": "R55",
+        "EDQM": null,
+        "begin": 1457,
+        "end": 1464
+      }
+    ]
+  },
+  {
+    "doc_id": 219,
+    "text": "8734e78f-f5dc-4c5a-b837-e16ec4701a72\r\n\r\nSERVIÇO DE PNEUMOLOGIA - HOSPITAL SÃO LUÍS\r\nDiretor de Serviço - Dr. Carlos Miguel, Coordenadora de Unidade - Dr.ª Sofia Castanheira\r\nEquipa Médica Assistencial (Pneumologia): Dr.ª Beatriz Oliveira (AHG Pneumologia), Dra. Maria José Silva (IFE 3ºano Pneumologia), Dr. Luís Filipe Rocha (IFE 2ºano Pneumologia)\r\n\r\nIDENTIFICAÇÃO: Sexo masculino, 58 anos, autónomo, vive com a esposa. Tem apoio de filho, Leonardo. Foi jogador de futebol profissional. Trabalhou como treinador de futebol. Reformou-se aos 55 anos.\r\nCONTACTO DE REFERÊNCIA: Leonardo (filho) - 936875432\r\n\r\nHISTÓRIA DA DOENÇA ATUAL\r\nRecorre ao SU por agravamento do padrão de dispneia e tosse seca, com sensação de cansaço generalizado e febre (38.5ºC). Menciona dor torácica posterior que agrava com os movimentos respiratórios, ortopneia e edema dos membros inferiores. Refere que tem tido várias intercorrências infeciosas no último ano.\r\nSintomatologia com 3 dias de evolução, em progressivo agravamento. Refere ter iniciado Azitromicina 500mg 1cp id (prescrito como 1/2cp id) desde 20/04.\r\n\r\nInternado recentemente de 15 a 22/03 por infeção respiratória com agudização de DPOC; cumpriu 7 dias de amoxiclav 1.2g 3id EV + 3 dias de azitromicina 500mg id EV.\r\n\r\nANTECEDENTES PESSOAIS\r\n# FRCV: HTA sem LOA (dx desde 2009), dislipidemia (LDL 70 mg/dL 02/2024), atualmente com excesso de peso (IMC: 30 Kg/m2, seguimento prévio em CE Nutrição)\r\n# DPOC - seguido em CE Pneumologia Dr. Carlos Miguel \r\n- múltiplos internamentos por agudizações\r\n# Doença renal crónica DRC G3A1 (eGFR 45) de etiologia não esclarecida, com TFG 30-40 e albuminúria\r\n# Quisto simples no rim esquerdo (15mm)\r\n- orientado para C.Nefrologia, mas faltou 02/2024 - Cr basal 1.2mg/\r\n# Doença hepática crónica de etiologia multifactorial: dislipidemia, obesidade\r\n# Espessamento do ângulo esplénico do cólon, com densificação dos tecidos envolventes\r\n# Síndrome depressivo - perdeu seguimento em C.Psiquiatria \r\n# Osteopenia (DMO 2022)\r\n# Anemia crónica - seguido pelo MF, sob ferro por via parentérica\r\n# POAD\r\n\r\nVACINAÇÃO\r\nTd (próx. 2030), VHB (3x, 2026), Pn13 (2019), Pn23 (2024), Gripe (2024), COVID (2024)\r\n\r\nHÁBITOS E ESTILOS DE VIDA\r\nTabaco: ex-fumador, fumou dos 25 aos ~50 anos, fumava ~15cig/dia - ~25UMA.\r\nNão consome e nunca consumiu drogas.\r\n\r\nMEDICAÇÃO HABITUAL\r\n- Sildenafil 20mg 1cp ao PA\r\n- Enalapril 10mg 1cp ao PA\r\n- Atenolol 50mg 1cp ao PA\r\n- Simvastatina 20mg 1cp ao Jantar\r\n- Omeprazol 20mg 1cp em jejum\r\n- Salbutamol [Ventolin] 2 puffs manhã + 2 puffs almoço + 2 puffs noite e em SOS \r\n- Brometo de tiotrópio [Spiriva] 18µg 1puff de manhã\r\n- Tiotrópio [Seretide] 5/50mcg 2 puffs manhã + 2 puffs almoço + 2 puffs noite\r\n- Acetilcisteína [Fluimucil] 600mg 1id\r\n\r\n- Alergia medicamentosa conhecida: Penicilina - reação de hipersensibilidade grave com manifestações cutâneas, angioedema e dificuldade respiratória \r\n\r\nEXAME OBJETIVO NO SU\r\nCOC TEP. Queixoso.\r\nMucosas ligeiramente descoradas, hidratadas, anictericas e acianoticas\r\nPolipneica, sem SDR, SpO2 (1L) 96% --> aa 92%\r\nPA 120/70mmHg, FC 110, T 38.2\r\nAC: regular, sem soproa ou extrasons\r\nAP: MV globalmente diminuido, sem perceção de RAs; acessos de tosse seca\r\nAbdomen inocente\r\nSem edema periferico\r\n\r\nEXAMES REALIZADOS NO SU\r\n- GSA (1L/min): pH 7.42, pO2 75, pCO2 35, HCO3 22, Na 135, K 4.1, Ca 1.12, Lac 1.5\r\n- EA: Hb 10.8, Leuc 14.50, Plaq 420, Cr 1.8 (Cr basal 1.2), Ureia 120, Na 135, K 4.3, PCR 60.5, NTproBNP 150.9\r\n- SU: Nitritos negativos; RAC 200; Sem leucocitúria ou eritrocitúria\r\n- Vírus respiratórios: Antigénio Influenza B Positivo\r\n- Rx tórax: sem condensações parenquimatosas\r\n- Ecografia RV sem HNF\r\n\r\nTERAPÊUTICA EFETUDA NO SU\r\n- Brometo Ipratrópio + Salbutamol\r\n- Hidrocortisona 200 mg iv\r\n- Paracetamol 1000 mg iv\r\n- Cloreto Sódio 0.9% 500 + 1000 ml iv\r\n- Oseltamivir 30 mg per os\r\n\r\nPortanto, doente internado por gripe B sem insuficiência respiratória e LRA não oligúrica (provável excesso de diurético)",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "419015002",
+        "begin": 2348,
+        "end": 2373
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318853004",
+        "begin": 2377,
+        "end": 2401
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318420003",
+        "begin": 2405,
+        "end": 2428
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "319997009",
+        "begin": 2432,
+        "end": 2463
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "317306008",
+        "begin": 2467,
+        "end": 2494
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "768882009",
+        "begin": 2498,
+        "end": 2575
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "785983008",
+        "begin": 2580,
+        "end": 2630
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "777781008",
+        "begin": 2634,
+        "end": 2709
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "418569002",
+        "begin": 2713,
+        "end": 2749
+      },
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Positiva",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 2788,
+        "end": 2798
+      },
+      {
+        "label": "Diagnóstico",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": "J10",
+        "EDQM": null,
+        "begin": 3886,
+        "end": 3893
+      }
+    ]
+  },
+  {
+    "doc_id": 234,
+    "text": "79a540e8-9c22-4230-9fef-675941e34045\r\n\r\nNova nota de admissao para o paciente Leonardo da Vinci, admittingido no serviço de Neurologia:\r\no paciente apresenta historico de episodio convulsivo generalizado, iniciado ha duas horas, durando aproximadamente dez minutos.\r\nEtiologia suspeitada: epilepsia de origem desconhecida.\r\nInicio de sintomas: 08h00 do dia actual.\r\nUltima medicação tomada: - carbamazepina 200mg, 2 comprimidos, ha uma hora.\r\n\r\n# Antecedentes clinicos: \r\n# Hipertensao arterial\r\n# Dislipidemia\r\n# Doenca isquemica cardiaca\r\n- betabloqueador, metformina.\r\n- acido acetilsalicilico\r\n\r\nO paciente refere historia de alergia medicamentosa a penicilina e sulfonamidas.\r\n\r\nExames realizados:\r\nimediata avaliacao clinica: Patient esta consciente, orientado no tempo e espaço, com deficit motor de membros superiores.\r\nEcografia transcraniana 11/2022: \" sem alteracoes significativas\".\r\nTomografia computorizada 28.12: lesao expansiva cerebral na regiao parietal esquerda.\r\n\r\nMCDTs:\r\n- Analiticamente: Hb 14.1; Leucocitos: 7.23; PLT 220; Sem citocolestase; Glicemia 189; U 42; Na/K 140/4.5; Cl 102; PCR 2.9.\r\n- Rx torax: ausencia de alteracoes radiologicas significativas.\r\n\r\nTratamento proposto:\r\n- carbamazepina, manutencao da dose atual\r\n- introducao de - fenytoina como segunda opcao terapeutica caso ocorram mais episodios convulsivos\r\n\r\nObservacoes:\r\nO paciente sera monitorizado por periodos de 24 horas, para avaliar a necessidade de ajustes na medicação e exames complementares.",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "322864007",
+        "begin": 393,
+        "end": 412
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "373254001",
+        "begin": 543,
+        "end": 557
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "372567009",
+        "begin": 559,
+        "end": 569
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "1197380000",
+        "begin": 574,
+        "end": 596
+      },
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Positiva",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 654,
+        "end": 664
+      },
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Positiva",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 667,
+        "end": 679
+      }
+    ]
+  },
+  {
+    "doc_id": 238,
+    "text": "NOTA CLÍNICA DE ADMISSÃO\r\n\r\nIDENTIFICAÇÃO: Doente do sexo masculino, 74 anos, aposentado, natural e residente em Porto, casado.\r\n\r\nDATA E MOTIVO DA ADMISSÃO: Admitido em 10/02/2025 por quadro de dor torácica e dispneia súbita.\r\n\r\nHISTÓRIA DA DOENÇA ATUAL: Paciente previamente autónomo e sem queixas recentes, refere início súbito, há cerca de 2 horas, de dor torácica em aperto, retroesternal, intensa (8/10), irradiando para membro superior esquerdo e mandíbula, associada a dispneia e sudorese profusa. Sintomas mantiveram-se e motivaram deslocação ao serviço de urgência. Nega febre, tosse, síncope ou episódios prévios semelhantes.\r\n\r\nANTECEDENTES PESSOAIS: - HTA diagnosticada há 20 anos, em tratamento com losartan 50mg/dia. - Diabetes Mellitus tipo 2, controlada com metformina 850mg 2x/dia. - Dislipidemia, em tratamento com atorvastatina 20mg/dia. - História de enfarte agudo do miocárdio há 5 anos, submetido a angioplastia com colocação de stent. - Ex-tabagista (40 maços/ano), cessou há 10 anos. - Nega AVC prévio ou outras comorbilidades relevantes.\r\n\r\nANTECEDENTES FAMILIARES: - Pai falecido por EAM aos 68 anos. - Mãe com história de AVC aos 72 anos. - Irmão com HTA e DM2.\r\n\r\nEXAME FÍSICO: - Geral: Paciente ansioso, sudorético, palidez cutânea. - Sinais Vitais: - FC: 95 bpm - PA: 145/90 mmHg - FR: 22 irpm - SpO₂: 94% em ar ambiente - Tax: 36,6ºC - Cardiovascular: Bulhas rítmicas, sopro sistólico ++/6+ em foco mitral, pulso carotídeo presente, sem sopros. - Respiratório: Murmúrio vesicular presente, sem ruídos adventícios. - Abdómen: Indolor, sem visceromegalias. - Neurológico: Sem défices focais, Glasgow 15.\r\n\r\nEXAMES COMPLEMENTARES: - ECG: Supradesnivelamento do segmento ST em derivações inferiores (DII, DIII e aVF). - Troponina I: 5.800 ng/mL (elevada). - Gasometria arterial: pH 7,41; pCO₂ 37 mmHg; pO₂ 90 mmHg. - Rx tórax: Sem sinais de congestão pulmonar.\r\n\r\nLISTA DE PROBLEMAS: 1. Síndrome coronária aguda com supradesnivelamento do segmento ST inferior. 2. Hipertensão arterial. 3. Diabetes mellitus tipo 2. 4. Dislipidemia. 5. História prévia de enfarte do miocárdio.\r\n\r\nPLANO: - Ativação da Via Verde Coronária. - Encaminhamento para cateterismo urgente. - Antiagregação plaquetária com AAS 300mg + ticagrelor 180mg. - Anticoagulação com heparina de baixo peso molecular. - Monitorização contínua em unidade de cuidados intensivos cardíacos. - Controlo rigoroso da glicemia e pressão arterial. - Avaliação cardiológica para ajuste terapêutico pós-reperfusão.\r\n",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318956006",
+        "begin": 713,
+        "end": 730
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "325279004",
+        "begin": 775,
+        "end": 798
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "1145420004",
+        "begin": 834,
+        "end": 856
+      },
+      {
+        "label": "Diagnóstico",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": "I21.1",
+        "EDQM": null,
+        "begin": 1915,
+        "end": 1987
+      }
+    ]
+  },
+  {
+    "doc_id": 246,
+    "text": "adc3d9ef-5de6-4b6d-b5c3-3b2a1a6671f9\r\n\r\nSERVIÇO DE CARDIOLOGIA DO CENTRO HOSPITALAR DE COIMBRA\r\nDIRETOR DE SERVIÇO: Dr. Pedro Martins (Assistente Hospitalar Graduado Sénior Cardiologia)\r\nEQUIPA MÉDICA: Drª Sofia Rodrigues (AH - Cardiologia); Dr Luís Costa (IFE Cardiologia); DrªBeatriz Nunes (IFE Cardiologia); Dr Carlos Santos (IFG)\r\n\r\nPROVENIÊNCIA: SU 10/03/2024\r\nDATA DE ADMISSÃO NA ENFERMARIA DE CARDIOLOGIA: 11/03/2024\r\nMOTIVO DE INTERNAMENTO:\r\n\r\nIDENTIFICAÇÃO: 58 anos, médico reformado, vive com esposa.\r\nAVALIAÇÃO GERIÁTRICA GLOBAL: Independente nas AVDs. Funções cognitivas superiores preservadas.\r\n\r\nCONTACTO FAMILIAR: Sra. Ana (esposa) 912345678; USF São Pedro\r\n\r\nHistória da doença atual:\r\nDoente apresentou-se com sintomas de angina instável nos últimos 3 dias, com dor torácica de caráter oprimido e irradiada para o braço esquerdo, relacionada com o esforço.\r\nSem antecedentes pessoais de doença cardiovascular.\r\n\r\nEO: \"CCO. Corado. Eupneico em aa, sem SDR. SpO2 98%. TA 140/90 mmHg | FC 80 bpm | T 36.8ºC. AC: regular, com sopro diastólico audível em foco aórtico. AP: MV normal. Abd mole e depressível.\"\r\n\r\nEADs no SU:\r\n* Análises: Hb 14 Leuc 8 (neutrofilia) Plaq 250\r\nAST 15 ALT 20 yGT 40 FA 80 BrbT 2.5 (habitual ~1.5) \r\nUreia 30 pCr 1.0 Mg 1.4 Na 140 K 4.3 Cl 100\r\nPCR 10\r\nNT pro BNP 500\r\n* Ecocardiograma: \"Ventrículos normais, com função sistólica preservada.\"\r\n\r\nANTECEDENTES PESSOAIS:\r\n# Hipertensão arterial\r\n - Compressão arterial de 140/90 mmHg (03/24)\r\n - TA média 130/85 mmHg nos últimos 6 meses\r\n# Dislipidemia\r\n - CT 200 mg/dL e LDL 120 mg/dL (02/24)\r\n# Ex-fumador (carga tabágica de 20 UMAs)\r\n\r\nMedicação habitual:\r\n- Atenolol 50mg, 1 cp ao pequeno-almoço\r\n- Enalapril 10mg, 1 cp ao pequeno-almoço\r\n- Simvastatina 20mg, 1 cp à noite\r\n- Aspirina 100mg, 1 cp por dia\r\n\r\nALERGIA: sim, ácido acetilsalicílico e sulfonamidas.",
+    "annotations": [
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318420003",
+        "begin": 1650,
+        "end": 1687
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "318853004",
+        "begin": 1691,
+        "end": 1729
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "319997009",
+        "begin": 1733,
+        "end": 1764
+      },
+      {
+        "label": "Medicação Habitual",
+        "diagnostico": null,
+        "Polaridade": null,
+        "ICD10": null,
+        "EDQM": "1197380000",
+        "begin": 1768,
+        "end": 1796
+      },
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Positiva",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 1814,
+        "end": 1836
+      },
+      {
+        "label": "Alergias medicamentosas",
+        "diagnostico": null,
+        "Polaridade": "Positiva",
+        "ICD10": null,
+        "EDQM": null,
+        "begin": 1839,
+        "end": 1851
+      }
+    ]
+  }
+]
