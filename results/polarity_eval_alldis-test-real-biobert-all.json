@@ -1,0 +1,1582 @@
+{
+  "timestamp": "2026-05-14T22:48:07Z",
+  "model_path": "/home/tmunna/project-glintt/new-code/output-medialbertina-pt-pt-900m-realtest/best",
+  "test_file": "/home/tmunna/project-glintt/final-data/new-split-test-real/test-real.json",
+  "relaxed_iou": 0.5,
+  "score_mode": "joint",
+  "bases_with_polarity": [
+    "Alergias medicamentosas"
+  ],
+  "bases_without_polarity": [
+    "Medicação Habitual",
+    "Diagnóstico"
+  ],
+  "polarity_exact_micro": {
+    "precision": 0.6666666666666666,
+    "recall": 0.8333333333333334,
+    "f1": 0.7407407407407408,
+    "support": 12
+  },
+  "polarity_exact_macro": {
+    "precision": 0.6931818181818181,
+    "recall": 0.8125,
+    "f1": 0.743421052631579,
+    "support": 12
+  },
+  "polarity_relaxed_micro": {
+    "precision": 0.7333333333333333,
+    "recall": 0.9166666666666666,
+    "f1": 0.8148148148148148,
+    "support": 12
+  },
+  "polarity_relaxed_macro": {
+    "precision": 0.7386363636363636,
+    "recall": 0.875,
+    "f1": 0.7960526315789473,
+    "support": 12
+  },
+  "per_class_exact_micro": {
+    "precision": 0.7346938775510204,
+    "recall": 0.8372093023255814,
+    "f1": 0.782608695652174,
+    "support": 86
+  },
+  "per_class_exact_macro": {
+    "precision": 0.6352661227661227,
+    "recall": 0.7643696581196581,
+    "f1": 0.6835338881391513,
+    "support": 86
+  },
+  "per_class_exact": {
+    "Alergias medicamentosas__Negativa": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1": 0.75,
+      "support": 4
+    },
+    "Alergias medicamentosas__Positiva": {
+      "precision": 0.6363636363636364,
+      "recall": 0.875,
+      "f1": 0.7368421052631579,
+      "support": 8
+    },
+    "Diagnóstico": {
+      "precision": 0.2777777777777778,
+      "recall": 0.5555555555555556,
+      "f1": 0.3703703703703704,
+      "support": 9
+    },
+    "Medicação Habitual": {
+      "precision": 0.8769230769230769,
+      "recall": 0.8769230769230769,
+      "f1": 0.8769230769230769,
+      "support": 65
+    }
+  },
+  "per_class_relaxed_micro": {
+    "precision": 0.7857142857142857,
+    "recall": 0.8953488372093024,
+    "f1": 0.8369565217391304,
+    "support": 86
+  },
+  "per_class_relaxed_macro": {
+    "precision": 0.683420745920746,
+    "recall": 0.8349358974358974,
+    "f1": 0.7399066576698157,
+    "support": 86
+  },
+  "per_class_relaxed": {
+    "Alergias medicamentosas__Negativa": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1": 0.75,
+      "support": 4
+    },
+    "Alergias medicamentosas__Positiva": {
+      "precision": 0.7272727272727273,
+      "recall": 1.0,
+      "f1": 0.8421052631578948,
+      "support": 8
+    },
+    "Diagnóstico": {
+      "precision": 0.3333333333333333,
+      "recall": 0.6666666666666666,
+      "f1": 0.4444444444444444,
+      "support": 9
+    },
+    "Medicação Habitual": {
+      "precision": 0.9230769230769231,
+      "recall": 0.9230769230769231,
+      "f1": 0.9230769230769231,
+      "support": 65
+    }
+  },
+  "docs": [
+    {
+      "doc_id": 2,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 905,
+          "end": 920,
+          "g_word": "Enalapril 20 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 905,
+          "p_end": 920,
+          "p_word": "Enalapril 20 mg"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 924,
+          "end": 942,
+          "g_word": "Metformina 1000 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 924,
+          "p_end": 942,
+          "p_word": "Metformina 1000 mg"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 946,
+          "end": 964,
+          "g_word": "Simvastatina 20 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 946,
+          "p_end": 964,
+          "p_word": "Simvastatina 20 mg"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 968,
+          "p_end": 993,
+          "p_word": "Aspirina (Aspegic) 100 mg"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 997,
+          "end": 1015,
+          "g_word": "Sinvastatina 40 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 997,
+          "p_end": 1015,
+          "p_word": "Sinvastatina 40 mg"
+        },
+        {
+          "label": null,
+          "diagnostico": false,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 2768,
+          "p_end": 2778,
+          "p_word": "meticilina"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 3808,
+          "p_end": 3833,
+          "p_word": "Sepse de origem abdominal"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 3838,
+          "p_end": 3851,
+          "p_word": "insuficiência"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 3856,
+          "p_end": 3864,
+          "p_word": "iratória"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 3870,
+          "p_end": 3871,
+          "p_word": "1"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 3874,
+          "p_end": 3885,
+          "p_word": "renal aguda"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 4004,
+          "p_end": 4027,
+          "p_word": "Infecção bacteriana por"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 4028,
+          "p_end": 4048,
+          "p_word": "Estafilococos aureus"
+        },
+        {
+          "label": null,
+          "diagnostico": false,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 4062,
+          "p_end": 4072,
+          "p_word": "meticilina"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 968,
+          "end": 976,
+          "g_word": "Aspirina",
+          "p_label": null,
+          "p_polaridade": null,
+          "p_begin": null,
+          "p_end": null,
+          "p_word": null
+        },
+        {
+          "label": "Diagnóstico",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 4004,
+          "end": 4072,
+          "g_word": "Infecção bacteriana por Estafilococos aureus resistente à meticilina",
+          "p_label": null,
+          "p_polaridade": null,
+          "p_begin": null,
+          "p_end": null,
+          "p_word": null
+        }
+      ]
+    },
+    {
+      "doc_id": 9,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 667,
+          "end": 686,
+          "g_word": "bisoprolol 2,5mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 667,
+          "p_end": 686,
+          "p_word": "bisoprolol 2,5mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 688,
+          "end": 703,
+          "g_word": "ramipril 5mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 688,
+          "p_end": 703,
+          "p_word": "ramipril 5mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 705,
+          "end": 723,
+          "g_word": "furosemida 20mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 705,
+          "p_end": 723,
+          "p_word": "furosemida 20mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 725,
+          "end": 744,
+          "g_word": "pantoprazol 20mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 725,
+          "p_end": 744,
+          "p_word": "pantoprazol 20mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 746,
+          "end": 765,
+          "g_word": "ferro oral 100mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 746,
+          "p_end": 765,
+          "p_word": "ferro oral 100mg id"
+        },
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Positiva",
+          "begin": 788,
+          "end": 802,
+          "g_word": "metoclopramida",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 788,
+          "p_end": 802,
+          "p_word": "metoclopramida"
+        },
+        {
+          "label": "Diagnóstico",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2600,
+          "end": 2631,
+          "g_word": "HIPONATRÉMIA HIPOVOLÉMICA GRAVE",
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 2600,
+          "p_end": 2631,
+          "p_word": "HIPONATRÉMIA HIPOVOLÉMICA GRAVE"
+        }
+      ]
+    },
+    {
+      "doc_id": 34,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 596,
+          "end": 611,
+          "g_word": "Amlodipino 5 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 596,
+          "p_end": 611,
+          "p_word": "Amlodipino 5 mg"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 615,
+          "end": 634,
+          "g_word": "Atorvastatina 20 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 615,
+          "p_end": 634,
+          "p_word": "Atorvastatina 20 mg"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 638,
+          "end": 660,
+          "g_word": "Metformina 1000 mg bid",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 638,
+          "p_end": 660,
+          "p_word": "Metformina 1000 mg bid"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 664,
+          "end": 714,
+          "g_word": "Salmeterol/Fluticasona 50/500 mcg, 2 inalações/dia",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 664,
+          "p_end": 714,
+          "p_word": "Salmeterol/Fluticasona 50/500 mcg, 2 inalações/dia"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 718,
+          "end": 733,
+          "g_word": "Omeprazol 20 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 718,
+          "p_end": 733,
+          "p_word": "Omeprazol 20 mg"
+        },
+        {
+          "label": "Diagnóstico",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1626,
+          "end": 1646,
+          "g_word": "Pneumonia bacteriana",
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 1627,
+          "p_end": 1646,
+          "p_word": "neumonia bacteriana"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 1661,
+          "p_end": 1663,
+          "p_word": "DP"
+        }
+      ]
+    },
+    {
+      "doc_id": 44,
+      "predictions": [
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Negativa",
+          "begin": 898,
+          "end": 920,
+          "g_word": "alergias medicamentosa",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Negativa",
+          "p_begin": 898,
+          "p_end": 920,
+          "p_word": "alergias medicamentosa"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 3037,
+          "end": 3083,
+          "g_word": "salbutamol 5mg, 2 inhalações quando necessário",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 3024,
+          "p_end": 3083,
+          "p_word": "Inhalador de salbutamol 5mg, 2 inhalações quando necessário"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 3087,
+          "p_end": 3111,
+          "p_word": "inhalador de fluticasona"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 3100,
+          "end": 3150,
+          "g_word": "fluticasona-salmeterol 250/25mcg, 2 inhalações bid",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 3112,
+          "p_end": 3150,
+          "p_word": "salmeterol 250/25mcg, 2 inhalações bid"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 3154,
+          "p_end": 3193,
+          "p_word": "Oxigénio 2L/minuto durante 18 horas/dia"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 3197,
+          "end": 3218,
+          "g_word": "Sinvastatina 40 mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 3197,
+          "p_end": 3218,
+          "p_word": "Sinvastatina 40 mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 3222,
+          "end": 3244,
+          "g_word": "carvedilol 6.25 mg bid",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 3222,
+          "p_end": 3244,
+          "p_word": "carvedilol 6.25 mg bid"
+        },
+        {
+          "label": "Diagnóstico",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 956,
+          "end": 990,
+          "g_word": "Insuficiência respiratória crónica",
+          "p_label": null,
+          "p_polaridade": null,
+          "p_begin": null,
+          "p_end": null,
+          "p_word": null
+        }
+      ]
+    },
+    {
+      "doc_id": 79,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 557,
+          "end": 580,
+          "g_word": "Enalapril maleato 10 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 557,
+          "p_end": 580,
+          "p_word": "Enalapril maleato 10 mg"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 582,
+          "end": 605,
+          "g_word": "Hidroclorotiazida 25 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 582,
+          "p_end": 605,
+          "p_word": "Hidroclorotiazida 25 mg"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 607,
+          "end": 625,
+          "g_word": "Simvastatina 20 mg",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 607,
+          "p_end": 625,
+          "p_word": "Simvastatina 20 mg"
+        },
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Positiva",
+          "begin": 669,
+          "end": 679,
+          "g_word": "penicilina",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 669,
+          "p_end": 679,
+          "p_word": "penicilina"
+        }
+      ]
+    },
+    {
+      "doc_id": 109,
+      "predictions": [
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Positiva",
+          "begin": 2223,
+          "end": 2233,
+          "g_word": "penicilina",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 2223,
+          "p_end": 2233,
+          "p_word": "penicilina"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2260,
+          "end": 2268,
+          "g_word": "Losartan",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2260,
+          "p_end": 2268,
+          "p_word": "Losartan"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2273,
+          "end": 2283,
+          "g_word": "Metformina",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2273,
+          "p_end": 2283,
+          "p_word": "Metformina"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2288,
+          "end": 2301,
+          "g_word": "Epoetina alfa",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2288,
+          "p_end": 2301,
+          "p_word": "Epoetina alfa"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2306,
+          "end": 2316,
+          "g_word": "Calcitriol",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2306,
+          "p_end": 2316,
+          "p_word": "Calcitriol"
+        },
+        {
+          "label": "Diagnóstico",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2976,
+          "end": 3001,
+          "g_word": "Insuficiência renal aguda",
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 2976,
+          "p_end": 3001,
+          "p_word": "Insuficiência renal aguda"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 3008,
+          "p_end": 3028,
+          "p_word": "doença renal crónica"
+        }
+      ]
+    },
+    {
+      "doc_id": 119,
+      "predictions": [
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Negativa",
+          "begin": 1450,
+          "end": 1473,
+          "g_word": "alergias medicamentosas",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Negativa",
+          "p_begin": 1450,
+          "p_end": 1473,
+          "p_word": "alergias medicamentosas"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1501,
+          "end": 1511,
+          "g_word": "Tamoxifeno",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1501,
+          "p_end": 1511,
+          "p_word": "Tamoxifeno"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1515,
+          "end": 1525,
+          "g_word": "Anastrozol",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1515,
+          "p_end": 1525,
+          "p_word": "Anastrozol"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1529,
+          "end": 1540,
+          "g_word": "Paracetamol",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1529,
+          "p_end": 1540,
+          "p_word": "Paracetamol"
+        }
+      ]
+    },
+    {
+      "doc_id": 149,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1170,
+          "end": 1190,
+          "g_word": "Omeprazol 20mg 0+1+0",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1170,
+          "p_end": 1190,
+          "p_word": "Omeprazol 20mg 0+1+0"
+        },
+        {
+          "label": null,
+          "diagnostico": false,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Negativa",
+          "p_begin": 1272,
+          "p_end": 1312,
+          "p_word": "alergia conhecida a qualquer medicamento"
+        },
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Negativa",
+          "begin": 1272,
+          "end": 1279,
+          "g_word": "alergia",
+          "p_label": null,
+          "p_polaridade": null,
+          "p_begin": null,
+          "p_end": null,
+          "p_word": null
+        }
+      ]
+    },
+    {
+      "doc_id": 157,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 688,
+          "end": 704,
+          "g_word": "Losartan 50mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 688,
+          "p_end": 704,
+          "p_word": "Losartan 50mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 708,
+          "end": 733,
+          "g_word": "Hidroclorotiazida 25mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 708,
+          "p_end": 733,
+          "p_word": "Hidroclorotiazida 25mg id"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 941,
+          "p_end": 943,
+          "p_word": "Am"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 941,
+          "end": 959,
+          "g_word": "Amlodipino 10mg id",
+          "p_label": null,
+          "p_polaridade": null,
+          "p_begin": null,
+          "p_end": null,
+          "p_word": null
+        }
+      ]
+    },
+    {
+      "doc_id": 182,
+      "predictions": [
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 1244,
+          "p_end": 1245,
+          "p_word": "P"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1827,
+          "end": 1852,
+          "g_word": "Salbutamol khi necessário",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1827,
+          "p_end": 1852,
+          "p_word": "Salbutamol khi necessário"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1854,
+          "end": 1891,
+          "g_word": "Salmeterol/Fluticasona 1 inalação bid",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1854,
+          "p_end": 1891,
+          "p_word": "Salmeterol/Fluticasona 1 inalação bid"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1893,
+          "end": 1914,
+          "g_word": "Atorvastatina 20mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1893,
+          "p_end": 1914,
+          "p_word": "Atorvastatina 20mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1916,
+          "end": 1933,
+          "g_word": "Enalapril 10mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1916,
+          "p_end": 1933,
+          "p_word": "Enalapril 10mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1935,
+          "end": 1947,
+          "g_word": "AAS 100mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1935,
+          "p_end": 1947,
+          "p_word": "AAS 100mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1949,
+          "end": 1966,
+          "g_word": "Omeprazol 20mg id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1949,
+          "p_end": 1966,
+          "p_word": "Omeprazol 20mg id"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1971,
+          "end": 2004,
+          "g_word": "Enoxaparina sódica 40mg sc 1x/dia",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1971,
+          "p_end": 2018,
+          "p_word": "Enoxaparina sódica 40mg sc 1x/dia para profilax"
+        },
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Negativa",
+          "begin": 2062,
+          "end": 2085,
+          "g_word": "ALERGIAS MEDICAMENTOSAS",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Negativa",
+          "p_begin": 2062,
+          "p_end": 2085,
+          "p_word": "ALERGIAS MEDICAMENTOSAS"
+        },
+        {
+          "label": "Diagnóstico",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2881,
+          "end": 2909,
+          "g_word": "Febre de origem desconhecida",
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 2881,
+          "p_end": 2909,
+          "p_word": "Febre de origem desconhecida"
+        }
+      ]
+    },
+    {
+      "doc_id": 186,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 594,
+          "end": 602,
+          "g_word": "losartan",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 594,
+          "p_end": 602,
+          "p_word": "losartan"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 605,
+          "end": 622,
+          "g_word": "hidroclorotiazida",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 605,
+          "p_end": 622,
+          "p_word": "hidroclorotiazida"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 650,
+          "end": 663,
+          "g_word": "atorvastatina",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 650,
+          "p_end": 663,
+          "p_word": "atorvastatina"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 730,
+          "end": 738,
+          "g_word": "levodopa",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 730,
+          "p_end": 738,
+          "p_word": "levodopa"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 773,
+          "end": 785,
+          "g_word": "bifosfonatos",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 773,
+          "p_end": 785,
+          "p_word": "bifosfonatos"
+        },
+        {
+          "label": "Diagnóstico",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1457,
+          "end": 1464,
+          "g_word": "Síncope",
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 1457,
+          "p_end": 1464,
+          "p_word": "Síncope"
+        }
+      ]
+    },
+    {
+      "doc_id": 219,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2348,
+          "end": 2373,
+          "g_word": "Sildenafil 20mg 1cp ao PA",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2348,
+          "p_end": 2373,
+          "p_word": "Sildenafil 20mg 1cp ao PA"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2377,
+          "end": 2401,
+          "g_word": "Enalapril 10mg 1cp ao PA",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2377,
+          "p_end": 2401,
+          "p_word": "Enalapril 10mg 1cp ao PA"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2405,
+          "end": 2428,
+          "g_word": "Atenolol 50mg 1cp ao PA",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2405,
+          "p_end": 2428,
+          "p_word": "Atenolol 50mg 1cp ao PA"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2432,
+          "end": 2463,
+          "g_word": "Simvastatina 20mg 1cp ao Jantar",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2432,
+          "p_end": 2463,
+          "p_word": "Simvastatina 20mg 1cp ao Jantar"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2467,
+          "end": 2494,
+          "g_word": "Omeprazol 20mg 1cp em jejum",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2467,
+          "p_end": 2494,
+          "p_word": "Omeprazol 20mg 1cp em jejum"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2498,
+          "end": 2575,
+          "g_word": "Salbutamol [Ventolin] 2 puffs manhã + 2 puffs almoço + 2 puffs noite e em SOS",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2498,
+          "p_end": 2575,
+          "p_word": "Salbutamol [Ventolin] 2 puffs manhã + 2 puffs almoço + 2 puffs noite e em SOS"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2580,
+          "end": 2630,
+          "g_word": "Brometo de tiotrópio [Spiriva] 18µg 1puff de manhã",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2580,
+          "p_end": 2630,
+          "p_word": "Brometo de tiotrópio [Spiriva] 18µg 1puff de manhã"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2634,
+          "end": 2709,
+          "g_word": "Tiotrópio [Seretide] 5/50mcg 2 puffs manhã + 2 puffs almoço + 2 puffs noite",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2634,
+          "p_end": 2709,
+          "p_word": "Tiotrópio [Seretide] 5/50mcg 2 puffs manhã + 2 puffs almoço + 2 puffs noite"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 2713,
+          "end": 2749,
+          "g_word": "Acetilcisteína [Fluimucil] 600mg 1id",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 2713,
+          "p_end": 2749,
+          "p_word": "Acetilcisteína [Fluimucil] 600mg 1id"
+        },
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Positiva",
+          "begin": 2788,
+          "end": 2798,
+          "g_word": "Penicilina",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 2788,
+          "p_end": 2798,
+          "p_word": "Penicilina"
+        },
+        {
+          "label": "Diagnóstico",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 3886,
+          "end": 3893,
+          "g_word": "gripe B",
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 3886,
+          "p_end": 3893,
+          "p_word": "gripe B"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 3898,
+          "p_end": 3924,
+          "p_word": "insuficiência respiratória"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Diagnóstico",
+          "p_polaridade": null,
+          "p_begin": 3927,
+          "p_end": 3944,
+          "p_word": "LRA não oligúrica"
+        }
+      ]
+    },
+    {
+      "doc_id": 234,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 559,
+          "end": 569,
+          "g_word": "metformina",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 559,
+          "p_end": 569,
+          "p_word": "metformina"
+        },
+        {
+          "label": null,
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 594,
+          "p_end": 596,
+          "p_word": "co"
+        },
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Positiva",
+          "begin": 654,
+          "end": 664,
+          "g_word": "penicilina",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 654,
+          "p_end": 666,
+          "p_word": "penicilina e"
+        },
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Positiva",
+          "begin": 667,
+          "end": 679,
+          "g_word": "sulfonamidas",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 667,
+          "p_end": 679,
+          "p_word": "sulfonamidas"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 393,
+          "end": 412,
+          "g_word": "carbamazepina 200mg",
+          "p_label": null,
+          "p_polaridade": null,
+          "p_begin": null,
+          "p_end": null,
+          "p_word": null
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 543,
+          "end": 557,
+          "g_word": "betabloqueador",
+          "p_label": null,
+          "p_polaridade": null,
+          "p_begin": null,
+          "p_end": null,
+          "p_word": null
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 574,
+          "end": 596,
+          "g_word": "acido acetilsalicilico",
+          "p_label": null,
+          "p_polaridade": null,
+          "p_begin": null,
+          "p_end": null,
+          "p_word": null
+        }
+      ]
+    },
+    {
+      "doc_id": 238,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 713,
+          "end": 730,
+          "g_word": "losartan 50mg/dia",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 713,
+          "p_end": 730,
+          "p_word": "losartan 50mg/dia"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 775,
+          "end": 798,
+          "g_word": "metformina 850mg 2x/dia",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 775,
+          "p_end": 798,
+          "p_word": "metformina 850mg 2x/dia"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 834,
+          "end": 856,
+          "g_word": "atorvastatina 20mg/dia",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 834,
+          "p_end": 856,
+          "p_word": "atorvastatina 20mg/dia"
+        },
+        {
+          "label": "Diagnóstico",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1915,
+          "end": 1987,
+          "g_word": "Síndrome coronária aguda com supradesnivelamento do segmento ST inferior",
+          "p_label": null,
+          "p_polaridade": null,
+          "p_begin": null,
+          "p_end": null,
+          "p_word": null
+        }
+      ]
+    },
+    {
+      "doc_id": 246,
+      "predictions": [
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1650,
+          "end": 1687,
+          "g_word": "Atenolol 50mg, 1 cp ao pequeno-almoço",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1650,
+          "p_end": 1687,
+          "p_word": "Atenolol 50mg, 1 cp ao pequeno-almoço"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1691,
+          "end": 1729,
+          "g_word": "Enalapril 10mg, 1 cp ao pequeno-almoço",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1691,
+          "p_end": 1729,
+          "p_word": "Enalapril 10mg, 1 cp ao pequeno-almoço"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1733,
+          "end": 1764,
+          "g_word": "Simvastatina 20mg, 1 cp à noite",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1733,
+          "p_end": 1764,
+          "p_word": "Simvastatina 20mg, 1 cp à noite"
+        },
+        {
+          "label": "Medicação Habitual",
+          "diagnostico": true,
+          "Polaridade": null,
+          "begin": 1768,
+          "end": 1796,
+          "g_word": "Aspirina 100mg, 1 cp por dia",
+          "p_label": "Medicação Habitual",
+          "p_polaridade": null,
+          "p_begin": 1768,
+          "p_end": 1796,
+          "p_word": "Aspirina 100mg, 1 cp por dia"
+        },
+        {
+          "label": null,
+          "diagnostico": false,
+          "Polaridade": null,
+          "begin": null,
+          "end": null,
+          "g_word": null,
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 1809,
+          "p_end": 1812,
+          "p_word": "sim"
+        },
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Positiva",
+          "begin": 1814,
+          "end": 1836,
+          "g_word": "ácido acetilsalicílico",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 1814,
+          "p_end": 1836,
+          "p_word": "ácido acetilsalicílico"
+        },
+        {
+          "label": "Alergias medicamentosas",
+          "diagnostico": false,
+          "Polaridade": "Positiva",
+          "begin": 1839,
+          "end": 1851,
+          "g_word": "sulfonamidas",
+          "p_label": "Alergias medicamentosas",
+          "p_polaridade": "Positiva",
+          "p_begin": 1839,
+          "p_end": 1851,
+          "p_word": "sulfonamidas"
+        }
+      ]
+    }
+  ]
+}
