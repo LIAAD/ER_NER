@@ -29,7 +29,7 @@ from typing import List, Dict, Tuple, Optional
 import numpy as np
 import torch
 from torch.nn import CrossEntropyLoss
-from datasets import Dataset, concatenate_datasets
+from dataset import Dataset, concatenate_datasets
 
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
