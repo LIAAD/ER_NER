@@ -1,0 +1,263 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">Alergias medicamentosas positiva</span> <span class="lx-label" style="background-color:#C8E6C9;">Diagnóstico</span> <span class="lx-label" style="background-color:#FEF0C3;">Medicação Habitual</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        8734e78f-f5dc-4c5a-b837-e16ec4701a72
+
+SERVIÇO DE PNEUMOLOGIA - HOSPITAL SÃO LUÍS
+Diretor de Serviço - Dr. Carlos Miguel, Coordenadora de Unidade - Dr.ª Sofia Castanheira
+Equipa Médica Assistencial (Pneumologia): Dr.ª Beatriz Oliveira (AHG Pneumologia), Dra. Maria José Silva (IFE 3ºano Pneumologia), Dr. Luís Filipe Rocha (IFE 2ºano Pneumologia)
+
+IDENTIFICAÇÃO: Sexo masculino, 58 anos, autónomo, vive com a esposa. Tem apoio de filho, Leonardo. Foi jogador de futebol profissional. Trabalhou como treinador de futebol. Reformou-se aos 55 anos.
+CONTACTO DE REFERÊNCIA: Leonardo (filho) - 936875432
+
+HISTÓRIA DA DOENÇA ATUAL
+Recorre ao SU por agravamento do padrão de dispneia e tosse seca, com sensação de cansaço generalizado e febre (38.5ºC). Menciona dor torácica posterior que agrava com os movimentos respiratórios, ortopneia e edema dos membros inferiores. Refere que tem tido várias intercorrências infeciosas no último ano.
+Sintomatologia com 3 dias de evolução, em progressivo agravamento. Refere ter iniciado Azitromicina 500mg 1cp id (prescrito como 1/2cp id) desde 20/04.
+
+Internado recentemente de 15 a 22/03 por infeção respiratória com agudização de DPOC; cumpriu 7 dias de amoxiclav 1.2g 3id EV + 3 dias de azitromicina 500mg id EV.
+
+ANTECEDENTES PESSOAIS
+# FRCV: HTA sem LOA (dx desde 2009), dislipidemia (LDL 70 mg/dL 02/2024), atualmente com excesso de peso (IMC: 30 Kg/m2, seguimento prévio em CE Nutrição)
+# DPOC - seguido em CE Pneumologia Dr. Carlos Miguel 
+- múltiplos internamentos por agudizações
+# Doença renal crónica DRC G3A1 (eGFR 45) de etiologia não esclarecida, com TFG 30-40 e albuminúria
+# Quisto simples no rim esquerdo (15mm)
+- orientado para C.Nefrologia, mas faltou 02/2024 - Cr basal 1.2mg/
+# Doença hepática crónica de etiologia multifactorial: dislipidemia, obesidade
+# Espessamento do ângulo esplénico do cólon, com densificação dos tecidos envolventes
+# Síndrome depressivo - perdeu seguimento em C.Psiquiatria 
+# Osteopenia (DMO 2022)
+# Anemia crónica - seguido pelo MF, sob ferro por via parentérica
+# POAD
+
+VACINAÇÃO
+Td (próx. 2030), VHB (3x, 2026), Pn13 (2019), Pn23 (2024), Gripe (2024), COVID (2024)
+
+HÁBITOS E ESTILOS DE VIDA
+Tabaco: ex-fumador, fumou dos 25 aos ~50 anos, fumava ~15cig/dia - ~25UMA.
+Não consome e nunca consumiu drogas.
+
+MEDICAÇÃO HABITUAL
+- <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#FEF0C3;">Sildenafil 20mg 1cp ao PA</span>
+- <span class="lx-highlight" data-idx="1" style="background-color:#FEF0C3;">Enalapril 10mg 1cp ao PA</span>
+- <span class="lx-highlight" data-idx="2" style="background-color:#FEF0C3;">Atenolol 50mg 1cp ao PA</span>
+- <span class="lx-highlight" data-idx="3" style="background-color:#FEF0C3;">Simvastatina 20mg 1cp ao Jantar</span>
+- <span class="lx-highlight" data-idx="4" style="background-color:#FEF0C3;">Omeprazol 20mg 1cp em jejum</span>
+- <span class="lx-highlight" data-idx="5" style="background-color:#FEF0C3;">Salbutamol [Ventolin] 2 puffs manhã + 2 puffs almoço + 2 puffs noite e em SOS</span> 
+- <span class="lx-highlight" data-idx="6" style="background-color:#FEF0C3;">Brometo de tiotrópio [Spiriva] 18µg 1puff de manhã</span>
+- <span class="lx-highlight" data-idx="7" style="background-color:#FEF0C3;">Tiotrópio [Seretide] 5/50mcg 2 puffs manhã + 2 puffs almoço + 2 puffs noite</span>
+- <span class="lx-highlight" data-idx="8" style="background-color:#FEF0C3;">Acetilcisteína [Fluimucil] 600mg 1id</span>
+
+- Alergia medicamentosa conhecida: <span class="lx-highlight" data-idx="9" style="background-color:#D2E3FC;">Penicilina</span> - reação de hipersensibilidade grave com manifestações cutâneas, angioedema e dificuldade respiratória 
+
+EXAME OBJETIVO NO SU
+COC TEP. Queixoso.
+Mucosas ligeiramente descoradas, hidratadas, anictericas e acianoticas
+Polipneica, sem SDR, SpO2 (1L) 96% --&gt; aa 92%
+PA 120/70mmHg, FC 110, T 38.2
+AC: regular, sem soproa ou extrasons
+AP: MV globalmente diminuido, sem perceção de RAs; acessos de tosse seca
+Abdomen inocente
+Sem edema periferico
+
+EXAMES REALIZADOS NO SU
+- GSA (1L/min): pH 7.42, pO2 75, pCO2 35, HCO3 22, Na 135, K 4.1, Ca 1.12, Lac 1.5
+- EA: Hb 10.8, Leuc 14.50, Plaq 420, Cr 1.8 (Cr basal 1.2), Ureia 120, Na 135, K 4.3, PCR 60.5, NTproBNP 150.9
+- SU: Nitritos negativos; RAC 200; Sem leucocitúria ou eritrocitúria
+- Vírus respiratórios: Antigénio Influenza B Positivo
+- Rx tórax: sem condensações parenquimatosas
+- Ecografia RV sem HNF
+
+TERAPÊUTICA EFETUDA NO SU
+- Brometo Ipratrópio + Salbutamol
+- Hidrocortisona 200 mg iv
+- Paracetamol 1000 mg iv
+- Cloreto Sódio 0.9% 500 + 1000 ml iv
+- Oseltamivir 30 mg per os
+
+Portanto, doente internado por <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">gripe B</span> sem insuficiência respiratória e LRA não oligúrica (provável excesso de diurético)
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="10" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/11</span> |
+          Pos <span id="posInfo">[2348-2373]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "Medica\u00e7\u00e3o Habitual", "text": "Sildenafil 20mg 1cp ao PA", "color": "#FEF0C3", "startPos": 2348, "endPos": 2373, "beforeText": "OS DE VIDA\r\nTabaco: ex-fumador, fumou dos 25 aos ~50 anos, fumava ~15cig/dia - ~25UMA.\r\nN\u00e3o consome e nunca consumiu drogas.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- ", "extractionText": "Sildenafil 20mg 1cp ao PA", "afterText": "\r\n- Enalapril 10mg 1cp ao PA\r\n- Atenolol 50mg 1cp ao PA\r\n- Simvastatina 20mg 1cp ao Jantar\r\n- Omeprazol 20mg 1cp em jejum\r\n- Salbutamol [Ventolin] 2 p", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 1, "class": "Medica\u00e7\u00e3o Habitual", "text": "Enalapril 10mg 1cp ao PA", "color": "#FEF0C3", "startPos": 2377, "endPos": 2401, "beforeText": "r, fumou dos 25 aos ~50 anos, fumava ~15cig/dia - ~25UMA.\r\nN\u00e3o consome e nunca consumiu drogas.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Sildenafil 20mg 1cp ao PA\r\n- ", "extractionText": "Enalapril 10mg 1cp ao PA", "afterText": "\r\n- Atenolol 50mg 1cp ao PA\r\n- Simvastatina 20mg 1cp ao Jantar\r\n- Omeprazol 20mg 1cp em jejum\r\n- Salbutamol [Ventolin] 2 puffs manh\u00e3 + 2 puffs almo\u00e7o ", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 2, "class": "Medica\u00e7\u00e3o Habitual", "text": "Atenolol 50mg 1cp ao PA", "color": "#FEF0C3", "startPos": 2405, "endPos": 2428, "beforeText": ", fumava ~15cig/dia - ~25UMA.\r\nN\u00e3o consome e nunca consumiu drogas.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Sildenafil 20mg 1cp ao PA\r\n- Enalapril 10mg 1cp ao PA\r\n- ", "extractionText": "Atenolol 50mg 1cp ao PA", "afterText": "\r\n- Simvastatina 20mg 1cp ao Jantar\r\n- Omeprazol 20mg 1cp em jejum\r\n- Salbutamol [Ventolin] 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite e em SOS \r\n", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 3, "class": "Medica\u00e7\u00e3o Habitual", "text": "Simvastatina 20mg 1cp ao Jantar", "color": "#FEF0C3", "startPos": 2432, "endPos": 2463, "beforeText": "A.\r\nN\u00e3o consome e nunca consumiu drogas.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Sildenafil 20mg 1cp ao PA\r\n- Enalapril 10mg 1cp ao PA\r\n- Atenolol 50mg 1cp ao PA\r\n- ", "extractionText": "Simvastatina 20mg 1cp ao Jantar", "afterText": "\r\n- Omeprazol 20mg 1cp em jejum\r\n- Salbutamol [Ventolin] 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite e em SOS \r\n- Brometo de tiotr\u00f3pio [Spiriva] 18", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 4, "class": "Medica\u00e7\u00e3o Habitual", "text": "Omeprazol 20mg 1cp em jejum", "color": "#FEF0C3", "startPos": 2467, "endPos": 2494, "beforeText": "ogas.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Sildenafil 20mg 1cp ao PA\r\n- Enalapril 10mg 1cp ao PA\r\n- Atenolol 50mg 1cp ao PA\r\n- Simvastatina 20mg 1cp ao Jantar\r\n- ", "extractionText": "Omeprazol 20mg 1cp em jejum", "afterText": "\r\n- Salbutamol [Ventolin] 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite e em SOS \r\n- Brometo de tiotr\u00f3pio [Spiriva] 18\u00b5g 1puff de manh\u00e3\r\n- Tiotr\u00f3pio ", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 5, "class": "Medica\u00e7\u00e3o Habitual", "text": "Salbutamol [Ventolin] 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite e em SOS", "color": "#FEF0C3", "startPos": 2498, "endPos": 2575, "beforeText": "Sildenafil 20mg 1cp ao PA\r\n- Enalapril 10mg 1cp ao PA\r\n- Atenolol 50mg 1cp ao PA\r\n- Simvastatina 20mg 1cp ao Jantar\r\n- Omeprazol 20mg 1cp em jejum\r\n- ", "extractionText": "Salbutamol [Ventolin] 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite e em SOS", "afterText": " \r\n- Brometo de tiotr\u00f3pio [Spiriva] 18\u00b5g 1puff de manh\u00e3\r\n- Tiotr\u00f3pio [Seretide] 5/50mcg 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite\r\n- Acetilciste\u00ed", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 6, "class": "Medica\u00e7\u00e3o Habitual", "text": "Brometo de tiotr\u00f3pio [Spiriva] 18\u00b5g 1puff de manh\u00e3", "color": "#FEF0C3", "startPos": 2580, "endPos": 2630, "beforeText": "- Simvastatina 20mg 1cp ao Jantar\r\n- Omeprazol 20mg 1cp em jejum\r\n- Salbutamol [Ventolin] 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite e em SOS \r\n- ", "extractionText": "Brometo de tiotr\u00f3pio [Spiriva] 18\u00b5g 1puff de manh\u00e3", "afterText": "\r\n- Tiotr\u00f3pio [Seretide] 5/50mcg 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite\r\n- Acetilciste\u00edna [Fluimucil] 600mg 1id\r\n\r\n- Alergia medicamentosa con", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 7, "class": "Medica\u00e7\u00e3o Habitual", "text": "Tiotr\u00f3pio [Seretide] 5/50mcg 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite", "color": "#FEF0C3", "startPos": 2634, "endPos": 2709, "beforeText": "p em jejum\r\n- Salbutamol [Ventolin] 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite e em SOS \r\n- Brometo de tiotr\u00f3pio [Spiriva] 18\u00b5g 1puff de manh\u00e3\r\n- ", "extractionText": "Tiotr\u00f3pio [Seretide] 5/50mcg 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite", "afterText": "\r\n- Acetilciste\u00edna [Fluimucil] 600mg 1id\r\n\r\n- Alergia medicamentosa conhecida: Penicilina - rea\u00e7\u00e3o de hipersensibilidade grave com manifesta\u00e7\u00f5es cut\u00e2n", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 8, "class": "Medica\u00e7\u00e3o Habitual", "text": "Acetilciste\u00edna [Fluimucil] 600mg 1id", "color": "#FEF0C3", "startPos": 2713, "endPos": 2749, "beforeText": "ite e em SOS \r\n- Brometo de tiotr\u00f3pio [Spiriva] 18\u00b5g 1puff de manh\u00e3\r\n- Tiotr\u00f3pio [Seretide] 5/50mcg 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite\r\n- ", "extractionText": "Acetilciste\u00edna [Fluimucil] 600mg 1id", "afterText": "\r\n\r\n- Alergia medicamentosa conhecida: Penicilina - rea\u00e7\u00e3o de hipersensibilidade grave com manifesta\u00e7\u00f5es cut\u00e2neas, angioedema e dificuldade respirat\u00f3r", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 9, "class": "Alergias medicamentosas positiva", "text": "Penicilina", "color": "#D2E3FC", "startPos": 2788, "endPos": 2798, "beforeText": "r\u00f3pio [Seretide] 5/50mcg 2 puffs manh\u00e3 + 2 puffs almo\u00e7o + 2 puffs noite\r\n- Acetilciste\u00edna [Fluimucil] 600mg 1id\r\n\r\n- Alergia medicamentosa conhecida: ", "extractionText": "Penicilina", "afterText": " - rea\u00e7\u00e3o de hipersensibilidade grave com manifesta\u00e7\u00f5es cut\u00e2neas, angioedema e dificuldade respirat\u00f3ria \r\n\r\nEXAME OBJETIVO NO SU\r\nCOC TEP. Queixoso.\r\n", "attributesHtml": "<div><strong>class:</strong> Alergias medicamentosas positiva</div><div><strong>attributes:</strong> {}</div>"}, {"index": 10, "class": "Diagn\u00f3stico", "text": "gripe B", "color": "#C8E6C9", "startPos": 3886, "endPos": 3893, "beforeText": "drocortisona 200 mg iv\r\n- Paracetamol 1000 mg iv\r\n- Cloreto S\u00f3dio 0.9% 500 + 1000 ml iv\r\n- Oseltamivir 30 mg per os\r\n\r\nPortanto, doente internado por ", "extractionText": "gripe B", "afterText": " sem insufici\u00eancia respirat\u00f3ria e LRA n\u00e3o olig\u00farica (prov\u00e1vel excesso de diur\u00e9tico)", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

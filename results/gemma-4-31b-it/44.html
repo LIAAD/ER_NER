@@ -1,0 +1,259 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">drug_allergy</span> <span class="lx-label" style="background-color:#C8E6C9;">principal_diagnosis</span> <span class="lx-label" style="background-color:#FEF0C3;">usual_medication</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        933fc848-5271-4b2d-ab49-201a04a4bb8a
+
+62 anos, raça caucásica, casada e mãe de dois filhos. Empregada de escritório.
+
+Contactos: 963214567, marido 916543210.
+
+Etiologia DRC: Pneumopatia crónica.
+Inicio de HD: 10/02/2018.
+Transfusões: sim, uma em 2020.
+Gravidezes - 2
+Transplante prévio - Não
+
+ANTECEDENTES PESSOAIS:
+# Asma alérgica
+- seguida em consulta de Pneumologia;
+- iniciou terapêutica com corticosteroides inalatórios e broncodilatadores em 2010.
+# DPOC: 
+- ECG (abr/2020): RS, FC ~70bpm;
+- spirometria (jun/2020): VEF1 60% do valor previsto, indicativo de obstrução respiratória moderada.
+# Antecedentes ginecológicos/obstétricos: partos normais; menopausa aos 50 anos; sem THS
+# Antecedentes cirúrgicos: cesariana em 1995 e histerectomia em 2001
+# Antecedentes familiares: pai com DPOC faleceu aos 65 anos; 2 irmãos afetados pela mesma doença.
+# Alergias: não refere <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">alergias medicamentosa conhecidas</span>.
+
+PERÍODO CLÍNICO:
+# <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">Insuficiência respiratória crónica</span>
+- classe III NYHA-&gt; Ok por Pneumologia
+# Internamento em 2022 por exacerbação da DPOC.
+Aguardava avaliação para oxigenoterapia de longo prazo -&gt; iniciada em 02/2022
+- Realizou ECG de repouso em 15/02/2022 com resultado normal
+# Infeção COVID em 01/2022 mas já curada. Assintomática.
+
+# Suspensão temporária da terapêutica inalatória devido a dificuldades na sua administração.
+- Reavaliação da terapêutica e ajustes necessários
+# Avaliação de capacidade respiratória -&gt; FEV1 55% do valor previsto, sem alterações significativas.
+
+Estratégia clínica: Data da última avaliação: 20.03.2023 Modalidade: Monitorização ambulatória Marca: Não aplicável
+Tipo: Seguimento clínico N.º de consultas: 4 por ano
+
+Marcadores laboratoriais: hemograma completo em 10/02/2023 - sem alterações significativas, gasometria arterial em 15/02/2023 - pH 7.38, PaCO2 42 mmHg, PaO2 85 mmHg.
+
+VACINAÇÃO 
+Imunização pneumocócica: prevenar 13 em 2018 e pneumovax 23 em 2020
+Imunização gripe: 15/10/2022
+Imunização covid-19: 20.05.2021 e booster 01.11.2022
+
+Na avaliação mais recente, em Consulta de Pneumologia em fevereiro de 2023, destaca-se:
+
+REVISÃO DE SINTOMAS 
+Geral: Assintomática Humor: Bem Apetite: Bom Prurido: não Dores ósseas: não tem
+Sintomas cardiovasculares: nega dispneia ou ortopneia. Nega dor torácica.
+Sintomas respiratórios: nega tosse ou expectoração, mas refere Orthopneia e dispneia de esforço
+
+EXAME FÍSICO 
+Aspecto geral: Regular TA=130/80 mmHg P=60 bpm
+Hérnias: 0 AP: limpa Peso = 65 kg Edema MI: sem edema
+
+REVISÃO DA TERAPÊUTICA 
+- <span class="lx-highlight" data-idx="2" style="background-color:#FEF0C3;">Inalador de corticosteroides</span> e <span class="lx-highlight" data-idx="3" style="background-color:#FEF0C3;">broncodilatadores</span>, com ajuste da posologia para manter controle dos sintomas.
+- <span class="lx-highlight" data-idx="4" style="background-color:#FEF0C3;">Oxigenoterapia de longo prazo</span>, com avaliação mensal da necessidade de ajustes.
+
+AVALIAÇÃO GLOBAL E PLANO 
+Mantenha a terapêutica atual, com acompanhamento regular para ajustes e monitorização da função pulmonar.
+Realizar ecocardiograma anual, spirometria bianual, e exames laboratoriais trimestrais para acompanhar a evolução clínica.
+
+Medicação:
+- <span class="lx-highlight" data-idx="5" style="background-color:#FEF0C3;">Inhalador de salbutamol 5mg, 2 inhalações quando necessário</span>
+- <span class="lx-highlight" data-idx="6" style="background-color:#FEF0C3;">inhalador de fluticasona-salmeterol 250/25mcg, 2 inhalações bid</span>
+- <span class="lx-highlight" data-idx="7" style="background-color:#FEF0C3;">Oxigénio 2L/minuto durante 18 horas/dia</span>
+- <span class="lx-highlight" data-idx="8" style="background-color:#FEF0C3;">Sinvastatina 40 mg id</span>
+- <span class="lx-highlight" data-idx="9" style="background-color:#FEF0C3;">carvedilol 6.25 mg bid</span>
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="9" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/10</span> |
+          Pos <span id="posInfo">[956-990]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "drug_allergy", "text": "alergias medicamentosa conhecidas", "color": "#D2E3FC", "startPos": 898, "endPos": 931, "beforeText": "95 e histerectomia em 2001\r\n# Antecedentes familiares: pai com DPOC faleceu aos 65 anos; 2 irm\u00e3os afetados pela mesma doen\u00e7a.\r\n# Alergias: n\u00e3o refere ", "extractionText": "alergias medicamentosa conhecidas", "afterText": ".\r\n\r\nPER\u00cdODO CL\u00cdNICO:\r\n# Insufici\u00eancia respirat\u00f3ria cr\u00f3nica\r\n- classe III NYHA-&gt; Ok por Pneumologia\r\n# Internamento em 2022 por exacerba\u00e7\u00e3o da DPOC.\r\n", "attributesHtml": "<div><strong>class:</strong> drug_allergy</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">polarity</span>: <span class=\"lx-attr-value\">negative</span>}</div>"}, {"index": 1, "class": "principal_diagnosis", "text": "Insufici\u00eancia respirat\u00f3ria cr\u00f3nica", "color": "#C8E6C9", "startPos": 956, "endPos": 990, "beforeText": " com DPOC faleceu aos 65 anos; 2 irm\u00e3os afetados pela mesma doen\u00e7a.\r\n# Alergias: n\u00e3o refere alergias medicamentosa conhecidas.\r\n\r\nPER\u00cdODO CL\u00cdNICO:\r\n# ", "extractionText": "Insufici\u00eancia respirat\u00f3ria cr\u00f3nica", "afterText": "\r\n- classe III NYHA-&gt; Ok por Pneumologia\r\n# Internamento em 2022 por exacerba\u00e7\u00e3o da DPOC.\r\nAguardava avalia\u00e7\u00e3o para oxigenoterapia de longo prazo -&gt; i", "attributesHtml": "<div><strong>class:</strong> principal_diagnosis</div><div><strong>attributes:</strong> {}</div>"}, {"index": 2, "class": "usual_medication", "text": "Inalador de corticosteroides", "color": "#FEF0C3", "startPos": 2556, "endPos": 2584, "beforeText": "\n\r\nEXAME F\u00cdSICO \r\nAspecto geral: Regular TA=130/80 mmHg P=60 bpm\r\nH\u00e9rnias: 0 AP: limpa Peso = 65 kg Edema MI: sem edema\r\n\r\nREVIS\u00c3O DA TERAP\u00caUTICA \r\n- ", "extractionText": "Inalador de corticosteroides", "afterText": " e broncodilatadores, com ajuste da posologia para manter controle dos sintomas.\r\n- Oxigenoterapia de longo prazo, com avalia\u00e7\u00e3o mensal da necessidade", "attributesHtml": "<div><strong>class:</strong> usual_medication</div><div><strong>attributes:</strong> {}</div>"}, {"index": 3, "class": "usual_medication", "text": "broncodilatadores", "color": "#FEF0C3", "startPos": 2587, "endPos": 2604, "beforeText": ": Regular TA=130/80 mmHg P=60 bpm\r\nH\u00e9rnias: 0 AP: limpa Peso = 65 kg Edema MI: sem edema\r\n\r\nREVIS\u00c3O DA TERAP\u00caUTICA \r\n- Inalador de corticosteroides e ", "extractionText": "broncodilatadores", "afterText": ", com ajuste da posologia para manter controle dos sintomas.\r\n- Oxigenoterapia de longo prazo, com avalia\u00e7\u00e3o mensal da necessidade de ajustes.\r\n\r\nAVAL", "attributesHtml": "<div><strong>class:</strong> usual_medication</div><div><strong>attributes:</strong> {}</div>"}, {"index": 4, "class": "usual_medication", "text": "Oxigenoterapia de longo prazo", "color": "#FEF0C3", "startPos": 2668, "endPos": 2697, "beforeText": "m edema\r\n\r\nREVIS\u00c3O DA TERAP\u00caUTICA \r\n- Inalador de corticosteroides e broncodilatadores, com ajuste da posologia para manter controle dos sintomas.\r\n- ", "extractionText": "Oxigenoterapia de longo prazo", "afterText": ", com avalia\u00e7\u00e3o mensal da necessidade de ajustes.\r\n\r\nAVALIA\u00c7\u00c3O GLOBAL E PLANO \r\nMantenha a terap\u00eautica atual, com acompanhamento regular para ajustes ", "attributesHtml": "<div><strong>class:</strong> usual_medication</div><div><strong>attributes:</strong> {}</div>"}, {"index": 5, "class": "usual_medication", "text": "Inhalador de salbutamol 5mg, 2 inhala\u00e7\u00f5es quando necess\u00e1rio", "color": "#FEF0C3", "startPos": 3024, "endPos": 3083, "beforeText": "ulmonar.\r\nRealizar ecocardiograma anual, spirometria bianual, e exames laboratoriais trimestrais para acompanhar a evolu\u00e7\u00e3o cl\u00ednica.\r\n\r\nMedica\u00e7\u00e3o:\r\n- ", "extractionText": "Inhalador de salbutamol 5mg, 2 inhala\u00e7\u00f5es quando necess\u00e1rio", "afterText": "\r\n- inhalador de fluticasona-salmeterol 250/25mcg, 2 inhala\u00e7\u00f5es bid\r\n- Oxig\u00e9nio 2L/minuto durante 18 horas/dia\r\n- Sinvastatina 40 mg id\r\n- carvedilol ", "attributesHtml": "<div><strong>class:</strong> usual_medication</div><div><strong>attributes:</strong> {}</div>"}, {"index": 6, "class": "usual_medication", "text": "inhalador de fluticasona-salmeterol 250/25mcg, 2 inhala\u00e7\u00f5es bid", "color": "#FEF0C3", "startPos": 3087, "endPos": 3150, "beforeText": " exames laboratoriais trimestrais para acompanhar a evolu\u00e7\u00e3o cl\u00ednica.\r\n\r\nMedica\u00e7\u00e3o:\r\n- Inhalador de salbutamol 5mg, 2 inhala\u00e7\u00f5es quando necess\u00e1rio\r\n- ", "extractionText": "inhalador de fluticasona-salmeterol 250/25mcg, 2 inhala\u00e7\u00f5es bid", "afterText": "\r\n- Oxig\u00e9nio 2L/minuto durante 18 horas/dia\r\n- Sinvastatina 40 mg id\r\n- carvedilol 6.25 mg bid", "attributesHtml": "<div><strong>class:</strong> usual_medication</div><div><strong>attributes:</strong> {}</div>"}, {"index": 7, "class": "usual_medication", "text": "Oxig\u00e9nio 2L/minuto durante 18 horas/dia", "color": "#FEF0C3", "startPos": 3154, "endPos": 3193, "beforeText": "a.\r\n\r\nMedica\u00e7\u00e3o:\r\n- Inhalador de salbutamol 5mg, 2 inhala\u00e7\u00f5es quando necess\u00e1rio\r\n- inhalador de fluticasona-salmeterol 250/25mcg, 2 inhala\u00e7\u00f5es bid\r\n- ", "extractionText": "Oxig\u00e9nio 2L/minuto durante 18 horas/dia", "afterText": "\r\n- Sinvastatina 40 mg id\r\n- carvedilol 6.25 mg bid", "attributesHtml": "<div><strong>class:</strong> usual_medication</div><div><strong>attributes:</strong> {}</div>"}, {"index": 8, "class": "usual_medication", "text": "Sinvastatina 40 mg id", "color": "#FEF0C3", "startPos": 3197, "endPos": 3218, "beforeText": " 5mg, 2 inhala\u00e7\u00f5es quando necess\u00e1rio\r\n- inhalador de fluticasona-salmeterol 250/25mcg, 2 inhala\u00e7\u00f5es bid\r\n- Oxig\u00e9nio 2L/minuto durante 18 horas/dia\r\n- ", "extractionText": "Sinvastatina 40 mg id", "afterText": "\r\n- carvedilol 6.25 mg bid", "attributesHtml": "<div><strong>class:</strong> usual_medication</div><div><strong>attributes:</strong> {}</div>"}, {"index": 9, "class": "usual_medication", "text": "carvedilol 6.25 mg bid", "color": "#FEF0C3", "startPos": 3222, "endPos": 3244, "beforeText": " necess\u00e1rio\r\n- inhalador de fluticasona-salmeterol 250/25mcg, 2 inhala\u00e7\u00f5es bid\r\n- Oxig\u00e9nio 2L/minuto durante 18 horas/dia\r\n- Sinvastatina 40 mg id\r\n- ", "extractionText": "carvedilol 6.25 mg bid", "afterText": "", "attributesHtml": "<div><strong>class:</strong> usual_medication</div><div><strong>attributes:</strong> {}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

@@ -1,0 +1,208 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">Medicação Habitual</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        NOTA CLÍNICA DE ADMISSÃO
+
+IDENTIFICAÇÃO: Doente do sexo masculino, 74 anos, aposentado, natural e residente em Porto, casado.
+
+DATA E MOTIVO DA ADMISSÃO: Admitido em 10/02/2025 por quadro de dor torácica e dispneia súbita.
+
+HISTÓRIA DA DOENÇA ATUAL: Paciente previamente autónomo e sem queixas recentes, refere início súbito, há cerca de 2 horas, de dor torácica em aperto, retroesternal, intensa (8/10), irradiando para membro superior esquerdo e mandíbula, associada a dispneia e sudorese profusa. Sintomas mantiveram-se e motivaram deslocação ao serviço de urgência. Nega febre, tosse, síncope ou episódios prévios semelhantes.
+
+ANTECEDENTES PESSOAIS: - HTA diagnosticada há 20 anos, em tratamento com <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">losartan 50mg/dia</span>. - Diabetes Mellitus tipo 2, controlada com <span class="lx-highlight" data-idx="1" style="background-color:#D2E3FC;">metformina 850mg 2x/dia</span>. - Dislipidemia, em tratamento com <span class="lx-highlight" data-idx="2" style="background-color:#D2E3FC;">atorvastatina 20mg/dia</span>. - História de enfarte agudo do miocárdio há 5 anos, submetido a angioplastia com colocação de stent. - Ex-tabagista (40 maços/ano), cessou há 10 anos. - Nega AVC prévio ou outras comorbilidades relevantes.
+
+ANTECEDENTES FAMILIARES: - Pai falecido por EAM aos 68 anos. - Mãe com história de AVC aos 72 anos. - Irmão com HTA e DM2.
+
+EXAME FÍSICO: - Geral: Paciente ansioso, sudorético, palidez cutânea. - Sinais Vitais: - FC: 95 bpm - PA: 145/90 mmHg - FR: 22 irpm - SpO₂: 94% em ar ambiente - Tax: 36,6ºC - Cardiovascular: Bulhas rítmicas, sopro sistólico ++/6+ em foco mitral, pulso carotídeo presente, sem sopros. - Respiratório: Murmúrio vesicular presente, sem ruídos adventícios. - Abdómen: Indolor, sem visceromegalias. - Neurológico: Sem défices focais, Glasgow 15.
+
+EXAMES COMPLEMENTARES: - ECG: Supradesnivelamento do segmento ST em derivações inferiores (DII, DIII e aVF). - Troponina I: 5.800 ng/mL (elevada). - Gasometria arterial: pH 7,41; pCO₂ 37 mmHg; pO₂ 90 mmHg. - Rx tórax: Sem sinais de congestão pulmonar.
+
+LISTA DE PROBLEMAS: 1. Síndrome coronária aguda com supradesnivelamento do segmento ST inferior. 2. Hipertensão arterial. 3. Diabetes mellitus tipo 2. 4. Dislipidemia. 5. História prévia de enfarte do miocárdio.
+
+PLANO: - Ativação da Via Verde Coronária. - Encaminhamento para cateterismo urgente. - Antiagregação plaquetária com AAS 300mg + ticagrelor 180mg. - Anticoagulação com heparina de baixo peso molecular. - Monitorização contínua em unidade de cuidados intensivos cardíacos. - Controlo rigoroso da glicemia e pressão arterial. - Avaliação cardiológica para ajuste terapêutico pós-reperfusão.
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="2" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/3</span> |
+          Pos <span id="posInfo">[713-730]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "Medica\u00e7\u00e3o Habitual", "text": "losartan 50mg/dia", "color": "#D2E3FC", "startPos": 713, "endPos": 730, "beforeText": "de urg\u00eancia. Nega febre, tosse, s\u00edncope ou epis\u00f3dios pr\u00e9vios semelhantes.\r\n\r\nANTECEDENTES PESSOAIS: - HTA diagnosticada h\u00e1 20 anos, em tratamento com ", "extractionText": "losartan 50mg/dia", "afterText": ". - Diabetes Mellitus tipo 2, controlada com metformina 850mg 2x/dia. - Dislipidemia, em tratamento com atorvastatina 20mg/dia. - Hist\u00f3ria de enfarte ", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 1, "class": "Medica\u00e7\u00e3o Habitual", "text": "metformina 850mg 2x/dia", "color": "#D2E3FC", "startPos": 775, "endPos": 798, "beforeText": "emelhantes.\r\n\r\nANTECEDENTES PESSOAIS: - HTA diagnosticada h\u00e1 20 anos, em tratamento com losartan 50mg/dia. - Diabetes Mellitus tipo 2, controlada com ", "extractionText": "metformina 850mg 2x/dia", "afterText": ". - Dislipidemia, em tratamento com atorvastatina 20mg/dia. - Hist\u00f3ria de enfarte agudo do mioc\u00e1rdio h\u00e1 5 anos, submetido a angioplastia com coloca\u00e7\u00e3o", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 2, "class": "Medica\u00e7\u00e3o Habitual", "text": "atorvastatina 20mg/dia", "color": "#D2E3FC", "startPos": 834, "endPos": 856, "beforeText": "\u00e1 20 anos, em tratamento com losartan 50mg/dia. - Diabetes Mellitus tipo 2, controlada com metformina 850mg 2x/dia. - Dislipidemia, em tratamento com ", "extractionText": "atorvastatina 20mg/dia", "afterText": ". - Hist\u00f3ria de enfarte agudo do mioc\u00e1rdio h\u00e1 5 anos, submetido a angioplastia com coloca\u00e7\u00e3o de stent. - Ex-tabagista (40 ma\u00e7os/ano), cessou h\u00e1 10 ano", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

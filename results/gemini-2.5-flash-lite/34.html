@@ -1,0 +1,222 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">Diagnóstico</span> <span class="lx-label" style="background-color:#C8E6C9;">Medicação Habitual</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        fa8a7023-7ada-4474-8e0a-61fbe69bb762
+
+Doente de 62 anos, independente para as atividades da vida diária, chamado Leonardo da Vinci, foi admitido no serviço de Medicina Interna.
+
+ANTECEDENTES PESSOAIS: 
+# FRCV: hipertensão arterial e dislipidemia
+# Diabetes tipo 2, diagnosticado em 2015, controlado com metformina
+# Doença pulmonar obstrutiva crónica (DPOC), com predomínio enfisematoso, sob vigilância no Centro de Especialidades de Pneumologia
+# Infecção por Helicobacter pylori, tratada em 2019
+# Litíase renal, com episódios de colica renal em 2018 e 2020
+
+MEDICAÇÃO HABITUAL: 
+- <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">Amlodipino 5 mg</span>
+- <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">Atorvastatina 20 mg</span>
+- <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">Metformina 1000 mg bid</span>
+- <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">Salmeterol/Fluticasona 50/500 mcg, 2 inalações/dia</span>
+- <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">Omeprazol 20 mg</span>
+
+História da doença atual: 
+O doente deu entrada no serviço de urgência às 22h do dia 10, reclamando febre (com pico máximo de 38,5ºC), tosse seca e dor torácica tipo pressão, há 24 horas. Referiu dificuldade respiratória progressiva, com necessidade de oxigénio suplementar. Nega trauma torácico ou exposição a substâncias tóxicas.
+
+EXAME OBJETIVO NO SU: 
+O doente apresentava-se consciente, orientado e cooperante, com saturação de oxigénio de 92% em ar ambiente, frequência cardíaca de 100 batimentos por minuto e pressão arterial de 140/90 mmHg. A ausculta pulmonar revelou murmúrios vesiculares diminuídos e ruídos crepitantes bilaterais. O exame abdominal foi normal.
+
+ECDS no SU: 
+- Análise ao sangue: leucocitose com 12000 leucócitos/mm3, PCR elevada a 150 mg/L
+- Radiografia torácica: infiltrados pulmonares bilaterais, sugerindo pneumonia
+
+Hipoteses de diagnóstico: 
+# <span class="lx-highlight" data-idx="5" style="background-color:#D2E3FC;">Pneumonia bacteriana</span> em doente com DPOC
+- Sepsis de origem respiratória
+
+Evolução: 
+O doente iniciou antibioticoterapia com <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">ceftriaxone</span> e <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">azitromicina</span>, e foi internado na unidade de cuidados paliativos para monitorização e vigilância clínica. Durante a noite, o doente apresentou melhoria dos sintomas respiratórios, mas com necessidade contínua de oxigénio suplementar. Foi solicitada uma tomografia computorizada de tórax para avaliar a extensão da pneumonia e excluir outras complicações.
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="7" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/8</span> |
+          Pos <span id="posInfo">[596-611]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "Medica\u00e7\u00e3o Habitual", "text": "Amlodipino 5 mg", "color": "#C8E6C9", "startPos": 596, "endPos": 611, "beforeText": "ologia\r\n# Infec\u00e7\u00e3o por Helicobacter pylori, tratada em 2019\r\n# Lit\u00edase renal, com epis\u00f3dios de colica renal em 2018 e 2020\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL: \r\n- ", "extractionText": "Amlodipino 5 mg", "afterText": "\r\n- Atorvastatina 20 mg\r\n- Metformina 1000 mg bid\r\n- Salmeterol/Fluticasona 50/500 mcg, 2 inala\u00e7\u00f5es/dia\r\n- Omeprazol 20 mg\r\n\r\nHist\u00f3ria da doen\u00e7a atual", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 1, "class": "Medica\u00e7\u00e3o Habitual", "text": "Atorvastatina 20 mg", "color": "#C8E6C9", "startPos": 615, "endPos": 634, "beforeText": "por Helicobacter pylori, tratada em 2019\r\n# Lit\u00edase renal, com epis\u00f3dios de colica renal em 2018 e 2020\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL: \r\n- Amlodipino 5 mg\r\n- ", "extractionText": "Atorvastatina 20 mg", "afterText": "\r\n- Metformina 1000 mg bid\r\n- Salmeterol/Fluticasona 50/500 mcg, 2 inala\u00e7\u00f5es/dia\r\n- Omeprazol 20 mg\r\n\r\nHist\u00f3ria da doen\u00e7a atual: \r\nO doente deu entrad", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 2, "class": "Medica\u00e7\u00e3o Habitual", "text": "Metformina 1000 mg bid", "color": "#C8E6C9", "startPos": 638, "endPos": 660, "beforeText": ", tratada em 2019\r\n# Lit\u00edase renal, com epis\u00f3dios de colica renal em 2018 e 2020\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL: \r\n- Amlodipino 5 mg\r\n- Atorvastatina 20 mg\r\n- ", "extractionText": "Metformina 1000 mg bid", "afterText": "\r\n- Salmeterol/Fluticasona 50/500 mcg, 2 inala\u00e7\u00f5es/dia\r\n- Omeprazol 20 mg\r\n\r\nHist\u00f3ria da doen\u00e7a atual: \r\nO doente deu entrada no servi\u00e7o de urg\u00eancia \u00e0", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 3, "class": "Medica\u00e7\u00e3o Habitual", "text": "Salmeterol/Fluticasona 50/500 mcg, 2 inala\u00e7\u00f5es/dia", "color": "#C8E6C9", "startPos": 664, "endPos": 714, "beforeText": "se renal, com epis\u00f3dios de colica renal em 2018 e 2020\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL: \r\n- Amlodipino 5 mg\r\n- Atorvastatina 20 mg\r\n- Metformina 1000 mg bid\r\n- ", "extractionText": "Salmeterol/Fluticasona 50/500 mcg, 2 inala\u00e7\u00f5es/dia", "afterText": "\r\n- Omeprazol 20 mg\r\n\r\nHist\u00f3ria da doen\u00e7a atual: \r\nO doente deu entrada no servi\u00e7o de urg\u00eancia \u00e0s 22h do dia 10, reclamando febre (com pico m\u00e1ximo de ", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 4, "class": "Medica\u00e7\u00e3o Habitual", "text": "Omeprazol 20 mg", "color": "#C8E6C9", "startPos": 718, "endPos": 733, "beforeText": "\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL: \r\n- Amlodipino 5 mg\r\n- Atorvastatina 20 mg\r\n- Metformina 1000 mg bid\r\n- Salmeterol/Fluticasona 50/500 mcg, 2 inala\u00e7\u00f5es/dia\r\n- ", "extractionText": "Omeprazol 20 mg", "afterText": "\r\n\r\nHist\u00f3ria da doen\u00e7a atual: \r\nO doente deu entrada no servi\u00e7o de urg\u00eancia \u00e0s 22h do dia 10, reclamando febre (com pico m\u00e1ximo de 38,5\u00baC), tosse seca", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 5, "class": "Diagn\u00f3stico", "text": "Pneumonia bacteriana", "color": "#D2E3FC", "startPos": 1626, "endPos": 1646, "beforeText": "uc\u00f3citos/mm3, PCR elevada a 150 mg/L\r\n- Radiografia tor\u00e1cica: infiltrados pulmonares bilaterais, sugerindo pneumonia\r\n\r\nHipoteses de diagn\u00f3stico: \r\n# ", "extractionText": "Pneumonia bacteriana", "afterText": " em doente com DPOC\r\n- Sepsis de origem respirat\u00f3ria\r\n\r\nEvolu\u00e7\u00e3o: \r\nO doente iniciou antibioticoterapia com ceftriaxone e azitromicina, e foi internad", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 6, "class": "Medica\u00e7\u00e3o Habitual", "text": "ceftriaxone", "color": "#C8E6C9", "startPos": 1754, "endPos": 1765, "beforeText": "s de diagn\u00f3stico: \r\n# Pneumonia bacteriana em doente com DPOC\r\n- Sepsis de origem respirat\u00f3ria\r\n\r\nEvolu\u00e7\u00e3o: \r\nO doente iniciou antibioticoterapia com ", "extractionText": "ceftriaxone", "afterText": " e azitromicina, e foi internado na unidade de cuidados paliativos para monitoriza\u00e7\u00e3o e vigil\u00e2ncia cl\u00ednica. Durante a noite, o doente apresentou melho", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 7, "class": "Medica\u00e7\u00e3o Habitual", "text": "azitromicina", "color": "#C8E6C9", "startPos": 1768, "endPos": 1780, "beforeText": "co: \r\n# Pneumonia bacteriana em doente com DPOC\r\n- Sepsis de origem respirat\u00f3ria\r\n\r\nEvolu\u00e7\u00e3o: \r\nO doente iniciou antibioticoterapia com ceftriaxone e ", "extractionText": "azitromicina", "afterText": ", e foi internado na unidade de cuidados paliativos para monitoriza\u00e7\u00e3o e vigil\u00e2ncia cl\u00ednica. Durante a noite, o doente apresentou melhoria dos sintoma", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

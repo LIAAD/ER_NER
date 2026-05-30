@@ -1,0 +1,208 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">Diagnóstico</span> <span class="lx-label" style="background-color:#C8E6C9;">Medicação Habitual</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        NOTA CLÍNICA DE ADMISSÃO
+
+IDENTIFICAÇÃO: Doente do sexo feminino, 74 anos, reformada, natural e residente no Porto, viúva.
+
+DATA E MOTIVO DA ADMISSÃO: Admitida em 11/02/2025 por <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">síncope</span> e tontura.
+
+HISTÓRIA DA DOENÇA ATUAL: Paciente refere episódios recorrentes de tontura há cerca de 6 meses, associados a instabilidade postural. Hoje, apresentou episódio de síncope enquanto estava sentada, sem pródromos, com recuperação espontânea em poucos segundos. Nega cefaleia, dor torácica, palpitações ou dispneia.
+
+ANTECEDENTES PESSOAIS: - Hipertensão arterial há 20 anos, em tratamento com <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">losartan</span> e <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">hidroclorotiazida</span>. - Dislipidemia, em uso de <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">atorvastatina</span>. - Doença de Parkinson diagnosticada há 5 anos, em tratamento com <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">levodopa</span>. - Osteoporose, em tratamento com <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">bifosfonatos</span>.
+
+ANTECEDENTES FAMILIARES: - Mãe com Doença de Alzheimer. - Pai falecido por AVC.
+
+EXAME FÍSICO: - Geral: Paciente consciente, orientada, sem sinais de sofrimento. - Sinais Vitais: - FC: 54 bpm - PA: 105/65 mmHg - FR: 18 irpm - SpO₂: 96% em ar ambiente - Temperatura: 36,5ºC - Cardiovascular: Pulso bradicárdico, sem sinais de insuficiência cardíaca. - Neurológico: Tremor de repouso em membros superiores, rigidez muscular, marcha com passos curtos. - Ortostática: Queda da PA para 85/50 mmHg ao ortostatismo.
+
+EXAMES COMPLEMENTARES: - ECG: Bradicardia sinusal (FC 52 bpm). - Holter 24h: Episódios de pausas sinusais de até 3,2 segundos.
+
+LISTA DE PROBLEMAS: 1. <span class="lx-highlight" data-idx="6" style="background-color:#D2E3FC;">Síncope de provável etiologia disautonômica</span>. 2. <span class="lx-highlight" data-idx="7" style="background-color:#D2E3FC;">Bradicardia sinusal</span>. 3. <span class="lx-highlight" data-idx="8" style="background-color:#D2E3FC;">Hipotensão ortostática</span>. 4. <span class="lx-highlight" data-idx="9" style="background-color:#D2E3FC;">Doença de Parkinson</span>. 5. <span class="lx-highlight" data-idx="10" style="background-color:#D2E3FC;">Hipertensão arterial</span>.
+
+PLANO: - Suspender <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">hidroclorotiazida</span>. - Ajuste da medicação antiparkinsónica. - Encaminhar para avaliação por Cardiologia para estudo eletrofisiológico. - Educação do paciente e familiares sobre risco de quedas e estratégias de prevenção.
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="11" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/12</span> |
+          Pos <span id="posInfo">[594-602]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "Diagn\u00f3stico", "text": "s\u00edncope", "color": "#D2E3FC", "startPos": 182, "endPos": 189, "beforeText": "TIFICA\u00c7\u00c3O: Doente do sexo feminino, 74 anos, reformada, natural e residente no Porto, vi\u00fava.\r\n\r\nDATA E MOTIVO DA ADMISS\u00c3O: Admitida em 11/02/2025 por ", "extractionText": "s\u00edncope", "afterText": " e tontura.\r\n\r\nHIST\u00d3RIA DA DOEN\u00c7A ATUAL: Paciente refere epis\u00f3dios recorrentes de tontura h\u00e1 cerca de 6 meses, associados a instabilidade postural. Ho", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 1, "class": "Medica\u00e7\u00e3o Habitual", "text": "losartan", "color": "#C8E6C9", "startPos": 594, "endPos": 602, "beforeText": "poucos segundos. Nega cefaleia, dor tor\u00e1cica, palpita\u00e7\u00f5es ou dispneia.\r\n\r\nANTECEDENTES PESSOAIS: - Hipertens\u00e3o arterial h\u00e1 20 anos, em tratamento com ", "extractionText": "losartan", "afterText": " e hidroclorotiazida. - Dislipidemia, em uso de atorvastatina. - Doen\u00e7a de Parkinson diagnosticada h\u00e1 5 anos, em tratamento com levodopa. - Osteoporos", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 2, "class": "Medica\u00e7\u00e3o Habitual", "text": "hidroclorotiazida", "color": "#C8E6C9", "startPos": 605, "endPos": 622, "beforeText": "ndos. Nega cefaleia, dor tor\u00e1cica, palpita\u00e7\u00f5es ou dispneia.\r\n\r\nANTECEDENTES PESSOAIS: - Hipertens\u00e3o arterial h\u00e1 20 anos, em tratamento com losartan e ", "extractionText": "hidroclorotiazida", "afterText": ". - Dislipidemia, em uso de atorvastatina. - Doen\u00e7a de Parkinson diagnosticada h\u00e1 5 anos, em tratamento com levodopa. - Osteoporose, em tratamento com", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 3, "class": "Medica\u00e7\u00e3o Habitual", "text": "atorvastatina", "color": "#C8E6C9", "startPos": 650, "endPos": 663, "beforeText": "s ou dispneia.\r\n\r\nANTECEDENTES PESSOAIS: - Hipertens\u00e3o arterial h\u00e1 20 anos, em tratamento com losartan e hidroclorotiazida. - Dislipidemia, em uso de ", "extractionText": "atorvastatina", "afterText": ". - Doen\u00e7a de Parkinson diagnosticada h\u00e1 5 anos, em tratamento com levodopa. - Osteoporose, em tratamento com bifosfonatos.\r\n\r\nANTECEDENTES FAMILIARES", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 4, "class": "Medica\u00e7\u00e3o Habitual", "text": "levodopa", "color": "#C8E6C9", "startPos": 730, "endPos": 738, "beforeText": "ratamento com losartan e hidroclorotiazida. - Dislipidemia, em uso de atorvastatina. - Doen\u00e7a de Parkinson diagnosticada h\u00e1 5 anos, em tratamento com ", "extractionText": "levodopa", "afterText": ". - Osteoporose, em tratamento com bifosfonatos.\r\n\r\nANTECEDENTES FAMILIARES: - M\u00e3e com Doen\u00e7a de Alzheimer. - Pai falecido por AVC.\r\n\r\nEXAME F\u00cdSICO: -", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 5, "class": "Medica\u00e7\u00e3o Habitual", "text": "bifosfonatos", "color": "#C8E6C9", "startPos": 773, "endPos": 785, "beforeText": " - Dislipidemia, em uso de atorvastatina. - Doen\u00e7a de Parkinson diagnosticada h\u00e1 5 anos, em tratamento com levodopa. - Osteoporose, em tratamento com ", "extractionText": "bifosfonatos", "afterText": ".\r\n\r\nANTECEDENTES FAMILIARES: - M\u00e3e com Doen\u00e7a de Alzheimer. - Pai falecido por AVC.\r\n\r\nEXAME F\u00cdSICO: - Geral: Paciente consciente, orientada, sem sin", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 6, "class": "Diagn\u00f3stico", "text": "S\u00edncope de prov\u00e1vel etiologia disauton\u00f4mica", "color": "#D2E3FC", "startPos": 1457, "endPos": 1500, "beforeText": "MES COMPLEMENTARES: - ECG: Bradicardia sinusal (FC 52 bpm). - Holter 24h: Epis\u00f3dios de pausas sinusais de at\u00e9 3,2 segundos.\r\n\r\nLISTA DE PROBLEMAS: 1. ", "extractionText": "S\u00edncope de prov\u00e1vel etiologia disauton\u00f4mica", "afterText": ". 2. Bradicardia sinusal. 3. Hipotens\u00e3o ortost\u00e1tica. 4. Doen\u00e7a de Parkinson. 5. Hipertens\u00e3o arterial.\r\n\r\nPLANO: - Suspender hidroclorotiazida. - Ajust", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 7, "class": "Diagn\u00f3stico", "text": "Bradicardia sinusal", "color": "#D2E3FC", "startPos": 1505, "endPos": 1524, "beforeText": "FC 52 bpm). - Holter 24h: Epis\u00f3dios de pausas sinusais de at\u00e9 3,2 segundos.\r\n\r\nLISTA DE PROBLEMAS: 1. S\u00edncope de prov\u00e1vel etiologia disauton\u00f4mica. 2. ", "extractionText": "Bradicardia sinusal", "afterText": ". 3. Hipotens\u00e3o ortost\u00e1tica. 4. Doen\u00e7a de Parkinson. 5. Hipertens\u00e3o arterial.\r\n\r\nPLANO: - Suspender hidroclorotiazida. - Ajuste da medica\u00e7\u00e3o antiparki", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 8, "class": "Diagn\u00f3stico", "text": "Hipotens\u00e3o ortost\u00e1tica", "color": "#D2E3FC", "startPos": 1529, "endPos": 1551, "beforeText": ": Epis\u00f3dios de pausas sinusais de at\u00e9 3,2 segundos.\r\n\r\nLISTA DE PROBLEMAS: 1. S\u00edncope de prov\u00e1vel etiologia disauton\u00f4mica. 2. Bradicardia sinusal. 3. ", "extractionText": "Hipotens\u00e3o ortost\u00e1tica", "afterText": ". 4. Doen\u00e7a de Parkinson. 5. Hipertens\u00e3o arterial.\r\n\r\nPLANO: - Suspender hidroclorotiazida. - Ajuste da medica\u00e7\u00e3o antiparkins\u00f3nica. - Encaminhar para ", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 9, "class": "Diagn\u00f3stico", "text": "Doen\u00e7a de Parkinson", "color": "#D2E3FC", "startPos": 1556, "endPos": 1575, "beforeText": "ais de at\u00e9 3,2 segundos.\r\n\r\nLISTA DE PROBLEMAS: 1. S\u00edncope de prov\u00e1vel etiologia disauton\u00f4mica. 2. Bradicardia sinusal. 3. Hipotens\u00e3o ortost\u00e1tica. 4. ", "extractionText": "Doen\u00e7a de Parkinson", "afterText": ". 5. Hipertens\u00e3o arterial.\r\n\r\nPLANO: - Suspender hidroclorotiazida. - Ajuste da medica\u00e7\u00e3o antiparkins\u00f3nica. - Encaminhar para avalia\u00e7\u00e3o por Cardiologi", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 10, "class": "Diagn\u00f3stico", "text": "Hipertens\u00e3o arterial", "color": "#D2E3FC", "startPos": 1580, "endPos": 1600, "beforeText": "\r\n\r\nLISTA DE PROBLEMAS: 1. S\u00edncope de prov\u00e1vel etiologia disauton\u00f4mica. 2. Bradicardia sinusal. 3. Hipotens\u00e3o ortost\u00e1tica. 4. Doen\u00e7a de Parkinson. 5. ", "extractionText": "Hipertens\u00e3o arterial", "afterText": ".\r\n\r\nPLANO: - Suspender hidroclorotiazida. - Ajuste da medica\u00e7\u00e3o antiparkins\u00f3nica. - Encaminhar para avalia\u00e7\u00e3o por Cardiologia para estudo eletrofisio", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 11, "class": "Medica\u00e7\u00e3o Habitual", "text": "hidroclorotiazida", "color": "#C8E6C9", "startPos": 1624, "endPos": 1641, "beforeText": "el etiologia disauton\u00f4mica. 2. Bradicardia sinusal. 3. Hipotens\u00e3o ortost\u00e1tica. 4. Doen\u00e7a de Parkinson. 5. Hipertens\u00e3o arterial.\r\n\r\nPLANO: - Suspender ", "extractionText": "hidroclorotiazida", "afterText": ". - Ajuste da medica\u00e7\u00e3o antiparkins\u00f3nica. - Encaminhar para avalia\u00e7\u00e3o por Cardiologia para estudo eletrofisiol\u00f3gico. - Educa\u00e7\u00e3o do paciente e familiar", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

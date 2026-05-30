@@ -1,0 +1,250 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">Alergias medicamentosas positiva</span> <span class="lx-label" style="background-color:#C8E6C9;">Diagnóstico</span> <span class="lx-label" style="background-color:#FEF0C3;">Medicação Habitual</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        d210fdc6-2e48-48a1-b336-54557509d11d
+
+SERVIÇO DE DOENÇAS INFECCIOSAS - HOSPITAL SANTA MARIA
+Director de Serviço - Dr. Luís Filipe. Coordenadora do Serviço: Drª Sofia Rodrigues
+Equipa Médica: Dr. Pedro Martins (AH Doenças Infecciosas); Dra. Joana Silva (IFE Doenças Infecciosas); Dra. Margarida Costa (IFE Medicina Intensiva), Dra. Teresa Fernandes (IFG)
+
+IDENTIFICAÇÃO: Leonardo da Vinci, 42 anos. Casado, natural de Lisboa e residente em Amadora, designer gráfico e músico, 12º ano de escolaridade. Autónomo para as AVD.
+CS: Amadora
+MOTIVO DE INTERNAMENTO: Febre de origem desconhecida
+
+DATA DE ADMISSÃO HSJ: 10/02/2023 DATA DE ADMISSÃO NO S. DOENÇAS INFECCIOSAS A: 12/02/2023 (2 dias na UCIM previamente) PROVENIÊNCIA: AREA AMARELA (posteriormente UCIM)
+
+ANTECEDENTES PESSOAIS:
+# FRCV:
+- <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">Hipertensão arterial</span>, <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">dislipidemia</span>, hábitos tabágicos (20 UMA), <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">doença renal crónica estágio 2</span>.
+- <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">Doença pulmonar obstrutiva crónica</span> (DPOC) com exacerbações frequentes, <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">asmático</span> desde a infância.
+# <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">Sindrome de Guillain-Barré</span> .
+ » AR - Em 2018, internamento na Neurologia por fraqueza muscular progressiva e parestesias, com diagnóstico de Síndrome de Guillain-Barré. Atualmente sem grande expressão neurológica.
+# Infecções prévias:
+- Pneumonia adquirida na comunidade em 2015, tratada com amoxicilina.
+ - Hepatite A em 2002, com recuperação completa.
+
+ #Internamentos/Cx prévias:
+- Internamento em 2010 por exacerbação de DPOC.
+
+#Hábitos: hábitos alcoolicos leves -
+#Antecedentes Familiares:
+- Pai falecido com doença cardiovascular.
+#Vacinação: atualizada; fez pneumo e gripe anual, além de vacina contra a hepatite B.
+#Rastreios: ECG 2020, Rx tórax 2020.
+# Antibioterapia 3 meses anteriores ao internamento:
+- Azitromicina por 5 dias para tratamento de infecção respiratória.
+
+MEDICAÇÃO HABITUAL:
+ - <span class="lx-highlight" data-idx="6" style="background-color:#FEF0C3;">Salbutamol khi necessário</span>; <span class="lx-highlight" data-idx="7" style="background-color:#FEF0C3;">Salmeterol/Fluticasona 1 inalação bid</span>; <span class="lx-highlight" data-idx="8" style="background-color:#FEF0C3;">Atorvastatina 20mg id</span>; <span class="lx-highlight" data-idx="9" style="background-color:#FEF0C3;">Enalapril 10mg id</span>; <span class="lx-highlight" data-idx="10" style="background-color:#FEF0C3;">AAS 100mg id</span>; <span class="lx-highlight" data-idx="11" style="background-color:#FEF0C3;">Omeprazol 20mg id</span>.
+- <span class="lx-highlight" data-idx="12" style="background-color:#FEF0C3;">Enoxaparina sódica 40mg sc 1x/dia</span> para profilaxia de tromboembolismo venoso.
+
+NÃO POSSUI ALERGIAS MEDICAMENTOSAS RELATADAS.
+
+HISTÓRIA DA DOENÇA ATUAL:
+Doente apresentou febre alta (39°C) e dor de cabeça intensa, com início súbito 3 dias antes da admissão. Referiu também perda de apetite e fadiga. Não havia viajado recentemente para áreas de risco ou tido contato com pessoas doentes.
+Doente com história de exposição ocupacional a substâncias químicas e música em ambientes fechados.
+
+EXAME OBJECTIVO NO SU:
+PA - 120/80mmHg
+AC-N; AP - sons normais
+Abdomen - <span class="lx-highlight" data-idx="13" style="background-color:#D2E3FC;">sem</span> alterações
+Linfonodos - não palpáveis
+
+ECDT no SU:
+* Hemograma: leucocitose com 15000 leucócitos/mm³, hemoglobina 14 g/dl
+* Bioquímica: creatinina 1.2 mg/dl, ureia 30 mg/dl, ASAT 40 UI/L, ALAT 30 UI/L
+* Rx tórax: sem alterações
+- Eco abdominal: fígado e baço com dimensões normais, sem dilatação das vias biliares.
+
+Assim:
+# <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">Febre de origem desconhecida</span>.
+ » Doente já com história de doenças infecciosas prévias e exposição a substâncias químicas.
+- Foi internado na UCIM para realização de exames complementares e continuação de cuidados.
+- Realizou AngioTC torácico e abdominal, que não mostrou evidências de <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">infecção</span> ou <span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">doença inflamatória</span>.
+- Iniciada antibioticoterapia empirica com ceftriaxona 2g iv 1x/dia.
+- Acompanhamento clínico e laboratorial para avaliação da evolução.
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="16" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/17</span> |
+          Pos <span id="posInfo">[804-824]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "Diagn\u00f3stico", "text": "Hipertens\u00e3o arterial", "color": "#C8E6C9", "startPos": 804, "endPos": 824, "beforeText": "DOEN\u00c7AS INFECCIOSAS A: 12/02/2023 (2 dias na UCIM previamente) PROVENI\u00caNCIA: AREA AMARELA (posteriormente UCIM)\r\n\r\nANTECEDENTES PESSOAIS:\r\n# FRCV:\r\n- ", "extractionText": "Hipertens\u00e3o arterial", "afterText": ", dislipidemia, h\u00e1bitos tab\u00e1gicos (20 UMA), doen\u00e7a renal cr\u00f3nica est\u00e1gio 2.\r\n- Doen\u00e7a pulmonar obstrutiva cr\u00f3nica (DPOC) com exacerba\u00e7\u00f5es frequentes, ", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 1, "class": "Diagn\u00f3stico", "text": "dislipidemia", "color": "#C8E6C9", "startPos": 826, "endPos": 838, "beforeText": " 12/02/2023 (2 dias na UCIM previamente) PROVENI\u00caNCIA: AREA AMARELA (posteriormente UCIM)\r\n\r\nANTECEDENTES PESSOAIS:\r\n# FRCV:\r\n- Hipertens\u00e3o arterial, ", "extractionText": "dislipidemia", "afterText": ", h\u00e1bitos tab\u00e1gicos (20 UMA), doen\u00e7a renal cr\u00f3nica est\u00e1gio 2.\r\n- Doen\u00e7a pulmonar obstrutiva cr\u00f3nica (DPOC) com exacerba\u00e7\u00f5es frequentes, asm\u00e1tico desde", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 2, "class": "Diagn\u00f3stico", "text": "Doen\u00e7a renal cr\u00f3nica est\u00e1gio 2", "color": "#C8E6C9", "startPos": 868, "endPos": 898, "beforeText": "ROVENI\u00caNCIA: AREA AMARELA (posteriormente UCIM)\r\n\r\nANTECEDENTES PESSOAIS:\r\n# FRCV:\r\n- Hipertens\u00e3o arterial, dislipidemia, h\u00e1bitos tab\u00e1gicos (20 UMA), ", "extractionText": "doen\u00e7a renal cr\u00f3nica est\u00e1gio 2", "afterText": ".\r\n- Doen\u00e7a pulmonar obstrutiva cr\u00f3nica (DPOC) com exacerba\u00e7\u00f5es frequentes, asm\u00e1tico desde a inf\u00e2ncia.\r\n# Sindrome de Guillain-Barr\u00e9 .\r\n \u00bb AR - Em 201", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 3, "class": "Diagn\u00f3stico", "text": "Doen\u00e7a pulmonar obstrutiva cr\u00f3nica", "color": "#C8E6C9", "startPos": 903, "endPos": 937, "beforeText": "rmente UCIM)\r\n\r\nANTECEDENTES PESSOAIS:\r\n# FRCV:\r\n- Hipertens\u00e3o arterial, dislipidemia, h\u00e1bitos tab\u00e1gicos (20 UMA), doen\u00e7a renal cr\u00f3nica est\u00e1gio 2.\r\n- ", "extractionText": "Doen\u00e7a pulmonar obstrutiva cr\u00f3nica", "afterText": " (DPOC) com exacerba\u00e7\u00f5es frequentes, asm\u00e1tico desde a inf\u00e2ncia.\r\n# Sindrome de Guillain-Barr\u00e9 .\r\n \u00bb AR - Em 2018, internamento na Neurologia por fraqu", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 4, "class": "Diagn\u00f3stico", "text": "asm\u00e1tico", "color": "#C8E6C9", "startPos": 974, "endPos": 982, "beforeText": ", dislipidemia, h\u00e1bitos tab\u00e1gicos (20 UMA), doen\u00e7a renal cr\u00f3nica est\u00e1gio 2.\r\n- Doen\u00e7a pulmonar obstrutiva cr\u00f3nica (DPOC) com exacerba\u00e7\u00f5es frequentes, ", "extractionText": "asm\u00e1tico", "afterText": " desde a inf\u00e2ncia.\r\n# Sindrome de Guillain-Barr\u00e9 .\r\n \u00bb AR - Em 2018, internamento na Neurologia por fraqueza muscular progressiva e parestesias, com d", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 5, "class": "Diagn\u00f3stico", "text": "Sindrome de Guillain-Barr\u00e9", "color": "#C8E6C9", "startPos": 1004, "endPos": 1030, "beforeText": "cos (20 UMA), doen\u00e7a renal cr\u00f3nica est\u00e1gio 2.\r\n- Doen\u00e7a pulmonar obstrutiva cr\u00f3nica (DPOC) com exacerba\u00e7\u00f5es frequentes, asm\u00e1tico desde a inf\u00e2ncia.\r\n# ", "extractionText": "Sindrome de Guillain-Barr\u00e9", "afterText": " .\r\n \u00bb AR - Em 2018, internamento na Neurologia por fraqueza muscular progressiva e parestesias, com diagn\u00f3stico de S\u00edndrome de Guillain-Barr\u00e9. Atualm", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 6, "class": "Medica\u00e7\u00e3o Habitual", "text": "Salbutamol khi necess\u00e1rio", "color": "#FEF0C3", "startPos": 1827, "endPos": 1852, "beforeText": "\n# Antibioterapia 3 meses anteriores ao internamento:\r\n- Azitromicina por 5 dias para tratamento de infec\u00e7\u00e3o respirat\u00f3ria.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL:\r\n - ", "extractionText": "Salbutamol khi necess\u00e1rio", "afterText": "; Salmeterol/Fluticasona 1 inala\u00e7\u00e3o bid; Atorvastatina 20mg id; Enalapril 10mg id; AAS 100mg id; Omeprazol 20mg id.\r\n- Enoxaparina s\u00f3dica 40mg sc 1x/d", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 7, "class": "Medica\u00e7\u00e3o Habitual", "text": "Salmeterol/Fluticasona 1 inala\u00e7\u00e3o bid", "color": "#FEF0C3", "startPos": 1854, "endPos": 1891, "beforeText": "nteriores ao internamento:\r\n- Azitromicina por 5 dias para tratamento de infec\u00e7\u00e3o respirat\u00f3ria.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL:\r\n - Salbutamol khi necess\u00e1rio; ", "extractionText": "Salmeterol/Fluticasona 1 inala\u00e7\u00e3o bid", "afterText": "; Atorvastatina 20mg id; Enalapril 10mg id; AAS 100mg id; Omeprazol 20mg id.\r\n- Enoxaparina s\u00f3dica 40mg sc 1x/dia para profilaxia de tromboembolismo v", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 8, "class": "Medica\u00e7\u00e3o Habitual", "text": "Atorvastatina 20mg id", "color": "#FEF0C3", "startPos": 1893, "endPos": 1914, "beforeText": "ina por 5 dias para tratamento de infec\u00e7\u00e3o respirat\u00f3ria.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL:\r\n - Salbutamol khi necess\u00e1rio; Salmeterol/Fluticasona 1 inala\u00e7\u00e3o bid; ", "extractionText": "Atorvastatina 20mg id", "afterText": "; Enalapril 10mg id; AAS 100mg id; Omeprazol 20mg id.\r\n- Enoxaparina s\u00f3dica 40mg sc 1x/dia para profilaxia de tromboembolismo venoso.\r\n\r\nN\u00c3O POSSUI AL", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 9, "class": "Medica\u00e7\u00e3o Habitual", "text": "Enalapril 10mg id", "color": "#FEF0C3", "startPos": 1916, "endPos": 1933, "beforeText": "tamento de infec\u00e7\u00e3o respirat\u00f3ria.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL:\r\n - Salbutamol khi necess\u00e1rio; Salmeterol/Fluticasona 1 inala\u00e7\u00e3o bid; Atorvastatina 20mg id; ", "extractionText": "Enalapril 10mg id", "afterText": "; AAS 100mg id; Omeprazol 20mg id.\r\n- Enoxaparina s\u00f3dica 40mg sc 1x/dia para profilaxia de tromboembolismo venoso.\r\n\r\nN\u00c3O POSSUI ALERGIAS MEDICAMENTOS", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 10, "class": "Medica\u00e7\u00e3o Habitual", "text": "AAS 100mg id", "color": "#FEF0C3", "startPos": 1935, "endPos": 1947, "beforeText": " respirat\u00f3ria.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL:\r\n - Salbutamol khi necess\u00e1rio; Salmeterol/Fluticasona 1 inala\u00e7\u00e3o bid; Atorvastatina 20mg id; Enalapril 10mg id; ", "extractionText": "AAS 100mg id", "afterText": "; Omeprazol 20mg id.\r\n- Enoxaparina s\u00f3dica 40mg sc 1x/dia para profilaxia de tromboembolismo venoso.\r\n\r\nN\u00c3O POSSUI ALERGIAS MEDICAMENTOSAS RELATADAS.\r", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 11, "class": "Medica\u00e7\u00e3o Habitual", "text": "Omeprazol 20mg id", "color": "#FEF0C3", "startPos": 1949, "endPos": 1966, "beforeText": "\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL:\r\n - Salbutamol khi necess\u00e1rio; Salmeterol/Fluticasona 1 inala\u00e7\u00e3o bid; Atorvastatina 20mg id; Enalapril 10mg id; AAS 100mg id; ", "extractionText": "Omeprazol 20mg id", "afterText": ".\r\n- Enoxaparina s\u00f3dica 40mg sc 1x/dia para profilaxia de tromboembolismo venoso.\r\n\r\nN\u00c3O POSSUI ALERGIAS MEDICAMENTOSAS RELATADAS.\r\n\r\nHIST\u00d3RIA DA DOEN", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 12, "class": "Medica\u00e7\u00e3o Habitual", "text": "Enoxaparina s\u00f3dica 40mg sc 1x/dia", "color": "#FEF0C3", "startPos": 1971, "endPos": 2004, "beforeText": ":\r\n - Salbutamol khi necess\u00e1rio; Salmeterol/Fluticasona 1 inala\u00e7\u00e3o bid; Atorvastatina 20mg id; Enalapril 10mg id; AAS 100mg id; Omeprazol 20mg id.\r\n- ", "extractionText": "Enoxaparina s\u00f3dica 40mg sc 1x/dia", "afterText": " para profilaxia de tromboembolismo venoso.\r\n\r\nN\u00c3O POSSUI ALERGIAS MEDICAMENTOSAS RELATADAS.\r\n\r\nHIST\u00d3RIA DA DOEN\u00c7A ATUAL:\r\nDoente apresentou febre alt", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 13, "class": "Alergias medicamentosas positiva", "text": "sem", "color": "#D2E3FC", "startPos": 2542, "endPos": 2545, "beforeText": "\u00e7\u00e3o ocupacional a subst\u00e2ncias qu\u00edmicas e m\u00fasica em ambientes fechados.\r\n\r\nEXAME OBJECTIVO NO SU:\r\nPA - 120/80mmHg\r\nAC-N; AP - sons normais\r\nAbdomen - ", "extractionText": "sem", "afterText": " altera\u00e7\u00f5es\r\nLinfonodos - n\u00e3o palp\u00e1veis\r\n\r\nECDT no SU:\r\n* Hemograma: leucocitose com 15000 leuc\u00f3citos/mm\u00b3, hemoglobina 14 g/dl\r\n* Bioqu\u00edmica: creatini", "attributesHtml": "<div><strong>class:</strong> Alergias medicamentosas positiva</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">_unused</span>: <span class=\"lx-attr-value\">N\u00c3O POSSUI ALERGIAS MEDICAMENTOSAS RELATADAS</span>}</div>"}, {"index": 14, "class": "Diagn\u00f3stico", "text": "Febre de origem desconhecida", "color": "#C8E6C9", "startPos": 2881, "endPos": 2909, "beforeText": "0 UI/L, ALAT 30 UI/L\r\n* Rx t\u00f3rax: sem altera\u00e7\u00f5es\r\n- Eco abdominal: f\u00edgado e ba\u00e7o com dimens\u00f5es normais, sem dilata\u00e7\u00e3o das vias biliares.\r\n\r\nAssim:\r\n# ", "extractionText": "Febre de origem desconhecida", "afterText": ".\r\n \u00bb Doente j\u00e1 com hist\u00f3ria de doen\u00e7as infecciosas pr\u00e9vias e exposi\u00e7\u00e3o a subst\u00e2ncias qu\u00edmicas.\r\n- Foi internado na UCIM para realiza\u00e7\u00e3o de exames com", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 15, "class": "Diagn\u00f3stico", "text": "infec\u00e7\u00e3o", "color": "#C8E6C9", "startPos": 3170, "endPos": 3178, "beforeText": "o na UCIM para realiza\u00e7\u00e3o de exames complementares e continua\u00e7\u00e3o de cuidados.\r\n- Realizou AngioTC tor\u00e1cico e abdominal, que n\u00e3o mostrou evid\u00eancias de ", "extractionText": "infec\u00e7\u00e3o", "afterText": " ou doen\u00e7a inflamat\u00f3ria.\r\n- Iniciada antibioticoterapia empirica com ceftriaxona 2g iv 1x/dia.\r\n- Acompanhamento cl\u00ednico e laboratorial para avalia\u00e7\u00e3o", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 16, "class": "Diagn\u00f3stico", "text": "doen\u00e7a inflamat\u00f3ria", "color": "#C8E6C9", "startPos": 3182, "endPos": 3201, "beforeText": "ra realiza\u00e7\u00e3o de exames complementares e continua\u00e7\u00e3o de cuidados.\r\n- Realizou AngioTC tor\u00e1cico e abdominal, que n\u00e3o mostrou evid\u00eancias de infec\u00e7\u00e3o ou ", "extractionText": "doen\u00e7a inflamat\u00f3ria", "afterText": ".\r\n- Iniciada antibioticoterapia empirica com ceftriaxona 2g iv 1x/dia.\r\n- Acompanhamento cl\u00ednico e laboratorial para avalia\u00e7\u00e3o da evolu\u00e7\u00e3o.", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

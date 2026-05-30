@@ -1,0 +1,235 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">Alergias medicamentosas positiva</span> <span class="lx-label" style="background-color:#C8E6C9;">Diagnóstico</span> <span class="lx-label" style="background-color:#FEF0C3;">Medicação Habitual</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        8edb2f8c-02d2-45b9-8a65-173c4762a60b
+
+ADMISSÃO UCIM
+
+68 anos de idade. Antecedentes de adenocarcinoma gástrico submetido a gastrectomia subtotal (09/2022), seguido de quimioterapia adjuvante até 03/2023. Em vigilância, com achado de metástases hepáticas únicas no segmento VIII e nódulos pulmonares subcentimétricos em TAC de 11/2024. Reencaminhado a oncologia, iniciou 2ª linha de quimioterapia paliativa com FOLFIRI em 01/2025, último ciclo em 29/03/2025, tendo tido bons tolerância, exceto astenia prolongada. Mantém seguimento por medicina interna por hipertensão arterial e insuficiência cardíaca (FEVE 45%).
+
+Medicação habitual (confirmado com a esposa): <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#FEF0C3;">bisoprolol 2,5mg id</span>, <span class="lx-highlight" data-idx="1" style="background-color:#FEF0C3;">ramipril 5mg id</span>, <span class="lx-highlight" data-idx="2" style="background-color:#FEF0C3;">furosemida 20mg id</span>, <span class="lx-highlight" data-idx="3" style="background-color:#FEF0C3;">pantoprazol 20mg id</span>, <span class="lx-highlight" data-idx="4" style="background-color:#FEF0C3;">ferro oral 100mg id</span>
+
+Alergia conhecida: <span class="lx-highlight" data-idx="5" style="background-color:#D2E3FC;">metoclopramida</span> (náuseas importantes, vómitos e irritação cutânea em episódios prévios).
+
+Queixas de <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">vômitos alimentares</span> frequentes há 5 dias, associados a náuseas, diminuição marcada da ingestão oral, prostração intensa e tonturas ortostáticas. Esposa refere também diminuição da diurese e perda notória de peso nas últimas semanas. Sem febre ou dispneia. Enviado ao SU por médico assistente por agravamento do estado geral.
+
+À entrada no SU: consciente, orientado, desidratado, mucosas secas, hipoactivo; PA 93/54 mmHg, FC 88 bpm, satO2 96% AA. Abdómen doloroso difuso, sem sinais de irritação peritoneal; sem edema periférico. Peso estimado 56kg (era 62kg no último controlo há 1 mês).
+
+Analítica: Na+ 128, K+ 3,1, Cl- 95, PCR 54, pCr 2,47 (baseline 1,1), uremia 98, Hb 10,2, Leu 7,3, Plaq 234, Lactato 2,1. RX abdómen sem distensão significativa, sem sinais de obstrução. Eco abdominal: fígado com lesão sólida conhecida, moderada ascite, sem dilatação das vias biliares; rins sem alterações relevantes.
+
+Ao longo das primeiras horas no SU foi iniciado SF 0,9% com ligeira melhoria da TA, diurese esparsa (&lt;0,3 mL/kg/h). Por hipoNa e IRA funcional, platô de evolução negativa metabólica e instabilidade hemodinâmica ligeira, admitido na UCIM para vigilância e correção hidroelectrolítica.
+
+À admissão na UCIM
+PA 99/60 mmHg, FC 85 bpm
+Desidratado, pele e mucosas secas
+Consciente, colaborante, sem focalidade neurológica
+AC: ritmo regular
+AP: murmúrio vesicular presente, sem ruídos patológicos
+Abdómen: sem defesa, doloroso à palpação difusa, ausência de peristaltismo audível
+Extremidades sem edemas
+Sem sinais infecciosos cutâneos
+
+Documentação laboratorial nas últimas 24h:
+2/04: Na+ 126, K+ 3,0, PCR 60, pCr 2,36, uremia 94
+GSA: acidose metabólica ligeira, lactato 1,8
+
+IMPRESSÃO
+<span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">HIPONATRÉMIA HIPOVOLÉMICA GRAVE</span> em contexto de vómitos persistentes, redução da ingestão e possível agravamento de <span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">insuficiência renal funcional</span>, com quadro compatível com <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">desidratação grave</span>.
+<span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">Doente oncológico com doença avançada</span>, perfis digestivos sem sinais de obstrução aguda.
+
+PLANO
+Correção volumétrica cuidadosa (SF 0,9%) com ajustamento pelo ritmo da diurese e parâmetros laboratoriais, vigilância próxima hemodinâmica.
+Reposição cuidadosa de potássio.
+Avaliação de resposta à hidratação nas primeiras 6-12h.
+Evitar <span class="lx-highlight" data-idx="11" style="background-color:#D2E3FC;">metoclopramida</span> (A L E R G I A documentada) - antiemético alternativo: ondansetrona iv se necessário.
+Monitorização analítica diária.
+Manter hemodinâmica e reavaliação clínica frequente.
+Observação multidisciplinar (Oncologia, Nefrologia).
+
+Colheitas dirigidas: hemoculturas, função renal e eletrólitos seriados.
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="11" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/12</span> |
+          Pos <span id="posInfo">[667-686]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "Medica\u00e7\u00e3o Habitual", "text": "bisoprolol 2,5mg id", "color": "#FEF0C3", "startPos": 667, "endPos": 686, "beforeText": "Mant\u00e9m seguimento por medicina interna por hipertens\u00e3o arterial e insufici\u00eancia card\u00edaca (FEVE 45%).\r\n\r\nMedica\u00e7\u00e3o habitual (confirmado com a esposa): ", "extractionText": "bisoprolol 2,5mg id", "afterText": ", ramipril 5mg id, furosemida 20mg id, pantoprazol 20mg id, ferro oral 100mg id\r\n\r\nAlergia conhecida: metoclopramida (n\u00e1useas importantes, v\u00f3mitos e i", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 1, "class": "Medica\u00e7\u00e3o Habitual", "text": "ramipril 5mg id", "color": "#FEF0C3", "startPos": 688, "endPos": 703, "beforeText": " medicina interna por hipertens\u00e3o arterial e insufici\u00eancia card\u00edaca (FEVE 45%).\r\n\r\nMedica\u00e7\u00e3o habitual (confirmado com a esposa): bisoprolol 2,5mg id, ", "extractionText": "ramipril 5mg id", "afterText": ", furosemida 20mg id, pantoprazol 20mg id, ferro oral 100mg id\r\n\r\nAlergia conhecida: metoclopramida (n\u00e1useas importantes, v\u00f3mitos e irrita\u00e7\u00e3o cut\u00e2nea ", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 2, "class": "Medica\u00e7\u00e3o Habitual", "text": "furosemida 20mg id", "color": "#FEF0C3", "startPos": 705, "endPos": 723, "beforeText": " por hipertens\u00e3o arterial e insufici\u00eancia card\u00edaca (FEVE 45%).\r\n\r\nMedica\u00e7\u00e3o habitual (confirmado com a esposa): bisoprolol 2,5mg id, ramipril 5mg id, ", "extractionText": "furosemida 20mg id", "afterText": ", pantoprazol 20mg id, ferro oral 100mg id\r\n\r\nAlergia conhecida: metoclopramida (n\u00e1useas importantes, v\u00f3mitos e irrita\u00e7\u00e3o cut\u00e2nea em epis\u00f3dios pr\u00e9vios", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 3, "class": "Medica\u00e7\u00e3o Habitual", "text": "pantoprazol 20mg id", "color": "#FEF0C3", "startPos": 725, "endPos": 744, "beforeText": "erial e insufici\u00eancia card\u00edaca (FEVE 45%).\r\n\r\nMedica\u00e7\u00e3o habitual (confirmado com a esposa): bisoprolol 2,5mg id, ramipril 5mg id, furosemida 20mg id, ", "extractionText": "pantoprazol 20mg id", "afterText": ", ferro oral 100mg id\r\n\r\nAlergia conhecida: metoclopramida (n\u00e1useas importantes, v\u00f3mitos e irrita\u00e7\u00e3o cut\u00e2nea em epis\u00f3dios pr\u00e9vios).\r\n\r\nQueixas de v\u00f4mi", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 4, "class": "Medica\u00e7\u00e3o Habitual", "text": "ferro oral 100mg id", "color": "#FEF0C3", "startPos": 746, "endPos": 765, "beforeText": " card\u00edaca (FEVE 45%).\r\n\r\nMedica\u00e7\u00e3o habitual (confirmado com a esposa): bisoprolol 2,5mg id, ramipril 5mg id, furosemida 20mg id, pantoprazol 20mg id, ", "extractionText": "ferro oral 100mg id", "afterText": "\r\n\r\nAlergia conhecida: metoclopramida (n\u00e1useas importantes, v\u00f3mitos e irrita\u00e7\u00e3o cut\u00e2nea em epis\u00f3dios pr\u00e9vios).\r\n\r\nQueixas de v\u00f4mitos alimentares frequ", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 5, "class": "Alergias medicamentosas positiva", "text": "metoclopramida", "color": "#D2E3FC", "startPos": 788, "endPos": 802, "beforeText": "l (confirmado com a esposa): bisoprolol 2,5mg id, ramipril 5mg id, furosemida 20mg id, pantoprazol 20mg id, ferro oral 100mg id\r\n\r\nAlergia conhecida: ", "extractionText": "metoclopramida", "afterText": " (n\u00e1useas importantes, v\u00f3mitos e irrita\u00e7\u00e3o cut\u00e2nea em epis\u00f3dios pr\u00e9vios).\r\n\r\nQueixas de v\u00f4mitos alimentares frequentes h\u00e1 5 dias, associados a n\u00e1useas", "attributesHtml": "<div><strong>class:</strong> Alergias medicamentosas positiva</div><div><strong>attributes:</strong> {}</div>"}, {"index": 6, "class": "Diagn\u00f3stico", "text": "v\u00f4mitos alimentares", "color": "#C8E6C9", "startPos": 890, "endPos": 909, "beforeText": "g id, ferro oral 100mg id\r\n\r\nAlergia conhecida: metoclopramida (n\u00e1useas importantes, v\u00f3mitos e irrita\u00e7\u00e3o cut\u00e2nea em epis\u00f3dios pr\u00e9vios).\r\n\r\nQueixas de ", "extractionText": "v\u00f4mitos alimentares", "afterText": " frequentes h\u00e1 5 dias, associados a n\u00e1useas, diminui\u00e7\u00e3o marcada da ingest\u00e3o oral, prostra\u00e7\u00e3o intensa e tonturas ortost\u00e1ticas. Esposa refere tamb\u00e9m dim", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 7, "class": "Diagn\u00f3stico", "text": "HIPONATR\u00c9MIA HIPOVOL\u00c9MICA GRAVE", "color": "#C8E6C9", "startPos": 2600, "endPos": 2631, "beforeText": "enta\u00e7\u00e3o laboratorial nas \u00faltimas 24h:\r\n2/04: Na+ 126, K+ 3,0, PCR 60, pCr 2,36, uremia 94\r\nGSA: acidose metab\u00f3lica ligeira, lactato 1,8\r\n\r\nIMPRESS\u00c3O\r\n", "extractionText": "HIPONATR\u00c9MIA HIPOVOL\u00c9MICA GRAVE", "afterText": " em contexto de v\u00f3mitos persistentes, redu\u00e7\u00e3o da ingest\u00e3o e poss\u00edvel agravamento de insufici\u00eancia renal funcional, com quadro compat\u00edvel com desidrata", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 8, "class": "Diagn\u00f3stico", "text": "insufici\u00eancia renal funcional", "color": "#C8E6C9", "startPos": 2715, "endPos": 2744, "beforeText": "ligeira, lactato 1,8\r\n\r\nIMPRESS\u00c3O\r\nHIPONATR\u00c9MIA HIPOVOL\u00c9MICA GRAVE em contexto de v\u00f3mitos persistentes, redu\u00e7\u00e3o da ingest\u00e3o e poss\u00edvel agravamento de ", "extractionText": "insufici\u00eancia renal funcional", "afterText": ", com quadro compat\u00edvel com desidrata\u00e7\u00e3o grave.\r\nDoente oncol\u00f3gico com doen\u00e7a avan\u00e7ada, perfis digestivos sem sinais de obstru\u00e7\u00e3o aguda.\r\n\r\nPLANO\r\nCor", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 9, "class": "Diagn\u00f3stico", "text": "desidrata\u00e7\u00e3o grave", "color": "#C8E6C9", "startPos": 2772, "endPos": 2790, "beforeText": "ICA GRAVE em contexto de v\u00f3mitos persistentes, redu\u00e7\u00e3o da ingest\u00e3o e poss\u00edvel agravamento de insufici\u00eancia renal funcional, com quadro compat\u00edvel com ", "extractionText": "desidrata\u00e7\u00e3o grave", "afterText": ".\r\nDoente oncol\u00f3gico com doen\u00e7a avan\u00e7ada, perfis digestivos sem sinais de obstru\u00e7\u00e3o aguda.\r\n\r\nPLANO\r\nCorre\u00e7\u00e3o volum\u00e9trica cuidadosa (SF 0,9%) com ajus", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 10, "class": "Diagn\u00f3stico", "text": "Doente oncol\u00f3gico com doen\u00e7a avan\u00e7ada", "color": "#C8E6C9", "startPos": 2793, "endPos": 2830, "beforeText": " de v\u00f3mitos persistentes, redu\u00e7\u00e3o da ingest\u00e3o e poss\u00edvel agravamento de insufici\u00eancia renal funcional, com quadro compat\u00edvel com desidrata\u00e7\u00e3o grave.\r\n", "extractionText": "Doente oncol\u00f3gico com doen\u00e7a avan\u00e7ada", "afterText": ", perfis digestivos sem sinais de obstru\u00e7\u00e3o aguda.\r\n\r\nPLANO\r\nCorre\u00e7\u00e3o volum\u00e9trica cuidadosa (SF 0,9%) com ajustamento pelo ritmo da diurese e par\u00e2metr", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 11, "class": "Alergias medicamentosas positiva", "text": "metoclopramida", "color": "#D2E3FC", "startPos": 3130, "endPos": 3144, "beforeText": "os laboratoriais, vigil\u00e2ncia pr\u00f3xima hemodin\u00e2mica.\r\nReposi\u00e7\u00e3o cuidadosa de pot\u00e1ssio.\r\nAvalia\u00e7\u00e3o de resposta \u00e0 hidrata\u00e7\u00e3o nas primeiras 6-12h.\r\nEvitar ", "extractionText": "metoclopramida", "afterText": " (A L E R G I A documentada) - antiem\u00e9tico alternativo: ondansetrona iv se necess\u00e1rio.\r\nMonitoriza\u00e7\u00e3o anal\u00edtica di\u00e1ria.\r\nManter hemodin\u00e2mica e reavali", "attributesHtml": "<div><strong>class:</strong> Alergias medicamentosas positiva</div><div><strong>attributes:</strong> {}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

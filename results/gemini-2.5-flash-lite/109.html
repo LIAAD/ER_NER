@@ -1,0 +1,261 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">Alergias medicamentosas negativa</span> <span class="lx-label" style="background-color:#C8E6C9;">Diagnóstico</span> <span class="lx-label" style="background-color:#FEF0C3;">Medicação Habitual</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        77b2503e-8984-48f2-ad8c-03e4191d90bd
+
+NOTA DE ENTRADA - SERVIÇO DE NEFROLOGIA
+EQUIPA ASSISTENTE: Drª Sofia Rodrigues (Assistente de Nefrologia), Drª Joana Silva (IFE Nefrologia), Drª Luís Fernandes (IFE Urologia), Drª Beatriz Costa (IFE Medicina Interna)
+IDENTIFICAÇÃO
+Doente do sexo masculino, 62 anos, casado, natural e residente em Lisboa, reformado, 12 anos de escolaridade. Vive com a esposa. Mão dominante: direita. 
+C. S.: Usf Francisco Pina
+
+DATA E MOTIVO DE INTERNAMENTO
+Internado no serviço de Nefrologia a 10/03/2025, proveniente do serviço de urgência, com quadro de <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">insuficiência renal aguda sobre doença renal crónica</span>.
+
+HISTÓRIA DA DOENÇA ACTUAL
+Doente com história de doença renal crónica em estágio 4, sob acompanhamento no nosso serviço. Nos últimos dias, apresentou uma deterioração clínica, com aumento da fadiga, náuseas e vômitos. 
+Realizou análises que mostraram um agravamento da função renal, com creatinina de 3,5 mg/dL e ureia de 120 mg/dL.
+
+Na admissão: PA: 160/90 mmHg; P radial: 80 ppm; Glicemia capilar 180 mg/dL e apirético. 
+Ao exame físico, estava desperto, mas apresentava sinais de <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">desidratação</span>, com <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">oligúria</span> e <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">edema em membros inferiores</span>.
+
+Efectuou os seguintes estudos
+Análises Laboratoriais: Hemograma com Hb-10,2 g/dL; Leucocitose com 12.000 leucócitos/mm3; Platelmia normal; 
+<span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">Uremia</span> de 120 mg/dL; <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">Creatinina</span> de 3,5 mg/dL; <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">Sódio</span> de 140 mEq/L; <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">Potássio</span> de 5,2 mEq/L; 
+<span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">Cálcio</span> de 8,5 mg/dL; <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">Fósforo</span> de 6,2 mg/dL; 
+ECG: Ritmo sinusal com <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">ondas T invertidas em DII, DIII e aVF</span>.
+Rx Tórax: Bilaterismo com presença de <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">estrias intersticiais finas</span>.
+
+Na ausência de contraindicação, iniciou diálise peritoneal contínua.
+Discutida a necessidade de uma abordagem multidisciplinar, com envolvimento da equipa de urologia e medicina interna.
+
+No decurso do internamento, o doente apresentou uma melhoria clínica, com redução da fadiga e aumento da diurese.
+Realizou-se um ecodoppler renal que mostrou uma redução do fluxo sanguíneo nos rins, compatível com a <span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">doença renal crónica</span>.
+
+ANTECEDENTES PESSOAIS
+#Hipertensão arterial
+#Doença renal crónica em estágio 4
+#<span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">Diabetes mellitus tipo 2</span>
+#<span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">Hiperparatiroidismo secundário</span>
+
+Possui alergia medicamentosa conhecida a <span class="lx-highlight" data-idx="15" style="background-color:#D2E3FC;">penicilina</span>.
+
+MEDICAÇÃO HABITUAL
+- <span class="lx-highlight" data-idx="16" style="background-color:#FEF0C3;">Losartan</span> 
+- <span class="lx-highlight" data-idx="17" style="background-color:#FEF0C3;">Metformina</span> 
+- <span class="lx-highlight" data-idx="18" style="background-color:#FEF0C3;">Epoetina alfa</span> 
+- <span class="lx-highlight" data-idx="19" style="background-color:#FEF0C3;">Calcitriol</span> 
+
+ANTECEDENTES FAMILIARES
+História familiar de doença renal crónica e hipertensão arterial.
+
+ADMISSÃO NO SERVIÇO DE NEFROLOGIA
+Objectiva queixas de fadiga e náuseas.
+Equipa de enfermagem refere oligúria e edema em membros inferiores.
+
+Eupneico em ar ambiente.
+EN: Consciente, cooperante. 
+Olhos na linha média, pupilas isocóricas fotorreactivas. 
+Movimentos oculares possíveis em todas as direcções do olhar, sem nistagmo. 
+Sem aparente défice motor dos membros. 
+ROT presentes simétricos.
+Marcha possível, mas com dificuldade devido ao edema.
+
+Sinais Vitais (11/03): TA 150/80 mmHg; FC 75 bpm; temp 36,5ºC; SatO2 95%
+
+LISTA DE PROBLEMAS
+#<span class="lx-highlight" data-idx="20" style="background-color:#C8E6C9;">Insuficiência renal aguda</span> sobre <span class="lx-highlight" data-idx="21" style="background-color:#C8E6C9;">doença renal crónica</span>
+#<span class="lx-highlight" data-idx="22" style="background-color:#C8E6C9;">Hipertensão arterial</span>
+#<span class="lx-highlight" data-idx="23" style="background-color:#C8E6C9;">Diabetes mellitus tipo 2</span>
+#<span class="lx-highlight" data-idx="24" style="background-color:#C8E6C9;">Hiperparatiroidismo secundário</span>
+
+PLANO
+Ajuste da diálise peritoneal contínua.
+Avaliação da necessidade de diálise hemodialítica.
+Controle rigoroso dos níveis de eletrólitos e ácido úrico.
+Pedido de colaboração com a equipa de urologia para avaliar a necessidade de acesso vascular para diálise.
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="24" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/25</span> |
+          Pos <span id="posInfo">[588-640]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "Diagn\u00f3stico", "text": "insufici\u00eancia renal aguda sobre doen\u00e7a renal cr\u00f3nica", "color": "#C8E6C9", "startPos": 588, "endPos": 640, "beforeText": "f Francisco Pina\r\n\r\nDATA E MOTIVO DE INTERNAMENTO\r\nInternado no servi\u00e7o de Nefrologia a 10/03/2025, proveniente do servi\u00e7o de urg\u00eancia, com quadro de ", "extractionText": "insufici\u00eancia renal aguda sobre doen\u00e7a renal cr\u00f3nica", "afterText": ".\r\n\r\nHIST\u00d3RIA DA DOEN\u00c7A ACTUAL\r\nDoente com hist\u00f3ria de doen\u00e7a renal cr\u00f3nica em est\u00e1gio 4, sob acompanhamento no nosso servi\u00e7o. Nos \u00faltimos dias, apres", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 1, "class": "Diagn\u00f3stico", "text": "desidrata\u00e7\u00e3o", "color": "#C8E6C9", "startPos": 1133, "endPos": 1145, "beforeText": "Na admiss\u00e3o: PA: 160/90 mmHg; P radial: 80 ppm; Glicemia capilar 180 mg/dL e apir\u00e9tico. \r\nAo exame f\u00edsico, estava desperto, mas apresentava sinais de ", "extractionText": "desidrata\u00e7\u00e3o", "afterText": ", com olig\u00faria e edema em membros inferiores.\r\n\r\nEfectuou os seguintes estudos\r\nAn\u00e1lises Laboratoriais: Hemograma com Hb-10,2 g/dL; Leucocitose com 12", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 2, "class": "Diagn\u00f3stico", "text": "olig\u00faria", "color": "#C8E6C9", "startPos": 1151, "endPos": 1159, "beforeText": "60/90 mmHg; P radial: 80 ppm; Glicemia capilar 180 mg/dL e apir\u00e9tico. \r\nAo exame f\u00edsico, estava desperto, mas apresentava sinais de desidrata\u00e7\u00e3o, com ", "extractionText": "olig\u00faria", "afterText": " e edema em membros inferiores.\r\n\r\nEfectuou os seguintes estudos\r\nAn\u00e1lises Laboratoriais: Hemograma com Hb-10,2 g/dL; Leucocitose com 12.000 leuc\u00f3cito", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 3, "class": "Diagn\u00f3stico", "text": "edema em membros inferiores", "color": "#C8E6C9", "startPos": 1162, "endPos": 1189, "beforeText": " P radial: 80 ppm; Glicemia capilar 180 mg/dL e apir\u00e9tico. \r\nAo exame f\u00edsico, estava desperto, mas apresentava sinais de desidrata\u00e7\u00e3o, com olig\u00faria e ", "extractionText": "edema em membros inferiores", "afterText": ".\r\n\r\nEfectuou os seguintes estudos\r\nAn\u00e1lises Laboratoriais: Hemograma com Hb-10,2 g/dL; Leucocitose com 12.000 leuc\u00f3citos/mm3; Platelmia normal; \r\nUre", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 4, "class": "Diagn\u00f3stico", "text": "Uremia", "color": "#C8E6C9", "startPos": 1336, "endPos": 1342, "beforeText": "res.\r\n\r\nEfectuou os seguintes estudos\r\nAn\u00e1lises Laboratoriais: Hemograma com Hb-10,2 g/dL; Leucocitose com 12.000 leuc\u00f3citos/mm3; Platelmia normal; \r\n", "extractionText": "Uremia", "afterText": " de 120 mg/dL; Creatinina de 3,5 mg/dL; S\u00f3dio de 140 mEq/L; Pot\u00e1ssio de 5,2 mEq/L; \r\nC\u00e1lcio de 8,5 mg/dL; F\u00f3sforo de 6,2 mg/dL; \r\nECG: Ritmo sinusal c", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 5, "class": "Diagn\u00f3stico", "text": "Creatinina", "color": "#C8E6C9", "startPos": 1357, "endPos": 1367, "beforeText": "eguintes estudos\r\nAn\u00e1lises Laboratoriais: Hemograma com Hb-10,2 g/dL; Leucocitose com 12.000 leuc\u00f3citos/mm3; Platelmia normal; \r\nUremia de 120 mg/dL; ", "extractionText": "Creatinina", "afterText": " de 3,5 mg/dL; S\u00f3dio de 140 mEq/L; Pot\u00e1ssio de 5,2 mEq/L; \r\nC\u00e1lcio de 8,5 mg/dL; F\u00f3sforo de 6,2 mg/dL; \r\nECG: Ritmo sinusal com ondas T invertidas em ", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 6, "class": "Diagn\u00f3stico", "text": "S\u00f3dio", "color": "#C8E6C9", "startPos": 1382, "endPos": 1387, "beforeText": "s Laboratoriais: Hemograma com Hb-10,2 g/dL; Leucocitose com 12.000 leuc\u00f3citos/mm3; Platelmia normal; \r\nUremia de 120 mg/dL; Creatinina de 3,5 mg/dL; ", "extractionText": "S\u00f3dio", "afterText": " de 140 mEq/L; Pot\u00e1ssio de 5,2 mEq/L; \r\nC\u00e1lcio de 8,5 mg/dL; F\u00f3sforo de 6,2 mg/dL; \r\nECG: Ritmo sinusal com ondas T invertidas em DII, DIII e aVF.\r\nRx", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 7, "class": "Diagn\u00f3stico", "text": "Pot\u00e1ssio", "color": "#C8E6C9", "startPos": 1402, "endPos": 1410, "beforeText": "ograma com Hb-10,2 g/dL; Leucocitose com 12.000 leuc\u00f3citos/mm3; Platelmia normal; \r\nUremia de 120 mg/dL; Creatinina de 3,5 mg/dL; S\u00f3dio de 140 mEq/L; ", "extractionText": "Pot\u00e1ssio", "afterText": " de 5,2 mEq/L; \r\nC\u00e1lcio de 8,5 mg/dL; F\u00f3sforo de 6,2 mg/dL; \r\nECG: Ritmo sinusal com ondas T invertidas em DII, DIII e aVF.\r\nRx T\u00f3rax: Bilaterismo com", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 8, "class": "Diagn\u00f3stico", "text": "C\u00e1lcio", "color": "#C8E6C9", "startPos": 1427, "endPos": 1433, "beforeText": "Leucocitose com 12.000 leuc\u00f3citos/mm3; Platelmia normal; \r\nUremia de 120 mg/dL; Creatinina de 3,5 mg/dL; S\u00f3dio de 140 mEq/L; Pot\u00e1ssio de 5,2 mEq/L; \r\n", "extractionText": "C\u00e1lcio", "afterText": " de 8,5 mg/dL; F\u00f3sforo de 6,2 mg/dL; \r\nECG: Ritmo sinusal com ondas T invertidas em DII, DIII e aVF.\r\nRx T\u00f3rax: Bilaterismo com presen\u00e7a de estrias in", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 9, "class": "Diagn\u00f3stico", "text": "F\u00f3sforo", "color": "#C8E6C9", "startPos": 1448, "endPos": 1455, "beforeText": "0 leuc\u00f3citos/mm3; Platelmia normal; \r\nUremia de 120 mg/dL; Creatinina de 3,5 mg/dL; S\u00f3dio de 140 mEq/L; Pot\u00e1ssio de 5,2 mEq/L; \r\nC\u00e1lcio de 8,5 mg/dL; ", "extractionText": "F\u00f3sforo", "afterText": " de 6,2 mg/dL; \r\nECG: Ritmo sinusal com ondas T invertidas em DII, DIII e aVF.\r\nRx T\u00f3rax: Bilaterismo com presen\u00e7a de estrias intersticiais finas.\r\n\r\n", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 10, "class": "Diagn\u00f3stico", "text": "ondas T invertidas em DII, DIII e aVF", "color": "#C8E6C9", "startPos": 1495, "endPos": 1532, "beforeText": " 120 mg/dL; Creatinina de 3,5 mg/dL; S\u00f3dio de 140 mEq/L; Pot\u00e1ssio de 5,2 mEq/L; \r\nC\u00e1lcio de 8,5 mg/dL; F\u00f3sforo de 6,2 mg/dL; \r\nECG: Ritmo sinusal com ", "extractionText": "ondas T invertidas em DII, DIII e aVF", "afterText": ".\r\nRx T\u00f3rax: Bilaterismo com presen\u00e7a de estrias intersticiais finas.\r\n\r\nNa aus\u00eancia de contraindica\u00e7\u00e3o, iniciou di\u00e1lise peritoneal cont\u00ednua.\r\nDiscuti", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 11, "class": "Diagn\u00f3stico", "text": "estrias intersticiais finas", "color": "#C8E6C9", "startPos": 1573, "endPos": 1600, "beforeText": "; \r\nC\u00e1lcio de 8,5 mg/dL; F\u00f3sforo de 6,2 mg/dL; \r\nECG: Ritmo sinusal com ondas T invertidas em DII, DIII e aVF.\r\nRx T\u00f3rax: Bilaterismo com presen\u00e7a de ", "extractionText": "estrias intersticiais finas", "afterText": ".\r\n\r\nNa aus\u00eancia de contraindica\u00e7\u00e3o, iniciou di\u00e1lise peritoneal cont\u00ednua.\r\nDiscutida a necessidade de uma abordagem multidisciplinar, com envolvimento", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 12, "class": "Diagn\u00f3stico", "text": "doen\u00e7a renal cr\u00f3nica", "color": "#C8E6C9", "startPos": 2013, "endPos": 2033, "beforeText": "a, com redu\u00e7\u00e3o da fadiga e aumento da diurese.\r\nRealizou-se um ecodoppler renal que mostrou uma redu\u00e7\u00e3o do fluxo sangu\u00edneo nos rins, compat\u00edvel com a ", "extractionText": "doen\u00e7a renal cr\u00f3nica", "afterText": ".\r\n\r\nANTECEDENTES PESSOAIS\r\n#Hipertens\u00e3o arterial\r\n#Doen\u00e7a renal cr\u00f3nica em est\u00e1gio 4\r\n#Diabetes mellitus tipo 2\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nP", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 13, "class": "Diagn\u00f3stico", "text": "Diabetes mellitus tipo 2", "color": "#C8E6C9", "startPos": 2121, "endPos": 2145, "beforeText": "luxo sangu\u00edneo nos rins, compat\u00edvel com a doen\u00e7a renal cr\u00f3nica.\r\n\r\nANTECEDENTES PESSOAIS\r\n#Hipertens\u00e3o arterial\r\n#Doen\u00e7a renal cr\u00f3nica em est\u00e1gio 4\r\n#", "extractionText": "Diabetes mellitus tipo 2", "afterText": "\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nPossui alergia medicamentosa conhecida a penicilina.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Losartan \r\n- Metformina \r\n- Epoetin", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 14, "class": "Diagn\u00f3stico", "text": "Hiperparatiroidismo secund\u00e1rio", "color": "#C8E6C9", "startPos": 2148, "endPos": 2178, "beforeText": "mpat\u00edvel com a doen\u00e7a renal cr\u00f3nica.\r\n\r\nANTECEDENTES PESSOAIS\r\n#Hipertens\u00e3o arterial\r\n#Doen\u00e7a renal cr\u00f3nica em est\u00e1gio 4\r\n#Diabetes mellitus tipo 2\r\n#", "extractionText": "Hiperparatiroidismo secund\u00e1rio", "afterText": "\r\n\r\nPossui alergia medicamentosa conhecida a penicilina.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Losartan \r\n- Metformina \r\n- Epoetina alfa \r\n- Calcitriol \r\n\r\nANTECED", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 15, "class": "Alergias medicamentosas negativa", "text": "penicilina", "color": "#D2E3FC", "startPos": 2223, "endPos": 2233, "beforeText": " arterial\r\n#Doen\u00e7a renal cr\u00f3nica em est\u00e1gio 4\r\n#Diabetes mellitus tipo 2\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nPossui alergia medicamentosa conhecida a ", "extractionText": "penicilina", "afterText": ".\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Losartan \r\n- Metformina \r\n- Epoetina alfa \r\n- Calcitriol \r\n\r\nANTECEDENTES FAMILIARES\r\nHist\u00f3ria familiar de doen\u00e7a renal cr\u00f3", "attributesHtml": "<div><strong>class:</strong> Alergias medicamentosas negativa</div><div><strong>attributes:</strong> {}</div>"}, {"index": 16, "class": "Medica\u00e7\u00e3o Habitual", "text": "Losartan", "color": "#FEF0C3", "startPos": 2260, "endPos": 2268, "beforeText": "st\u00e1gio 4\r\n#Diabetes mellitus tipo 2\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nPossui alergia medicamentosa conhecida a penicilina.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- ", "extractionText": "Losartan", "afterText": " \r\n- Metformina \r\n- Epoetina alfa \r\n- Calcitriol \r\n\r\nANTECEDENTES FAMILIARES\r\nHist\u00f3ria familiar de doen\u00e7a renal cr\u00f3nica e hipertens\u00e3o arterial.\r\n\r\nADM", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 17, "class": "Medica\u00e7\u00e3o Habitual", "text": "Metformina", "color": "#FEF0C3", "startPos": 2273, "endPos": 2283, "beforeText": "abetes mellitus tipo 2\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nPossui alergia medicamentosa conhecida a penicilina.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Losartan \r\n- ", "extractionText": "Metformina", "afterText": " \r\n- Epoetina alfa \r\n- Calcitriol \r\n\r\nANTECEDENTES FAMILIARES\r\nHist\u00f3ria familiar de doen\u00e7a renal cr\u00f3nica e hipertens\u00e3o arterial.\r\n\r\nADMISS\u00c3O NO SERVI\u00c7", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 18, "class": "Medica\u00e7\u00e3o Habitual", "text": "Epoetina alfa", "color": "#FEF0C3", "startPos": 2288, "endPos": 2301, "beforeText": " tipo 2\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nPossui alergia medicamentosa conhecida a penicilina.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Losartan \r\n- Metformina \r\n- ", "extractionText": "Epoetina alfa", "afterText": " \r\n- Calcitriol \r\n\r\nANTECEDENTES FAMILIARES\r\nHist\u00f3ria familiar de doen\u00e7a renal cr\u00f3nica e hipertens\u00e3o arterial.\r\n\r\nADMISS\u00c3O NO SERVI\u00c7O DE NEFROLOGIA\r\nO", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 19, "class": "Medica\u00e7\u00e3o Habitual", "text": "Calcitriol", "color": "#FEF0C3", "startPos": 2306, "endPos": 2316, "beforeText": "atiroidismo secund\u00e1rio\r\n\r\nPossui alergia medicamentosa conhecida a penicilina.\r\n\r\nMEDICA\u00c7\u00c3O HABITUAL\r\n- Losartan \r\n- Metformina \r\n- Epoetina alfa \r\n- ", "extractionText": "Calcitriol", "afterText": " \r\n\r\nANTECEDENTES FAMILIARES\r\nHist\u00f3ria familiar de doen\u00e7a renal cr\u00f3nica e hipertens\u00e3o arterial.\r\n\r\nADMISS\u00c3O NO SERVI\u00c7O DE NEFROLOGIA\r\nObjectiva queixa", "attributesHtml": "<div><strong>class:</strong> Medica\u00e7\u00e3o Habitual</div><div><strong>attributes:</strong> {}</div>"}, {"index": 20, "class": "Diagn\u00f3stico", "text": "Insufici\u00eancia renal aguda", "color": "#C8E6C9", "startPos": 2976, "endPos": 3001, "beforeText": "ha poss\u00edvel, mas com dificuldade devido ao edema.\r\n\r\nSinais Vitais (11/03): TA 150/80 mmHg; FC 75 bpm; temp 36,5\u00baC; SatO2 95%\r\n\r\nLISTA DE PROBLEMAS\r\n#", "extractionText": "Insufici\u00eancia renal aguda", "afterText": " sobre doen\u00e7a renal cr\u00f3nica\r\n#Hipertens\u00e3o arterial\r\n#Diabetes mellitus tipo 2\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nPLANO\r\nAjuste da di\u00e1lise peritoneal ", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 21, "class": "Diagn\u00f3stico", "text": "doen\u00e7a renal cr\u00f3nica", "color": "#C8E6C9", "startPos": 3008, "endPos": 3028, "beforeText": " devido ao edema.\r\n\r\nSinais Vitais (11/03): TA 150/80 mmHg; FC 75 bpm; temp 36,5\u00baC; SatO2 95%\r\n\r\nLISTA DE PROBLEMAS\r\n#Insufici\u00eancia renal aguda sobre ", "extractionText": "doen\u00e7a renal cr\u00f3nica", "afterText": "\r\n#Hipertens\u00e3o arterial\r\n#Diabetes mellitus tipo 2\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nPLANO\r\nAjuste da di\u00e1lise peritoneal cont\u00ednua.\r\nAvalia\u00e7\u00e3o da nec", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 22, "class": "Diagn\u00f3stico", "text": "Hipertens\u00e3o arterial", "color": "#C8E6C9", "startPos": 3031, "endPos": 3051, "beforeText": "nais Vitais (11/03): TA 150/80 mmHg; FC 75 bpm; temp 36,5\u00baC; SatO2 95%\r\n\r\nLISTA DE PROBLEMAS\r\n#Insufici\u00eancia renal aguda sobre doen\u00e7a renal cr\u00f3nica\r\n#", "extractionText": "Hipertens\u00e3o arterial", "afterText": "\r\n#Diabetes mellitus tipo 2\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nPLANO\r\nAjuste da di\u00e1lise peritoneal cont\u00ednua.\r\nAvalia\u00e7\u00e3o da necessidade de di\u00e1lise hem", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 23, "class": "Diagn\u00f3stico", "text": "Diabetes mellitus tipo 2", "color": "#C8E6C9", "startPos": 3054, "endPos": 3078, "beforeText": " 150/80 mmHg; FC 75 bpm; temp 36,5\u00baC; SatO2 95%\r\n\r\nLISTA DE PROBLEMAS\r\n#Insufici\u00eancia renal aguda sobre doen\u00e7a renal cr\u00f3nica\r\n#Hipertens\u00e3o arterial\r\n#", "extractionText": "Diabetes mellitus tipo 2", "afterText": "\r\n#Hiperparatiroidismo secund\u00e1rio\r\n\r\nPLANO\r\nAjuste da di\u00e1lise peritoneal cont\u00ednua.\r\nAvalia\u00e7\u00e3o da necessidade de di\u00e1lise hemodial\u00edtica.\r\nControle rigor", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}, {"index": 24, "class": "Diagn\u00f3stico", "text": "Hiperparatiroidismo secund\u00e1rio", "color": "#C8E6C9", "startPos": 3081, "endPos": 3111, "beforeText": "mp 36,5\u00baC; SatO2 95%\r\n\r\nLISTA DE PROBLEMAS\r\n#Insufici\u00eancia renal aguda sobre doen\u00e7a renal cr\u00f3nica\r\n#Hipertens\u00e3o arterial\r\n#Diabetes mellitus tipo 2\r\n#", "extractionText": "Hiperparatiroidismo secund\u00e1rio", "afterText": "\r\n\r\nPLANO\r\nAjuste da di\u00e1lise peritoneal cont\u00ednua.\r\nAvalia\u00e7\u00e3o da necessidade de di\u00e1lise hemodial\u00edtica.\r\nControle rigoroso dos n\u00edveis de eletr\u00f3litos e \u00e1", "attributesHtml": "<div><strong>class:</strong> Diagn\u00f3stico</div><div><strong>attributes:</strong> {}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
