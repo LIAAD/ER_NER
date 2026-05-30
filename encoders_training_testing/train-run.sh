@@ -7,8 +7,8 @@
 set -e  # Exit immediately on error
 
 # ---------- Paths ----------
-TRAIN_JSON="/home/tmunna/project-glintt/final-data/new-split-test-real/train.json"
-VAL_JSON="/home/tmunna/project-glintt/final-data/new-split-test-real/val.json"
+TRAIN_JSON="train.json"
+VAL_JSON="val.json"
 OUTPUT_DIR="output-medialbertina-pt-pt-900m-realtest"  # where the best model will be saved
 
 # ---------- Model ----------
@@ -76,7 +76,7 @@ if [ -n "$GPU" ]; then
 fi
 
 export CUDA_VISIBLE_DEVICES=$GPU
-python /home/tmunna/project-glintt/new-code/train.py \
+python train.py \
     --train_json  "$TRAIN_JSON" \
     --val_json    "$VAL_JSON" \
     --model       "$MODEL" \
