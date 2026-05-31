@@ -15,7 +15,7 @@ Emergency Room (ER) handovers require rapid identification of a patient's princi
 **Key contributions:**
 
 - A **synthetic dataset** of 300 Portuguese ER admission notes (275 LLM-generated with Llama 3.3 + 15 physician-validated), covering eight medical specialties.
-- **Two-layer annotation**: entity spans for the three target classes, plus mappings to standard terminologies (ICD-10 for diagnoses, ATC for allergies, SNOMED CT for usual medications).
+- **Two-layer annotation**: entity spans for the three target classes, plus mappings to standard terminologies (ICD-10 for diagnoses, ATC for medication allergies, SNOMED CT for usual medications).
 - **Fine-tuned NER models**: BioBERT-PT and MediAlbertina, benchmarked against few-shot Gemini and Gemma baselines.
 
 ### Results summary (macro F1 on physician-validated test set)
@@ -36,32 +36,32 @@ Encoder models substantially outperform generative baselines. Principal diagnosi
 ```
 ER_NER/
 ├── dataset/
-│   ├── train.json                          # 257 documents for fine-tuning
-│   ├── val.json                            # 28 documents for validation
-│   ├── test-real.json                      # 15 physician-validated documents for evaluation
+│   ├── train.json                             # 257 documents — NER training split (spans + polarity)
+│   ├── val.json                               # 28 documents  — NER validation split (spans + polarity)
+│   ├── test-real.json                         # 15 documents  — physician-validated evaluation split
+│   ├── dataset_with_codes.json                # All 300 documents with terminology codes (ICD-10, ATC, SNOMED CT)
 │   └── ER_NER_Dataset_Characterization.ipynb  # Dataset statistics and analysis
 │
 ├── encoders_training_testing/
-│   ├── train.py                            # Fine-tuning script (HuggingFace Transformers)
-│   ├── train-run.sh                        # Training launcher with hyperparameter config
-│   ├── test-per-class.py                   # Evaluation script (exact match + IoU@0.5)
-│   ├── test_sub.sh                         # Evaluation launcher
-│   └── additional_details.md              # Full training and evaluation details
+│   ├── train.py                               # Fine-tuning script (HuggingFace Transformers)
+│   ├── train-run.sh                           # Training launcher with hyperparameter config
+│   ├── test-per-class.py                      # Evaluation script (exact match + IoU@0.5)
+│   ├── test_sub.sh                            # Evaluation launcher
+│   └── additional_details.md                 # Full training and evaluation details
 │
 ├── generative_testing/
-│   ├── ER_NER_baseline__cleaned.ipynb      # Gemini / Gemma few-shot NER extraction
-│   └── ER_NER_evaluation.ipynb            # Evaluation of generative model outputs
+│   ├── ER_NER_baseline__cleaned.ipynb         # Gemini / Gemma few-shot NER extraction
+│   └── ER_NER_evaluation.ipynb               # Evaluation of generative model outputs
 │
 ├── prompts/
-│   ├── prompt_synthetic_data_gen.md        # Prompt template used to generate clinical notes
-│   └── prompt_generative_NER_extraction.md # Prompt template used for generative NER baselines
+│   ├── prompt_synthetic_data_gen.md           # Prompt template used to generate clinical notes
+│   └── prompt_generative_NER_extraction.md   # Prompt template used for generative NER baselines
 │
 ├── results/
-│   ├── biobertpt.json                      # BioBERT-PT predictions on test set
-│   ├── medialbertina.json                  # MediaAlbertina predictions on test set
-│   ├── gemini-2.5-flash-lite/              # Per-document Gemini predictions (JSON + HTML) on test set
-|   ├──  gemma-4-31b-it/		     # Per-document Gemma predictions (JSON + HTML) on test set
-
+│   ├── biobertpt.json                         # BioBERT-PT predictions on test set
+│   ├── medialbertina.json                     # MediAlbertina predictions on test set
+│   ├── gemini-2.5-flash-lite/                 # Per-document Gemini predictions (JSON + HTML)
+│   └── gemma-4-31b-it/                        # Per-document Gemma predictions (JSON + HTML)
 │
 ├── images/
 │   ├── annotation_scheme.png
@@ -76,33 +76,102 @@ ER_NER/
 
 ## Dataset
 
+### Two versions
+
+The dataset is released in two complementary versions, suited to different use cases:
+
+| File | Documents | Content | Use case |
+|---|:---:|---|---|
+| `train.json` / `val.json` / `test-real.json` | 257 / 28 / 15 | Entity spans and polarity only | NER model training and evaluation |
+| `dataset_with_codes.json` | 300 | Entity spans + ICD-10, ATC, and SNOMED CT codes | Normalisation, interoperability, downstream tasks |
+
 ### Splits
 
-| Split | File | Documents | Annotated spans | Notes |
-|---|---|:---:|:---:|---|
-| Train | `train.json` | 257 | 1,492 | LLM-generated; used for fine-tuning |
-| Validation | `val.json` | 28 | 166 | LLM-generated; used for early stopping |
-| Test | `test-real.json` | 15 | 86 | Physician-validated; held out for evaluation |
+| Split | File | Documents | Annotated spans |
+|---|---|:---:|:---:|
+| Train | `train.json` | 257 | 1,493 |
+| Validation | `val.json` | 28 | 166 |
+| Test | `test-real.json` | 15 | 86 |
 
 The train/validation split uses iterative multi-label stratification to ensure proportional class representation. The test set is composed exclusively of the 15 physician-validated notes, providing a close-to-real-world evaluation benchmark.
 
-### Annotation and terminology mappings
+### Annotation scheme and terminology mappings
 
 ![Annotation Scheme](images/annotation_scheme.png)
 
-| JSON label | Entity | Terminology | Notes |
+| Entity | JSON label | Terminology | Field in `dataset_with_codes.json` |
 |---|---|---|---|
-| `Diagnóstico` | Principal diagnosis for the current ER episode | ICD-10 | One per note; specific codes only |
-| `Medicação Habitual` | Patient's chronic/usual medication | SNOMED CT | Includes dose and administration instructions when present |
-| `Alergias medicamentosas` | Medication allergy, or explicit absence of allergy | ATC | Has a `Polaridade` field: `Positiva` or `Negativa` |
+| Principal diagnosis | `Diagnóstico` | ICD-10 | `ICD10` |
+| Usual medication | `Medicação Habitual` | SNOMED CT | `SNOMEDCT` |
+| Medication allergy | `Alergias medicamentosas` | ATC | `ATC` |
 
+Medication allergies also carry a `Polaridade` field (`Positiva` / `Negativa`) in both dataset versions.
 
+### JSON formats
+
+**NER splits** (`train.json`, `val.json`, `test-real.json`) — spans and polarity only:
+
+```json
+{
+  "doc_id": 1,
+  "text": "...",
+  "annotations": [
+    {
+      "begin": 924,
+      "end": 942,
+      "label": "Medicação Habitual"
+    },
+    {
+      "begin": 310,
+      "end": 319,
+      "label": "Alergias medicamentosas",
+      "Polaridade": "Positiva"
+    }
+  ]
+}
+```
+
+**Full dataset with codes** (`dataset_with_codes.json`) — spans and terminology codes:
+
+```json
+{
+  "doc_id": 1,
+  "text": "...",
+  "annotations": [
+    {
+      "begin": 924,
+      "end": 942,
+      "label": "Medicação Habitual",
+      "SNOMEDCT": "376701008",
+      "ATC": "",
+      "ICD10": ""
+    },
+    {
+      "begin": 310,
+      "end": 319,
+      "label": "Alergias medicamentosas",
+      "Polaridade": "Positiva",
+      "SNOMEDCT": "",
+      "ATC": "J01CA04",
+      "ICD10": ""
+    }
+  ]
+}
+```
+
+The `begin` and `end` fields are **character-level, exclusive-end offsets** into `text`. Recover the span text with:
+
+```python
+span = document["text"][annotation["begin"]:annotation["end"]]
+```
+
+Each annotation only populates the terminology field relevant to its entity type; the other code fields are empty strings.
 
 ### Annotation notes
 
 - **Medication allergies:** the annotated markable is the allergenic agent itself (e.g. `"penicillin"` in *"reports a known allergy to penicillin"*). For negated contexts (e.g. *"has no drug allergies"*), the markable is the negated phrase (e.g. `"drug allergies"`) with `Polaridade = Negativa`.
 - **Principal diagnosis:** the most specific ICD-10 code is assigned where possible. Overly generic descriptions (e.g. *"cardiovascular disease"*) are not coded.
-- **Usual medication:** spans include the medication name plus dosage and administration instructions when present. SNOMED CT codes are stored in the `EDQM` field in this release.
+- **Usual medication:** spans include the medication name plus dosage and administration instructions when present.
 
 ---
 
@@ -135,6 +204,12 @@ cd encoders_training_testing
 bash train-run.sh
 ```
 
+**Handling long documents:** notes are split into overlapping 512-token windows with a stride of 128. At inference, logit scores from overlapping windows are averaged per token before argmax decoding.
+
+**Handling class imbalance:** inverse-frequency class weights are applied to the cross-entropy loss (O-class weight capped at 0.25× mean non-O weight; I-X weights forced equal to corresponding B-X weights). Documents containing at least one `Alergias medicamentosas__Negativa` span are oversampled ×4 during training.
+
+The best checkpoint (by validation F1) is saved to `{OUTPUT_DIR}/best/`. See [`encoders_training_testing/additional_details.md`](encoders_training_testing/additional_details.md) for the complete training specification.
+
 ### Evaluation
 
 ```bash
@@ -159,18 +234,18 @@ Evaluation runs in **joint extraction + polarity** mode (`--score_mode joint`): 
 
 ## Generative baselines
 
-Few-shot generative NER experiments are in `generative_testing/ER_NER_baseline__cleaned.ipynb`. Both baselines use [LangExtract](https://github.com/agoel00/langextract) to obtain structured outputs.
+Few-shot generative NER experiments are in `generative_testing/ER_NER_baseline__cleaned.ipynb`. Both baselines use [LangExtract](https://github.com/google/langextract) to obtain structured outputs.
 
 For each test document, the most semantically similar training document (by cosine similarity of text embeddings) is retrieved and used as a dynamic few-shot example.
 
-| Model | Type | HuggingFace / API identifier |
+| Model | Type | Identifier |
 |---|---|---|
 | Gemini 2.5 Flash Lite | Closed-weight (API) | `gemini-2.5-flash-lite` |
 | Gemma 4 | Open-weight (local) | `gemma-4-31B-it` |
 
 > **Privacy note:** closed-weight API models are unsuitable for real ER settings due to data governance constraints. Open-weight models can be deployed locally within hospital infrastructure.
 
-Pre-computed predictions for Gemini are available in `results/gemini-2.5-flash-lite/`.
+Pre-computed per-document predictions are available in `results/gemini-2.5-flash-lite/` and `results/gemma-4-31b-it/`.
 
 ---
 
@@ -213,3 +288,9 @@ If you use this dataset, models, or code in your work, please cite:
 
 ---
 
+## License
+
+## Licence
+
+- **Dataset** (`dataset/`): [CC BY-NC 4.0](LICENSE-DATASET.txt) — free for research; commercial use requires permission.
+- **Code** (`encoders_training_testing/`, `generative_testing/`, `prompts/`): [Apache 2.0](LICENSE-CODE.txt).
