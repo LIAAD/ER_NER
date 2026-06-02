@@ -1,7 +1,7 @@
 {
   "timestamp": "2026-05-28T13:19:06Z",
-  "model_path": "/home/XXX/project-glintt/model/best-biobertpt-all",
-  "test_file": "/home/XXX/project-glintt/final-data/new-split-test-real/test-real.json",
+  "model_path": " ",
+  "test_file": " ",
   "relaxed_iou": 0.5,
   "score_mode": "joint",
   "bases_with_polarity": [
